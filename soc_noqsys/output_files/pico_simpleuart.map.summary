@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sat Mar 09 16:53:03 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : pico_simpleuart
+Top-level Entity Name : picosoc
+Family : MAX 10
+Total logic elements : 3,793
+    Total combinational functions : 3,668
+    Dedicated logic registers : 1,395
+Total registers : 1395
+Total pins : 12
+Total virtual pins : 0
+Total memory bits : 264,192
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

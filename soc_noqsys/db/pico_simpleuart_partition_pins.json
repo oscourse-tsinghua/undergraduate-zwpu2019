@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ser_tx",
+					"strict" : false
+				},
+				{
+					"name" : "gpio[0]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio[1]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio[2]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio[3]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio[4]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio[5]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio[6]",
+					"strict" : false
+				},
+				{
+					"name" : "gpio[7]",
+					"strict" : false
+				},
+				{
+					"name" : "resetn",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "ser_rx",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
