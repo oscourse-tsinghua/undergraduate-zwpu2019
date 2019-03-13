@@ -1,0 +1,50 @@
+Warning (10273): Verilog HDL warning at picorv32.v(284): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 284
+Warning (10273): Verilog HDL warning at picorv32.v(304): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 304
+Warning (10273): Verilog HDL warning at picorv32.v(311): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 311
+Warning (10273): Verilog HDL warning at picorv32.v(370): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 370
+Warning (10273): Verilog HDL warning at picorv32.v(372): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 372
+Warning (10273): Verilog HDL warning at picorv32.v(1020): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1020
+Warning (10273): Verilog HDL warning at picorv32.v(1229): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1229
+Warning (10273): Verilog HDL warning at picorv32.v(1246): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1246
+Warning (10273): Verilog HDL warning at picorv32.v(1290): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1290
+Warning (10273): Verilog HDL warning at picorv32.v(1322): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1322
+Warning (10273): Verilog HDL warning at picorv32.v(1377): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1377
+Warning (10273): Verilog HDL warning at picorv32.v(1378): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1378
+Warning (10273): Verilog HDL warning at picorv32.v(1390): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1390
+Warning (10273): Verilog HDL warning at picorv32.v(1391): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1391
+Warning (10273): Verilog HDL warning at picorv32.v(1409): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1409
+Warning (10273): Verilog HDL warning at picorv32.v(1410): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1410
+Warning (10273): Verilog HDL warning at picorv32.v(1413): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1413
+Warning (10273): Verilog HDL warning at picorv32.v(1434): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1434
+Warning (10273): Verilog HDL warning at picorv32.v(1559): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1559
+Warning (10273): Verilog HDL warning at picorv32.v(1560): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1560
+Warning (10273): Verilog HDL warning at picorv32.v(1946): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1946
+Warning (10268): Verilog HDL information at picorv32.v(1375): always construct contains both blocking and non-blocking assignments File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 1375
+Warning (10273): Verilog HDL warning at picorv32.v(2397): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/picorv32.v Line: 2397
+Info (10281): Verilog HDL Declaration information at pico_qsys_mm_interconnect_0_router.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router.sv Line: 48
+Info (10281): Verilog HDL Declaration information at pico_qsys_mm_interconnect_0_router.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router.sv Line: 49
+Info (10281): Verilog HDL Declaration information at pico_qsys_mm_interconnect_0_router_002.sv(48): object "DEFAULT_WR_CHANNEL" differs only in case from object "default_wr_channel" in the same scope File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router_002.sv Line: 48
+Info (10281): Verilog HDL Declaration information at pico_qsys_mm_interconnect_0_router_002.sv(49): object "DEFAULT_RD_CHANNEL" differs only in case from object "default_rd_channel" in the same scope File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router_002.sv Line: 49
+Warning (10273): Verilog HDL warning at picorv32.v(284): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 284
+Warning (10273): Verilog HDL warning at picorv32.v(304): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 304
+Warning (10273): Verilog HDL warning at picorv32.v(311): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 311
+Warning (10273): Verilog HDL warning at picorv32.v(370): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 370
+Warning (10273): Verilog HDL warning at picorv32.v(372): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 372
+Warning (10273): Verilog HDL warning at picorv32.v(1020): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1020
+Warning (10273): Verilog HDL warning at picorv32.v(1229): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1229
+Warning (10273): Verilog HDL warning at picorv32.v(1246): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1246
+Warning (10273): Verilog HDL warning at picorv32.v(1290): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1290
+Warning (10273): Verilog HDL warning at picorv32.v(1322): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1322
+Warning (10273): Verilog HDL warning at picorv32.v(1377): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1377
+Warning (10273): Verilog HDL warning at picorv32.v(1378): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1378
+Warning (10273): Verilog HDL warning at picorv32.v(1390): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1390
+Warning (10273): Verilog HDL warning at picorv32.v(1391): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1391
+Warning (10273): Verilog HDL warning at picorv32.v(1409): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1409
+Warning (10273): Verilog HDL warning at picorv32.v(1410): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1410
+Warning (10273): Verilog HDL warning at picorv32.v(1413): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1413
+Warning (10273): Verilog HDL warning at picorv32.v(1434): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1434
+Warning (10273): Verilog HDL warning at picorv32.v(1559): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1559
+Warning (10273): Verilog HDL warning at picorv32.v(1560): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1560
+Warning (10273): Verilog HDL warning at picorv32.v(1946): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1946
+Warning (10268): Verilog HDL information at picorv32.v(1375): always construct contains both blocking and non-blocking assignments File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 1375
+Warning (10273): Verilog HDL warning at picorv32.v(2397): extended using "x" or "z" File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v Line: 2397

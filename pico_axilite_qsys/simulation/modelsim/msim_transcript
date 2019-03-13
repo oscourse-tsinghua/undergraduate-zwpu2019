@@ -1,0 +1,898 @@
+# do pico_axilite_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying /home/z/altera_lite/16.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/z/Desktop/pico_axilite_qsys {/home/z/Desktop/pico_axilite_qsys/picorv32.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:32 on Mar 05,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/z/Desktop/pico_axilite_qsys" /home/z/Desktop/pico_axilite_qsys/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 10:41:32 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/z/Desktop/pico_axilite_qsys {/home/z/Desktop/pico_axilite_qsys/pico_axilite_top.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:32 on Mar 05,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/z/Desktop/pico_axilite_qsys" /home/z/Desktop/pico_axilite_qsys/pico_axilite_top.v 
+# -- Compiling module pico_axilite_top
+# 
+# Top level modules:
+# 	pico_axilite_top
+# End time: 10:41:32 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/z/Desktop/pico_axilite_qsys {/home/z/Desktop/pico_axilite_qsys/pico_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:32 on Mar 05,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/z/Desktop/pico_axilite_qsys" /home/z/Desktop/pico_axilite_qsys/pico_tb.v 
+# -- Compiling module pico_tb
+# 
+# Top level modules:
+# 	pico_tb
+# End time: 10:41:32 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlib pico_qsys
+# ** Warning: (vlib-34) Library already exists at "pico_qsys".
+# vmap pico_qsys pico_qsys
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap pico_qsys pico_qsys 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/pico_qsys.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:32 on Mar 05,2019
+# vlog -reportprogress 300 -vlog01compat -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/pico_qsys.v 
+# -- Compiling module pico_qsys
+# 
+# Top level modules:
+# 	pico_qsys
+# End time: 10:41:32 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_avalon_sc_fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:32 on Mar 05,2019
+# vlog -reportprogress 300 -vlog01compat -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_avalon_sc_fifo.v 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 10:41:33 on Mar 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_reset_controller.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:33 on Mar 05,2019
+# vlog -reportprogress 300 -vlog01compat -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_reset_controller.v 
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 10:41:33 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_reset_synchronizer.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:33 on Mar 05,2019
+# vlog -reportprogress 300 -vlog01compat -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_reset_synchronizer.v 
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 10:41:33 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:33 on Mar 05,2019
+# vlog -reportprogress 300 -vlog01compat -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0.v 
+# -- Compiling module pico_qsys_mm_interconnect_0
+# 
+# Top level modules:
+# 	pico_qsys_mm_interconnect_0
+# End time: 10:41:33 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:33 on Mar 05,2019
+# vlog -reportprogress 300 -vlog01compat -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter.v 
+# -- Compiling module pico_qsys_mm_interconnect_0_avalon_st_adapter
+# 
+# Top level modules:
+# 	pico_qsys_mm_interconnect_0_avalon_st_adapter
+# End time: 10:41:33 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:33 on Mar 05,2019
+# vlog -reportprogress 300 -vlog01compat -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v 
+# -- Compiling module pico_qsys_onchip_memory2_0
+# 
+# Top level modules:
+# 	pico_qsys_onchip_memory2_0
+# End time: 10:41:33 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:33 on Mar 05,2019
+# vlog -reportprogress 300 -vlog01compat -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v 
+# -- Compiling module pico_qsys_onchip_memory2_1
+# 
+# Top level modules:
+# 	pico_qsys_onchip_memory2_1
+# End time: 10:41:33 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:33 on Mar 05,2019
+# vlog -reportprogress 300 -vlog01compat -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v 
+# -- Compiling module pico_qsys_uart_0_tx
+# -- Compiling module pico_qsys_uart_0_rx_stimulus_source
+# -- Compiling module pico_qsys_uart_0_rx
+# -- Compiling module pico_qsys_uart_0_regs
+# -- Compiling module pico_qsys_uart_0
+# 
+# Top level modules:
+# 	pico_qsys_uart_0
+# End time: 10:41:33 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:33 on Mar 05,2019
+# vlog -reportprogress 300 -vlog01compat -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v 
+# -- Compiling module picorv32
+# -- Compiling module picorv32_regs
+# -- Compiling module picorv32_pcpi_mul
+# -- Compiling module picorv32_pcpi_fast_mul
+# -- Compiling module picorv32_pcpi_div
+# -- Compiling module picorv32_axi
+# -- Compiling module picorv32_axi_adapter
+# -- Compiling module picorv32_wb
+# 
+# Top level modules:
+# 	picorv32_regs
+# 	picorv32_axi
+# 	picorv32_wb
+# End time: 10:41:33 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:33 on Mar 05,2019
+# vlog -reportprogress 300 -vlog01compat -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v 
+# -- Compiling module picorv32_axi_wrapper
+# 
+# Top level modules:
+# 	picorv32_axi_wrapper
+# End time: 10:41:33 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_arbitrator.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:33 on Mar 05,2019
+# vlog -reportprogress 300 -sv -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_arbitrator.sv 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 10:41:33 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:33 on Mar 05,2019
+# vlog -reportprogress 300 -sv -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv 
+# -- Compiling module altera_merlin_axi_master_ni
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv(763): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv(767): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv(701): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv(703): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv(705): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv(707): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv(722): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv(738): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv(740): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv(742): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv(744): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# Top level modules:
+# 	altera_merlin_axi_master_ni
+# End time: 10:41:33 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 11
+# vlog -sv -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_burst_uncompressor.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:33 on Mar 05,2019
+# vlog -reportprogress 300 -sv -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_burst_uncompressor.sv 
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 10:41:33 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_slave_agent.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:33 on Mar 05,2019
+# vlog -reportprogress 300 -sv -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_slave_agent.sv 
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_slave_agent.sv(490): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_slave_agent.sv(491): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# End time: 10:41:33 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# vlog -sv -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_slave_translator.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:33 on Mar 05,2019
+# vlog -reportprogress 300 -sv -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_slave_translator.sv 
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# End time: 10:41:33 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_irq_mapper.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:33 on Mar 05,2019
+# vlog -reportprogress 300 -sv -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_irq_mapper.sv 
+# -- Compiling module pico_qsys_irq_mapper
+# 
+# Top level modules:
+# 	pico_qsys_irq_mapper
+# End time: 10:41:33 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:33 on Mar 05,2019
+# vlog -reportprogress 300 -sv -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv 
+# -- Compiling module pico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# 
+# Top level modules:
+# 	pico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# End time: 10:41:34 on Mar 05,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:34 on Mar 05,2019
+# vlog -reportprogress 300 -sv -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_demux.sv 
+# -- Compiling module pico_qsys_mm_interconnect_0_cmd_demux
+# 
+# Top level modules:
+# 	pico_qsys_mm_interconnect_0_cmd_demux
+# End time: 10:41:34 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:34 on Mar 05,2019
+# vlog -reportprogress 300 -sv -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_mux.sv 
+# -- Compiling module pico_qsys_mm_interconnect_0_cmd_mux
+# 
+# Top level modules:
+# 	pico_qsys_mm_interconnect_0_cmd_mux
+# End time: 10:41:34 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:34 on Mar 05,2019
+# vlog -reportprogress 300 -sv -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router.sv 
+# -- Compiling module pico_qsys_mm_interconnect_0_router_default_decode
+# -- Compiling module pico_qsys_mm_interconnect_0_router
+# 
+# Top level modules:
+# 	pico_qsys_mm_interconnect_0_router
+# End time: 10:41:34 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router_002.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:34 on Mar 05,2019
+# vlog -reportprogress 300 -sv -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router_002.sv 
+# -- Compiling module pico_qsys_mm_interconnect_0_router_002_default_decode
+# -- Compiling module pico_qsys_mm_interconnect_0_router_002
+# 
+# Top level modules:
+# 	pico_qsys_mm_interconnect_0_router_002
+# End time: 10:41:34 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_demux.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:34 on Mar 05,2019
+# vlog -reportprogress 300 -sv -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_demux.sv 
+# -- Compiling module pico_qsys_mm_interconnect_0_rsp_demux
+# 
+# Top level modules:
+# 	pico_qsys_mm_interconnect_0_rsp_demux
+# End time: 10:41:34 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_mux.sv}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:34 on Mar 05,2019
+# vlog -reportprogress 300 -sv -work pico_qsys "+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules" /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_mux.sv 
+# -- Compiling module pico_qsys_mm_interconnect_0_rsp_mux
+# 
+# Top level modules:
+# 	pico_qsys_mm_interconnect_0_rsp_mux
+# End time: 10:41:34 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/home/z/Desktop/pico_axilite_qsys {/home/z/Desktop/pico_axilite_qsys/pico_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:41:34 on Mar 05,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/z/Desktop/pico_axilite_qsys" /home/z/Desktop/pico_axilite_qsys/pico_tb.v 
+# -- Compiling module pico_tb
+# 
+# Top level modules:
+# 	pico_tb
+# End time: 10:41:34 on Mar 05,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -L pico_qsys -voptargs="+acc"  pico_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -L pico_qsys -voptargs=""+acc"" pico_tb 
+# Start time: 10:41:34 on Mar 05,2019
+# Loading work.pico_tb
+# Loading work.pico_axilite_top
+# Loading pico_qsys.pico_qsys
+# Loading pico_qsys.pico_qsys_onchip_memory2_0
+# Loading altera_mf_ver.altsyncram
+# Loading pico_qsys.pico_qsys_onchip_memory2_1
+# Loading pico_qsys.picorv32_axi_wrapper
+# Loading work.picorv32_axi
+# Loading work.picorv32_axi_adapter
+# Loading work.picorv32
+# Loading pico_qsys.pico_qsys_uart_0
+# Loading pico_qsys.pico_qsys_uart_0_tx
+# Loading pico_qsys.pico_qsys_uart_0_rx
+# Loading pico_qsys.pico_qsys_uart_0_rx_stimulus_source
+# Loading altera_mf_ver.altera_std_synchronizer
+# Loading pico_qsys.pico_qsys_uart_0_regs
+# Loading pico_qsys.pico_qsys_mm_interconnect_0
+# Loading sv_std.std
+# Loading pico_qsys.altera_merlin_slave_translator
+# Loading pico_qsys.altera_merlin_axi_master_ni
+# Loading pico_qsys.altera_merlin_slave_agent
+# Loading pico_qsys.altera_merlin_burst_uncompressor
+# Loading pico_qsys.altera_avalon_sc_fifo
+# Loading pico_qsys.pico_qsys_mm_interconnect_0_router
+# Loading pico_qsys.pico_qsys_mm_interconnect_0_router_default_decode
+# Loading pico_qsys.pico_qsys_mm_interconnect_0_router_002
+# Loading pico_qsys.pico_qsys_mm_interconnect_0_router_002_default_decode
+# Loading pico_qsys.pico_qsys_mm_interconnect_0_cmd_demux
+# Loading pico_qsys.pico_qsys_mm_interconnect_0_cmd_mux
+# Loading pico_qsys.altera_merlin_arbitrator
+# Loading pico_qsys.altera_merlin_arb_adder
+# Loading pico_qsys.pico_qsys_mm_interconnect_0_rsp_demux
+# Loading pico_qsys.pico_qsys_mm_interconnect_0_rsp_mux
+# Loading pico_qsys.pico_qsys_mm_interconnect_0_avalon_st_adapter
+# Loading pico_qsys.pico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# Loading pico_qsys.pico_qsys_irq_mapper
+# Loading pico_qsys.altera_reset_controller
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading pico_qsys.altera_reset_synchronizer
+# ** Warning: (vsim-8311) System Verilog assertions are supported only in Questasim.
+# ** Warning: (vsim-3017) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Too few port connections. Expected 23, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /pico_tb/uo/u0/onchip_memory2_0/the_altsyncram File: /build/swbuild/SJ/nightly/16.0/211/l64/work/modelsim/eda/sim_lib/altera_mf.v
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'rden_a'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3017) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Too few port connections. Expected 23, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /pico_tb/uo/u0/onchip_memory2_1/the_altsyncram File: /build/swbuild/SJ/nightly/16.0/211/l64/work/modelsim/eda/sim_lib/altera_mf.v
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'rden_a'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3017) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Too few port connections. Expected 32, found 21.
+#    Time: 0 ps  Iteration: 0  Instance: /pico_tb/uo/u0/pico_axilite_0/uut File: /home/z/Desktop/pico_axilite_qsys/picorv32.v
+# ** Warning: (vsim-3015) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [PCDPC] - Port size (32) does not match connection size (1) for port 'irq'. The port definition is at: /home/z/Desktop/pico_axilite_qsys/picorv32.v(2512).
+#    Time: 0 ps  Iteration: 0  Instance: /pico_tb/uo/u0/pico_axilite_0/uut File: /home/z/Desktop/pico_axilite_qsys/picorv32.v
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: (vsim-3017) /home/z/Desktop/pico_axilite_qsys/picorv32.v(2604): [TFMPC] - Too few port connections. Expected 27, found 22.
+#    Time: 0 ps  Iteration: 0  Instance: /pico_tb/uo/u0/pico_axilite_0/uut/picorv32_core File: /home/z/Desktop/pico_axilite_qsys/picorv32.v
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/picorv32.v(2604): [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/picorv32.v(2604): [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/picorv32.v(2604): [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/picorv32.v(2604): [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/picorv32.v(2604): [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: (vsim-3017) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/pico_qsys.v(138): [TFMPC] - Too few port connections. Expected 14, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /pico_tb/uo/u0/uart_0 File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/pico_qsys.v(138): [TFMPC] - Missing connection for port 'dataavailable'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/pico_qsys.v(138): [TFMPC] - Missing connection for port 'readyfordata'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position insertpoint  \
+sim:/pico_tb/uo/u0/pico_axilite_0_altera_axi4lite_master_araddr
+add wave -position insertpoint  \
+sim:/pico_tb/uo/u0/pico_axilite_0_altera_axi4lite_master_rdata
+add wave -position insertpoint  \
+sim:/pico_tb/uo/u0/pico_axilite_0_altera_axi4lite_master_awaddr
+add wave -position insertpoint  \
+sim:/pico_tb/uo/u0/pico_axilite_0_altera_axi4lite_master_wdata
+add wave -position insertpoint  \
+sim:/pico_tb/uo/u0/onchip_memory2_1/address \
+sim:/pico_tb/uo/u0/onchip_memory2_1/write \
+sim:/pico_tb/uo/u0/onchip_memory2_1/writedata
+# 
+# stdin: <EOF>
+restart
+# ** Warning: (vsim-3017) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Too few port connections. Expected 23, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /pico_tb/uo/u0/onchip_memory2_0/the_altsyncram File: /build/swbuild/SJ/nightly/16.0/211/l64/work/modelsim/eda/sim_lib/altera_mf.v
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'rden_a'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v(59): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3017) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Too few port connections. Expected 23, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /pico_tb/uo/u0/onchip_memory2_1/the_altsyncram File: /build/swbuild/SJ/nightly/16.0/211/l64/work/modelsim/eda/sim_lib/altera_mf.v
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'wren_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'rden_a'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'rden_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'data_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'address_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'clock1'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'clocken1'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'clocken2'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'clocken3'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'aclr0'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'aclr1'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'byteena_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'addressstall_a'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'addressstall_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'q_b'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v(57): [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Warning: (vsim-3017) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Too few port connections. Expected 32, found 21.
+#    Time: 0 ps  Iteration: 0  Instance: /pico_tb/uo/u0/pico_axilite_0/uut File: /home/z/Desktop/pico_axilite_qsys/picorv32.v
+# ** Warning: (vsim-3015) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [PCDPC] - Port size (32) does not match connection size (1) for port 'irq'. The port definition is at: /home/z/Desktop/pico_axilite_qsys/picorv32.v(2512).
+#    Time: 0 ps  Iteration: 0  Instance: /pico_tb/uo/u0/pico_axilite_0/uut File: /home/z/Desktop/pico_axilite_qsys/picorv32.v
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v(91): [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: (vsim-3017) /home/z/Desktop/pico_axilite_qsys/picorv32.v(2604): [TFMPC] - Too few port connections. Expected 27, found 22.
+#    Time: 0 ps  Iteration: 0  Instance: /pico_tb/uo/u0/pico_axilite_0/uut/picorv32_core File: /home/z/Desktop/pico_axilite_qsys/picorv32.v
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/picorv32.v(2604): [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/picorv32.v(2604): [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/picorv32.v(2604): [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/picorv32.v(2604): [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/picorv32.v(2604): [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: (vsim-3017) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/pico_qsys.v(138): [TFMPC] - Too few port connections. Expected 14, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /pico_tb/uo/u0/uart_0 File: /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/pico_qsys.v(138): [TFMPC] - Missing connection for port 'dataavailable'.
+# ** Warning: (vsim-3722) /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/pico_qsys.v(138): [TFMPC] - Missing connection for port 'readyfordata'.
+add wave -position insertpoint  \
+sim:/pico_tb/uo/u0/pico_axilite_0/uut/picorv32_core/cpuregs
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 11:10:16 on Mar 05,2019, Elapsed time: 0:28:42
+# Errors: 0, Warnings: 113

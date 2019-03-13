@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sun Mar 10 09:44:52 2019
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : pico_axilite
+Top-level Entity Name : pico_axilite_top
+Family : MAX 10
+Total logic elements : 2,358
+    Total combinational functions : 2,123
+    Dedicated logic registers : 1,001
+Total registers : 1001
+Total pins : 12
+Total virtual pins : 0
+Total memory bits : 264,192
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

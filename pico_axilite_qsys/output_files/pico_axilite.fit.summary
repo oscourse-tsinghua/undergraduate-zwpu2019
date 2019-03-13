@@ -1,0 +1,18 @@
+Fitter Status : Successful - Sun Mar 10 09:45:27 2019
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : pico_axilite
+Top-level Entity Name : pico_axilite_top
+Family : MAX 10
+Device : 10M08SAM153C8G
+Timing Models : Final
+Total logic elements : 2,206 / 8,064 ( 27 % )
+    Total combinational functions : 2,125 / 8,064 ( 26 % )
+    Dedicated logic registers : 1,001 / 8,064 ( 12 % )
+Total registers : 1001
+Total pins : 12 / 112 ( 11 % )
+Total virtual pins : 0
+Total memory bits : 264,192 / 387,072 ( 68 % )
+Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 1 ( 0 % )

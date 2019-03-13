@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="95" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="312" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Processors and Peripherals,Library/Processors and Peripherals/Peripherals,Library/Basic Functions/Configuration and Programming,Library/Basic Functions,Library/University Program,Library,Project,Library/Basic Functions/On Chip Memory,Library/University Program/Generic IO" />
+ <window width="1698" height="860" x="78" y="-5" />
+</preferences>

@@ -1,0 +1,12 @@
+PowerPlay Power Analyzer Status : Successful - Sun Mar 10 09:45:38 2019
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : pico_axilite
+Top-level Entity Name : pico_axilite_top
+Family : MAX 10
+Device : 10M08SAM153C8G
+Power Models : Final
+Total Thermal Power Dissipation : 115.19 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 110.73 mW
+I/O Thermal Power Dissipation : 4.46 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

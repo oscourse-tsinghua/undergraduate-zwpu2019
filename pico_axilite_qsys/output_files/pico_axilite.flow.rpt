@@ -1,0 +1,149 @@
+Flow report for pico_axilite
+Sun Mar 10 09:45:49 2019
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Sun Mar 10 09:45:49 2019       ;
+; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name                      ; pico_axilite                                ;
+; Top-level Entity Name              ; pico_axilite_top                            ;
+; Family                             ; MAX 10                                      ;
+; Device                             ; 10M08SAM153C8G                              ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 2,206 / 8,064 ( 27 % )                      ;
+;     Total combinational functions  ; 2,125 / 8,064 ( 26 % )                      ;
+;     Dedicated logic registers      ; 1,001 / 8,064 ( 12 % )                      ;
+; Total registers                    ; 1001                                        ;
+; Total pins                         ; 12 / 112 ( 11 % )                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 264,192 / 387,072 ( 68 % )                  ;
+; Embedded Multiplier 9-bit elements ; 0 / 48 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 1 ( 0 % )                               ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
+; ADC blocks                         ; 0 / 1 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 03/10/2019 09:44:11 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; pico_axilite        ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                 ;
++--------------------------------------+---------------------------------------+---------------+------------------+----------------+
+; Assignment Name                      ; Value                                 ; Default Value ; Entity Name      ; Section Id     ;
++--------------------------------------+---------------------------------------+---------------+------------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 0.155218225104739                     ; --            ; --               ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --               ; pico_tb        ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; pico_tb                               ; --            ; --               ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --               ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)             ; <None>        ; --               ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --               ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; pico_tb.v                             ; --            ; --               ; pico_tb        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; pico_tb                               ; --            ; --               ; pico_tb        ;
+; EDA_TEST_BENCH_NAME                  ; pico_tb                               ; --            ; --               ; eda_simulation ;
+; EDA_TIME_SCALE                       ; 1 ps                                  ; --            ; --               ; eda_simulation ;
+; FLOW_ENABLE_POWER_ANALYZER           ; On                                    ; Off           ; --               ; --             ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --               ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --               ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                     ; --            ; --               ; --             ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                     ; --            ; --               ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                            ; --            ; --               ; --             ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                            ; --            ; --               ; --             ;
+; PARTITION_COLOR                      ; 16764057                              ; --            ; pico_axilite_top ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; pico_axilite_top ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; pico_axilite_top ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --               ; --             ;
+; POWER_DEFAULT_INPUT_IO_TOGGLE_RATE   ; 12.5 %                                ; 12.5%         ; --               ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --               ; --             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --               ; --             ;
+; TOP_LEVEL_ENTITY                     ; pico_axilite_top                      ; pico_axilite  ; --               ; --             ;
++--------------------------------------+---------------------------------------+---------------+------------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:41     ; 1.0                     ; 1261 MB             ; 00:01:34                           ;
+; Fitter                    ; 00:00:35     ; 1.0                     ; 1457 MB             ; 00:00:34                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 1081 MB             ; 00:00:01                           ;
+; PowerPlay Power Analyzer  ; 00:00:08     ; 1.0                     ; 1179 MB             ; 00:00:08                           ;
+; TimeQuest Timing Analyzer ; 00:00:08     ; 1.0                     ; 1119 MB             ; 00:00:08                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1384 MB             ; 00:00:01                           ;
+; Total                     ; 00:01:34     ; --                      ; --                  ; 00:02:26                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                             ;
++---------------------------+------------------+----------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++---------------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis      ; z-X555LI         ; Ubuntu 16.04.6 ; 16         ; x86_64         ;
+; Fitter                    ; z-X555LI         ; Ubuntu 16.04.6 ; 16         ; x86_64         ;
+; Assembler                 ; z-X555LI         ; Ubuntu 16.04.6 ; 16         ; x86_64         ;
+; PowerPlay Power Analyzer  ; z-X555LI         ; Ubuntu 16.04.6 ; 16         ; x86_64         ;
+; TimeQuest Timing Analyzer ; z-X555LI         ; Ubuntu 16.04.6 ; 16         ; x86_64         ;
+; EDA Netlist Writer        ; z-X555LI         ; Ubuntu 16.04.6 ; 16         ; x86_64         ;
++---------------------------+------------------+----------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off pico_axilite -c pico_axilite
+quartus_fit --read_settings_files=off --write_settings_files=off pico_axilite -c pico_axilite
+quartus_asm --read_settings_files=off --write_settings_files=off pico_axilite -c pico_axilite
+quartus_pow --read_settings_files=off --write_settings_files=off pico_axilite -c pico_axilite
+quartus_sta pico_axilite -c pico_axilite
+quartus_eda --read_settings_files=off --write_settings_files=off pico_axilite -c pico_axilite
+
+
+

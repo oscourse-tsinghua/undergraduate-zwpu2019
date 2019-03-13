@@ -1,0 +1,92 @@
+Assembler report for pico_axilite
+Sun Mar 10 09:45:29 2019
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Assembler Generated Files
+  5. Assembler Device Options: pico_axilite.sof
+  6. Assembler Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Sun Mar 10 09:45:29 2019 ;
+; Revision Name         ; pico_axilite                          ;
+; Top-level Entity Name ; pico_axilite_top                      ;
+; Family                ; MAX 10                                ;
+; Device                ; 10M08SAM153C8G                        ;
++-----------------------+---------------------------------------+
+
+
++----------------------------------+
+; Assembler Settings               ;
++--------+---------+---------------+
+; Option ; Setting ; Default Value ;
++--------+---------+---------------+
+
+
++---------------------------+
+; Assembler Generated Files ;
++---------------------------+
+; File Name                 ;
++---------------------------+
+; pico_axilite.sof          ;
++---------------------------+
+
+
++--------------------------------------------+
+; Assembler Device Options: pico_axilite.sof ;
++----------------+---------------------------+
+; Option         ; Setting                   ;
++----------------+---------------------------+
+; Device         ; 10M08SAM153C8G            ;
+; JTAG usercode  ; 0x001F7694                ;
+; Checksum       ; 0x001F7694                ;
++----------------+---------------------------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+    Info: Processing started: Sun Mar 10 09:45:28 2019
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off pico_axilite -c pico_axilite
+Info (115031): Writing out detailed assembly data for power analysis
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 1081 megabytes
+    Info: Processing ended: Sun Mar 10 09:45:29 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
