@@ -1,5 +1,5 @@
 Fitter report for pico_simpleuart
-Wed Mar 13 16:58:59 2019
+Thu Mar 14 10:57:08 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -41,8 +41,10 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
  33. I/O Rules Matrix
  34. Fitter Device Options
  35. Operating Settings and Conditions
- 36. Fitter Messages
- 37. Fitter Suppressed Messages
+ 36. Estimated Delay Added for Hold Timing Summary
+ 37. Estimated Delay Added for Hold Timing Details
+ 38. Fitter Messages
+ 39. Fitter Suppressed Messages
 
 
 
@@ -68,18 +70,18 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Wed Mar 13 16:58:59 2019           ;
+; Fitter Status                      ; Successful - Thu Mar 14 10:57:08 2019           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                      ; pico_simpleuart                                 ;
 ; Top-level Entity Name              ; picosoc                                         ;
 ; Family                             ; MAX 10                                          ;
 ; Device                             ; 10M08SAM153C8G                                  ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 3,869 / 8,064 ( 48 % )                          ;
-;     Total combinational functions  ; 3,743 / 8,064 ( 46 % )                          ;
-;     Dedicated logic registers      ; 1,428 / 8,064 ( 18 % )                          ;
-; Total registers                    ; 1428                                            ;
-; Total pins                         ; 30 / 112 ( 27 % )                               ;
+; Total logic elements               ; 3,843 / 8,064 ( 48 % )                          ;
+;     Total combinational functions  ; 3,718 / 8,064 ( 46 % )                          ;
+;     Dedicated logic registers      ; 1,424 / 8,064 ( 18 % )                          ;
+; Total registers                    ; 1424                                            ;
+; Total pins                         ; 34 / 112 ( 30 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 264,192 / 387,072 ( 68 % )                      ;
 ; Embedded Multiplier 9-bit elements ; 0 / 48 ( 0 % )                                  ;
@@ -154,12 +156,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.26        ;
+; Average used               ; 1.25        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  26.1%      ;
+;     Processor 2            ;  25.5%      ;
 +----------------------------+-------------+
 
 
@@ -169,8 +171,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+---------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 5378 ) ; 0.00 % ( 0 / 5378 )        ; 0.00 % ( 0 / 5378 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 5378 ) ; 0.00 % ( 0 / 5378 )        ; 0.00 % ( 0 / 5378 )      ;
+;     -- Requested    ; 0.00 % ( 0 / 5357 ) ; 0.00 % ( 0 / 5357 )        ; 0.00 % ( 0 / 5357 )      ;
+;     -- Achieved     ; 0.00 % ( 0 / 5357 ) ; 0.00 % ( 0 / 5357 )        ; 0.00 % ( 0 / 5357 )      ;
 ;                     ;                     ;                            ;                          ;
 ; Routing (by net)    ;                     ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -193,7 +195,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 5362 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 5341 )   ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -209,29 +211,29 @@ The pin-out file can be found in C:/Users/91947/Desktop/final/soc_noqsys/output_
 +---------------------------------------------+----------------------------+
 ; Resource                                    ; Usage                      ;
 +---------------------------------------------+----------------------------+
-; Total logic elements                        ; 3,869 / 8,064 ( 48 % )     ;
-;     -- Combinational with no register       ; 2441                       ;
-;     -- Register only                        ; 126                        ;
-;     -- Combinational with a register        ; 1302                       ;
+; Total logic elements                        ; 3,843 / 8,064 ( 48 % )     ;
+;     -- Combinational with no register       ; 2419                       ;
+;     -- Register only                        ; 125                        ;
+;     -- Combinational with a register        ; 1299                       ;
 ;                                             ;                            ;
 ; Logic element usage by number of LUT inputs ;                            ;
-;     -- 4 input functions                    ; 1733                       ;
-;     -- 3 input functions                    ; 1310                       ;
+;     -- 4 input functions                    ; 1727                       ;
+;     -- 3 input functions                    ; 1291                       ;
 ;     -- <=2 input functions                  ; 700                        ;
-;     -- Register only                        ; 126                        ;
+;     -- Register only                        ; 125                        ;
 ;                                             ;                            ;
 ; Logic elements by mode                      ;                            ;
-;     -- normal mode                          ; 2905                       ;
+;     -- normal mode                          ; 2880                       ;
 ;     -- arithmetic mode                      ; 838                        ;
 ;                                             ;                            ;
-; Total registers*                            ; 1,428 / 8,597 ( 17 % )     ;
-;     -- Dedicated logic registers            ; 1,428 / 8,064 ( 18 % )     ;
+; Total registers*                            ; 1,424 / 8,597 ( 17 % )     ;
+;     -- Dedicated logic registers            ; 1,424 / 8,064 ( 18 % )     ;
 ;     -- I/O registers                        ; 0 / 533 ( 0 % )            ;
 ;                                             ;                            ;
-; Total LABs:  partially or completely used   ; 286 / 504 ( 57 % )         ;
+; Total LABs:  partially or completely used   ; 285 / 504 ( 57 % )         ;
 ; Virtual pins                                ; 0                          ;
-; I/O pins                                    ; 30 / 112 ( 27 % )          ;
-;     -- Clock pins                           ; 1 / 4 ( 25 % )             ;
+; I/O pins                                    ; 34 / 112 ( 30 % )          ;
+;     -- Clock pins                           ; 3 / 4 ( 75 % )             ;
 ;     -- Dedicated input pins                 ; 1 / 1 ( 100 % )            ;
 ;                                             ;                            ;
 ; M9Ks                                        ; 34 / 42 ( 81 % )           ;
@@ -247,11 +249,11 @@ The pin-out file can be found in C:/Users/91947/Desktop/final/soc_noqsys/output_
 ; CRC blocks                                  ; 0 / 1 ( 0 % )              ;
 ; Remote update blocks                        ; 0 / 1 ( 0 % )              ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )              ;
-; Average interconnect usage (total/H/V)      ; 17.3% / 15.8% / 19.5%      ;
-; Peak interconnect usage (total/H/V)         ; 28.9% / 26.5% / 32.3%      ;
-; Maximum fan-out                             ; 1462                       ;
-; Highest non-global fan-out                  ; 665                        ;
-; Total fan-out                               ; 17804                      ;
+; Average interconnect usage (total/H/V)      ; 17.1% / 15.9% / 18.9%      ;
+; Peak interconnect usage (total/H/V)         ; 29.4% / 27.1% / 32.5%      ;
+; Maximum fan-out                             ; 1458                       ;
+; Highest non-global fan-out                  ; 668                        ;
+; Total fan-out                               ; 17709                      ;
 ; Average fan-out                             ; 3.30                       ;
 +---------------------------------------------+----------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -265,29 +267,29 @@ The pin-out file can be found in C:/Users/91947/Desktop/final/soc_noqsys/output_
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 3869 / 8064 ( 48 % ) ; 0 / 8064 ( 0 % )               ;
-;     -- Combinational with no register       ; 2441                 ; 0                              ;
-;     -- Register only                        ; 126                  ; 0                              ;
-;     -- Combinational with a register        ; 1302                 ; 0                              ;
+; Total logic elements                        ; 3843 / 8064 ( 48 % ) ; 0 / 8064 ( 0 % )               ;
+;     -- Combinational with no register       ; 2419                 ; 0                              ;
+;     -- Register only                        ; 125                  ; 0                              ;
+;     -- Combinational with a register        ; 1299                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 1733                 ; 0                              ;
-;     -- 3 input functions                    ; 1310                 ; 0                              ;
+;     -- 4 input functions                    ; 1727                 ; 0                              ;
+;     -- 3 input functions                    ; 1291                 ; 0                              ;
 ;     -- <=2 input functions                  ; 700                  ; 0                              ;
-;     -- Register only                        ; 126                  ; 0                              ;
+;     -- Register only                        ; 125                  ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 2905                 ; 0                              ;
+;     -- normal mode                          ; 2880                 ; 0                              ;
 ;     -- arithmetic mode                      ; 838                  ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total registers                             ; 1428                 ; 0                              ;
-;     -- Dedicated logic registers            ; 1428 / 8064 ( 18 % ) ; 0 / 8064 ( 0 % )               ;
+; Total registers                             ; 1424                 ; 0                              ;
+;     -- Dedicated logic registers            ; 1424 / 8064 ( 18 % ) ; 0 / 8064 ( 0 % )               ;
 ;     -- I/O registers                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 286 / 504 ( 57 % )   ; 0 / 504 ( 0 % )                ;
+; Total LABs:  partially or completely used   ; 285 / 504 ( 57 % )   ; 0 / 504 ( 0 % )                ;
 ;                                             ;                      ;                                ;
 ; Virtual pins                                ; 0                    ; 0                              ;
-; I/O pins                                    ; 30                   ; 0                              ;
+; I/O pins                                    ; 34                   ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 48 ( 0 % )       ; 0 / 48 ( 0 % )                 ;
 ; Total memory bits                           ; 264192               ; 0                              ;
 ; Total RAM block bits                        ; 313344               ; 0                              ;
@@ -303,15 +305,15 @@ The pin-out file can be found in C:/Users/91947/Desktop/final/soc_noqsys/output_
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 17814                ; 8                              ;
-;     -- Registered Connections               ; 6572                 ; 0                              ;
+;     -- Total Connections                    ; 17719                ; 8                              ;
+;     -- Registered Connections               ; 6548                 ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
 ;     -- hard_block:auto_generated_inst       ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Partition Interface                         ;                      ;                                ;
-;     -- Input Ports                          ; 3                    ; 0                              ;
+;     -- Input Ports                          ; 7                    ; 0                              ;
 ;     -- Output Ports                         ; 27                   ; 0                              ;
 ;     -- Bidir Ports                          ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
@@ -336,9 +338,13 @@ The pin-out file can be found in C:/Users/91947/Desktop/final/soc_noqsys/output_
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name   ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; clk    ; J5    ; 2        ; 0            ; 7            ; 21           ; 1462                  ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; resetn ; J9    ; 5        ; 31           ; 6            ; 21           ; 665                   ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; ser_rx ; L9    ; 3        ; 15           ; 0            ; 21           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; clk    ; J5    ; 2        ; 0            ; 7            ; 21           ; 1458                  ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; resetn ; J9    ; 5        ; 31           ; 6            ; 21           ; 668                   ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; ser_rx ; H3    ; 1B       ; 10           ; 15           ; 14           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; sw[0]  ; J12   ; 6        ; 31           ; 9            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; sw[1]  ; H11   ; 6        ; 31           ; 9            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; sw[2]  ; H12   ; 6        ; 31           ; 11           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; sw[3]  ; H13   ; 6        ; 31           ; 11           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
 +--------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -373,7 +379,7 @@ The pin-out file can be found in C:/Users/91947/Desktop/final/soc_noqsys/output_
 ; seg2[6] ; G5    ; 1A       ; 10           ; 21           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; seg2[7] ; L1    ; 1B       ; 0            ; 8            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; seg2[8] ; E2    ; 1A       ; 10           ; 19           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
-; ser_tx  ; R14   ; 3        ; 13           ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; ser_tx  ; G7    ; 1B       ; 10           ; 18           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +---------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -382,6 +388,7 @@ The pin-out file can be found in C:/Users/91947/Desktop/final/soc_noqsys/output_
 +----------+----------------------------------------------------+--------------------------------+---------------------+------------------+
 ; Location ; Pin Name                                           ; Reserved As                    ; User Signal Name    ; Pin Type         ;
 +----------+----------------------------------------------------+--------------------------------+---------------------+------------------+
+; G7       ; JTAGEN                                             ; Use as regular IO              ; ser_tx              ; Dual Purpose Pin ;
 ; G1       ; DIFFIO_RX_L11n, DIFFOUT_L11n, TMS, Low_Speed       ; Reserved as secondary function ; ~ALTERA_TMS~        ; Dual Purpose Pin ;
 ; J1       ; DIFFIO_RX_L11p, DIFFOUT_L11p, TCK, Low_Speed       ; Reserved as secondary function ; ~ALTERA_TCK~        ; Dual Purpose Pin ;
 ; H5       ; DIFFIO_RX_L12n, DIFFOUT_L12n, TDI, Low_Speed       ; Reserved as secondary function ; ~ALTERA_TDI~        ; Dual Purpose Pin ;
@@ -393,19 +400,19 @@ The pin-out file can be found in C:/Users/91947/Desktop/final/soc_noqsys/output_
 +----------+----------------------------------------------------+--------------------------------+---------------------+------------------+
 
 
-+-----------------------------------------------------------+
-; I/O Bank Usage                                            ;
-+----------+-----------------+---------------+--------------+
-; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
-+----------+-----------------+---------------+--------------+
-; 1A       ; 8 / 8 ( 100 % ) ; 2.5V          ; --           ;
-; 1B       ; 8 / 10 ( 80 % ) ; 2.5V          ; --           ;
-; 2        ; 5 / 10 ( 50 % ) ; 2.5V          ; --           ;
-; 3        ; 2 / 28 ( 7 % )  ; 2.5V          ; --           ;
-; 5        ; 9 / 12 ( 75 % ) ; 2.5V          ; --           ;
-; 6        ; 0 / 16 ( 0 % )  ; 2.5V          ; --           ;
-; 8        ; 6 / 28 ( 21 % ) ; 2.5V          ; --           ;
-+----------+-----------------+---------------+--------------+
++-------------------------------------------------------------+
+; I/O Bank Usage                                              ;
++----------+-------------------+---------------+--------------+
+; I/O Bank ; Usage             ; VCCIO Voltage ; VREF Voltage ;
++----------+-------------------+---------------+--------------+
+; 1A       ; 8 / 8 ( 100 % )   ; 2.5V          ; --           ;
+; 1B       ; 10 / 10 ( 100 % ) ; 2.5V          ; --           ;
+; 2        ; 5 / 10 ( 50 % )   ; 2.5V          ; --           ;
+; 3        ; 0 / 28 ( 0 % )    ; 2.5V          ; --           ;
+; 5        ; 9 / 12 ( 75 % )   ; 2.5V          ; --           ;
+; 6        ; 4 / 16 ( 25 % )   ; 2.5V          ; --           ;
+; 8        ; 6 / 28 ( 21 % )   ; 2.5V          ; --           ;
++----------+-------------------+---------------+--------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -477,7 +484,7 @@ The pin-out file can be found in C:/Users/91947/Desktop/final/soc_noqsys/output_
 ; G2       ; 21         ; 1B       ; seg2[4]                                        ; output ; 2.5 V                 ;           ; Row I/O    ; Y               ; no       ; Off          ;
 ; G4       ;            ;          ; GND                                            ; gnd    ;                       ;           ; --         ;                 ; --       ; --           ;
 ; G5       ; 6          ; 1A       ; seg2[6]                                        ; output ; 2.5 V                 ;           ; Row I/O    ; Y               ; no       ; Off          ;
-; G7       ; 18         ; 1B       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Row I/O    ;                 ; no       ; On           ;
+; G7       ; 18         ; 1B       ; ser_tx                                         ; output ; 2.5 V                 ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; G8       ;            ; --       ; VCC_ONE                                        ; power  ;                       ; 3.0V/3.3V ; --         ;                 ; --       ; --           ;
 ; G9       ;            ;          ; GND                                            ; gnd    ;                       ;           ; --         ;                 ; --       ; --           ;
 ; G11      ; 172        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Row I/O    ;                 ; no       ; On           ;
@@ -485,15 +492,15 @@ The pin-out file can be found in C:/Users/91947/Desktop/final/soc_noqsys/output_
 ; G14      ;            ; 6        ; VCCIO6                                         ; power  ;                       ; 2.5V      ; --         ;                 ; --       ; --           ;
 ; G15      ; 158        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Row I/O    ;                 ; no       ; On           ;
 ; H2       ;            ; 1B       ; VCCIO1B                                        ; power  ;                       ; 2.5V      ; --         ;                 ; --       ; --           ;
-; H3       ; 28         ; 1B       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Row I/O    ;                 ; no       ; On           ;
+; H3       ; 28         ; 1B       ; ser_rx                                         ; input  ; 2.5 V                 ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; H4       ; 26         ; 1B       ; ~ALTERA_TDO~                                   ; output ; 2.5 V                 ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; H5       ; 24         ; 1B       ; ~ALTERA_TDI~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 2.5 V Schmitt Trigger ;           ; Row I/O    ; N               ; no       ; On           ;
 ; H7       ;            ; --       ; VCC_ONE                                        ; power  ;                       ; 3.0V/3.3V ; --         ;                 ; --       ; --           ;
 ; H8       ;            ;          ; GND                                            ; gnd    ;                       ;           ; --         ;                 ; --       ; --           ;
 ; H9       ;            ; --       ; VCC_ONE                                        ; power  ;                       ; 3.0V/3.3V ; --         ;                 ; --       ; --           ;
-; H11      ; 150        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Row I/O    ;                 ; no       ; On           ;
-; H12      ; 152        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Row I/O    ;                 ; no       ; On           ;
-; H13      ; 154        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Row I/O    ;                 ; no       ; On           ;
+; H11      ; 150        ; 6        ; sw[1]                                          ; input  ; 2.5 V                 ;           ; Row I/O    ; Y               ; no       ; Off          ;
+; H12      ; 152        ; 6        ; sw[2]                                          ; input  ; 2.5 V                 ;           ; Row I/O    ; Y               ; no       ; Off          ;
+; H13      ; 154        ; 6        ; sw[3]                                          ; input  ; 2.5 V                 ;           ; Row I/O    ; Y               ; no       ; Off          ;
 ; H14      ;            ;          ; GND                                            ; gnd    ;                       ;           ; --         ;                 ; --       ; --           ;
 ; J1       ; 22         ; 1B       ; ~ALTERA_TCK~ / RESERVED_INPUT                  ; input  ; 2.5 V Schmitt Trigger ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; J2       ; 30         ; 1B       ; seg2[3]                                        ; output ; 2.5 V                 ;           ; Row I/O    ; Y               ; no       ; Off          ;
@@ -503,7 +510,7 @@ The pin-out file can be found in C:/Users/91947/Desktop/final/soc_noqsys/output_
 ; J8       ;            ; --       ; VCC_ONE                                        ; power  ;                       ; 3.0V/3.3V ; --         ;                 ; --       ; --           ;
 ; J9       ; 140        ; 5        ; resetn                                         ; input  ; 2.5 V                 ;           ; Row I/O    ; Y               ; no       ; Off          ;
 ; J11      ; 142        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Row I/O    ;                 ; no       ; On           ;
-; J12      ; 148        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Row I/O    ;                 ; no       ; On           ;
+; J12      ; 148        ; 6        ; sw[0]                                          ; input  ; 2.5 V                 ;           ; Row I/O    ; Y               ; no       ; Off          ;
 ; J14      ; 143        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Row I/O    ;                 ; no       ; On           ;
 ; J15      ; 156        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Row I/O    ;                 ; no       ; On           ;
 ; K2       ; 34         ; 1B       ; seg2[2]                                        ; output ; 2.5 V                 ;           ; Row I/O    ; Y               ; no       ; Off          ;
@@ -519,7 +526,7 @@ The pin-out file can be found in C:/Users/91947/Desktop/final/soc_noqsys/output_
 ; L6       ; 64         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Column I/O ;                 ; no       ; On           ;
 ; L7       ; 66         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Column I/O ;                 ; no       ; On           ;
 ; L8       ; 72         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Column I/O ;                 ; no       ; On           ;
-; L9       ; 84         ; 3        ; ser_rx                                         ; input  ; 2.5 V                 ;           ; Column I/O ; N               ; no       ; Off          ;
+; L9       ; 84         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Column I/O ;                 ; no       ; On           ;
 ; L10      ; 88         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Column I/O ;                 ; no       ; On           ;
 ; L11      ; 122        ; 5        ; led[6]                                         ; output ; 2.5 V                 ;           ; Row I/O    ; Y               ; no       ; Off          ;
 ; L12      ;            ;          ; GND                                            ; gnd    ;                       ;           ; --         ;                 ; --       ; --           ;
@@ -564,7 +571,7 @@ The pin-out file can be found in C:/Users/91947/Desktop/final/soc_noqsys/output_
 ; R9       ; 75         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Column I/O ;                 ; no       ; On           ;
 ; R11      ; 77         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Column I/O ;                 ; --       ; --           ;
 ; R13      ; 94         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Column I/O ;                 ; no       ; On           ;
-; R14      ; 80         ; 3        ; ser_tx                                         ; output ; 2.5 V                 ;           ; Column I/O ; N               ; no       ; Off          ;
+; R14      ; 80         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;           ; Column I/O ;                 ; no       ; On           ;
 ; R15      ;            ;          ; GND                                            ; gnd    ;                       ;           ; --         ;                 ; --       ; --           ;
 +----------+------------+----------+------------------------------------------------+--------+-----------------------+-----------+------------+-----------------+----------+--------------+
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
@@ -604,7 +611,11 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; seg2[8]  ; Incomplete set of assignments ;
 ; resetn   ; Incomplete set of assignments ;
 ; clk      ; Incomplete set of assignments ;
+; sw[1]    ; Incomplete set of assignments ;
 ; ser_rx   ; Incomplete set of assignments ;
+; sw[0]    ; Incomplete set of assignments ;
+; sw[3]    ; Incomplete set of assignments ;
+; sw[2]    ; Incomplete set of assignments ;
 ; ser_tx   ; Missing location assignment   ;
 ; ser_rx   ; Missing location assignment   ;
 +----------+-------------------------------+
@@ -615,22 +626,22 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------------------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node                ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                                                  ; Entity Name       ; Library Name ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------------------------------------------------------------+-------------------+--------------+
-; |picosoc                                  ; 3869 (204)  ; 1428 (68)                 ; 0 (0)         ; 264192      ; 34   ; 1          ; 0            ; 0       ; 0         ; 30   ; 0            ; 2441 (133)   ; 126 (9)           ; 1302 (98)        ; 0          ; |picosoc                                                                             ; picosoc           ; work         ;
-;    |picorv32:cpu|                         ; 3402 (2629) ; 1229 (774)                ; 0 (0)         ; 2048        ; 2    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2172 (1854)  ; 113 (78)          ; 1117 (693)       ; 0          ; |picosoc|picorv32:cpu                                                                ; picorv32          ; work         ;
+; |picosoc                                  ; 3843 (184)  ; 1424 (64)                 ; 0 (0)         ; 264192      ; 34   ; 1          ; 0            ; 0       ; 0         ; 34   ; 0            ; 2419 (116)   ; 125 (4)           ; 1299 (105)       ; 0          ; |picosoc                                                                             ; picosoc           ; work         ;
+;    |picorv32:cpu|                         ; 3395 (2628) ; 1229 (774)                ; 0 (0)         ; 2048        ; 2    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2166 (1854)  ; 117 (82)          ; 1112 (688)       ; 0          ; |picosoc|picorv32:cpu                                                                ; picorv32          ; work         ;
 ;       |altsyncram:cpuregs_rtl_0|          ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 1024        ; 1    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |picosoc|picorv32:cpu|altsyncram:cpuregs_rtl_0                                       ; altsyncram        ; work         ;
 ;          |altsyncram_j6d1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 1024        ; 1    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |picosoc|picorv32:cpu|altsyncram:cpuregs_rtl_0|altsyncram_j6d1:auto_generated        ; altsyncram_j6d1   ; work         ;
 ;       |altsyncram:cpuregs_rtl_1|          ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 1024        ; 1    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |picosoc|picorv32:cpu|altsyncram:cpuregs_rtl_1                                       ; altsyncram        ; work         ;
 ;          |altsyncram_j6d1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 1024        ; 1    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |picosoc|picorv32:cpu|altsyncram:cpuregs_rtl_1|altsyncram_j6d1:auto_generated        ; altsyncram_j6d1   ; work         ;
-;       |picorv32_pcpi_div:pcpi_div|        ; 381 (381)   ; 200 (200)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 177 (177)    ; 32 (32)           ; 172 (172)        ; 0          ; |picosoc|picorv32:cpu|picorv32_pcpi_div:pcpi_div                                     ; picorv32_pcpi_div ; work         ;
-;       |picorv32_pcpi_mul:pcpi_mul|        ; 396 (396)   ; 255 (255)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 141 (141)    ; 3 (3)             ; 252 (252)        ; 0          ; |picosoc|picorv32:cpu|picorv32_pcpi_mul:pcpi_mul                                     ; picorv32_pcpi_mul ; work         ;
+;       |picorv32_pcpi_div:pcpi_div|        ; 376 (376)   ; 200 (200)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 172 (172)    ; 33 (33)           ; 171 (171)        ; 0          ; |picosoc|picorv32:cpu|picorv32_pcpi_div:pcpi_div                                     ; picorv32_pcpi_div ; work         ;
+;       |picorv32_pcpi_mul:pcpi_mul|        ; 395 (395)   ; 255 (255)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 140 (140)    ; 2 (2)             ; 253 (253)        ; 0          ; |picosoc|picorv32:cpu|picorv32_pcpi_mul:pcpi_mul                                     ; picorv32_pcpi_mul ; work         ;
 ;    |ram:ram_inst|                         ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 131072      ; 16   ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |picosoc|ram:ram_inst                                                                ; ram               ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 131072      ; 16   ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |picosoc|ram:ram_inst|altsyncram:altsyncram_component                                ; altsyncram        ; work         ;
 ;          |altsyncram_bkf1:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 131072      ; 16   ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |picosoc|ram:ram_inst|altsyncram:altsyncram_component|altsyncram_bkf1:auto_generated ; altsyncram_bkf1   ; work         ;
 ;    |rom:rom_inst|                         ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 131072      ; 16   ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |picosoc|rom:rom_inst                                                                ; rom               ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 131072      ; 16   ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |picosoc|rom:rom_inst|altsyncram:altsyncram_component                                ; altsyncram        ; work         ;
 ;          |altsyncram_6t91:auto_generated| ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 131072      ; 16   ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0          ; |picosoc|rom:rom_inst|altsyncram:altsyncram_component|altsyncram_6t91:auto_generated ; altsyncram_6t91   ; work         ;
-;    |segment:seg_inst|                     ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (10)      ; 0 (0)             ; 4 (4)            ; 0          ; |picosoc|segment:seg_inst                                                            ; segment           ; work         ;
-;    |simpleuart:simpleuart|                ; 258 (258)   ; 131 (131)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 126 (126)    ; 4 (4)             ; 128 (128)        ; 0          ; |picosoc|simpleuart:simpleuart                                                       ; simpleuart        ; work         ;
+;    |segment:seg_inst|                     ; 14 (14)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 3 (3)            ; 0          ; |picosoc|segment:seg_inst                                                            ; segment           ; work         ;
+;    |simpleuart:simpleuart|                ; 257 (257)   ; 131 (131)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 126 (126)    ; 4 (4)             ; 127 (127)        ; 0          ; |picosoc|simpleuart:simpleuart                                                       ; simpleuart        ; work         ;
 +-------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+--------------------------------------------------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -669,7 +680,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; seg2[8] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; resetn  ; Input    ; --            ; (6) 873 ps    ; --                    ; --  ; --   ;
 ; clk     ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; ser_rx  ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; sw[1]   ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
+; ser_rx  ; Input    ; (6) 873 ps    ; --            ; --                    ; --  ; --   ;
+; sw[0]   ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
+; sw[3]   ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
+; sw[2]   ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
 +---------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -1042,21 +1057,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - simpleuart:simpleuart|send_bitcnt[1]~2                     ; 1                 ; 6       ;
 ;      - simpleuart:simpleuart|send_bitcnt[1]~5                     ; 1                 ; 6       ;
 ;      - gpio_reg~0                                                 ; 1                 ; 6       ;
-;      - gpio_reg[0]~1                                              ; 1                 ; 6       ;
-;      - gpio_reg~2                                                 ; 1                 ; 6       ;
+;      - gpio_reg[0]~2                                              ; 1                 ; 6       ;
 ;      - gpio_reg~3                                                 ; 1                 ; 6       ;
 ;      - gpio_reg~4                                                 ; 1                 ; 6       ;
 ;      - gpio_reg~5                                                 ; 1                 ; 6       ;
 ;      - gpio_reg~6                                                 ; 1                 ; 6       ;
 ;      - gpio_reg~7                                                 ; 1                 ; 6       ;
 ;      - gpio_reg~8                                                 ; 1                 ; 6       ;
+;      - gpio_reg~9                                                 ; 1                 ; 6       ;
 ;      - seg_reg~0                                                  ; 1                 ; 6       ;
-;      - seg_reg[3]~1                                               ; 1                 ; 6       ;
+;      - seg_reg[0]~1                                               ; 1                 ; 6       ;
 ;      - seg_reg~2                                                  ; 1                 ; 6       ;
 ;      - seg_reg~3                                                  ; 1                 ; 6       ;
 ;      - seg_reg~4                                                  ; 1                 ; 6       ;
 ;      - seg_reg~5                                                  ; 1                 ; 6       ;
-;      - seg_reg[10]~6                                              ; 1                 ; 6       ;
+;      - seg_reg[13]~6                                              ; 1                 ; 6       ;
 ;      - seg_reg~7                                                  ; 1                 ; 6       ;
 ;      - seg_reg~8                                                  ; 1                 ; 6       ;
 ;      - seg_reg~9                                                  ; 1                 ; 6       ;
@@ -1070,7 +1085,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - picorv32:cpu|reg_op1[31]                                   ; 1                 ; 6       ;
 ;      - picorv32:cpu|mem_valid~3                                   ; 1                 ; 6       ;
 ;      - seg_reg~10                                                 ; 1                 ; 6       ;
-;      - simpleuart:simpleuart|cfg_divider[24]~0                    ; 1                 ; 6       ;
+;      - simpleuart:simpleuart|cfg_divider[29]~0                    ; 1                 ; 6       ;
 ;      - seg_reg~11                                                 ; 1                 ; 6       ;
 ;      - seg_reg~12                                                 ; 1                 ; 6       ;
 ;      - seg_reg~13                                                 ; 1                 ; 6       ;
@@ -1079,7 +1094,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - seg_reg~16                                                 ; 1                 ; 6       ;
 ;      - seg_reg~17                                                 ; 1                 ; 6       ;
 ;      - seg_reg~18                                                 ; 1                 ; 6       ;
-;      - simpleuart:simpleuart|cfg_divider[17]~1                    ; 1                 ; 6       ;
+;      - simpleuart:simpleuart|cfg_divider[23]~1                    ; 1                 ; 6       ;
 ;      - seg_reg~19                                                 ; 1                 ; 6       ;
 ;      - seg_reg~20                                                 ; 1                 ; 6       ;
 ;      - seg_reg~21                                                 ; 1                 ; 6       ;
@@ -1088,12 +1103,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - seg_reg~24                                                 ; 1                 ; 6       ;
 ;      - seg_reg~25                                                 ; 1                 ; 6       ;
 ;      - seg_reg~26                                                 ; 1                 ; 6       ;
-;      - simpleuart:simpleuart|cfg_divider[10]~2                    ; 1                 ; 6       ;
+;      - simpleuart:simpleuart|cfg_divider[14]~2                    ; 1                 ; 6       ;
 ;      - seg_reg~27                                                 ; 1                 ; 6       ;
 ;      - seg_reg~28                                                 ; 1                 ; 6       ;
 ;      - seg_reg~29                                                 ; 1                 ; 6       ;
 ;      - seg_reg~30                                                 ; 1                 ; 6       ;
-;      - simpleuart:simpleuart|cfg_divider[7]~3                     ; 1                 ; 6       ;
+;      - simpleuart:simpleuart|cfg_divider[1]~3                     ; 1                 ; 6       ;
 ;      - seg_reg~31                                                 ; 1                 ; 6       ;
 ;      - seg_reg~32                                                 ; 1                 ; 6       ;
 ;      - seg_reg~33                                                 ; 1                 ; 6       ;
@@ -1104,41 +1119,44 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - picorv32:cpu|mem_do_prefetch~1                             ; 1                 ; 6       ;
 ;      - picorv32:cpu|reg_op1[1]~4                                  ; 1                 ; 6       ;
 ;      - picorv32:cpu|trap~0                                        ; 1                 ; 6       ;
-;      - picorv32:cpu|reg_next_pc[24]~34                            ; 1                 ; 6       ;
-;      - picorv32:cpu|prefetched_high_word~1                        ; 1                 ; 6       ;
+;      - picorv32:cpu|prefetched_high_word~0                        ; 1                 ; 6       ;
 ;      - picorv32:cpu|prefetched_high_word~3                        ; 1                 ; 6       ;
+;      - picorv32:cpu|reg_next_pc[5]~34                             ; 1                 ; 6       ;
 ;      - picorv32:cpu|mem_16bit_buffer[1]~0                         ; 1                 ; 6       ;
-;      - seg_reg[18]~34                                             ; 1                 ; 6       ;
-;      - gpio_reg[18]~9                                             ; 1                 ; 6       ;
+;      - seg_reg[22]~34                                             ; 1                 ; 6       ;
+;      - gpio_reg[22]~10                                            ; 1                 ; 6       ;
 ;      - simpleuart:simpleuart|recv_buf_data~0                      ; 1                 ; 6       ;
-;      - simpleuart:simpleuart|recv_buf_data[6]~1                   ; 1                 ; 6       ;
+;      - simpleuart:simpleuart|recv_buf_data[2]~1                   ; 1                 ; 6       ;
 ;      - simpleuart:simpleuart|recv_buf_data~2                      ; 1                 ; 6       ;
 ;      - picorv32:cpu|mem_la_firstword_reg~0                        ; 1                 ; 6       ;
 ;      - picorv32:cpu|mem_valid~5                                   ; 1                 ; 6       ;
-;      - picorv32:cpu|reg_op2[9]~34                                 ; 1                 ; 6       ;
+;      - picorv32:cpu|reg_op2[26]~34                                ; 1                 ; 6       ;
 ;      - picorv32:cpu|cpu_state~19                                  ; 1                 ; 6       ;
 ;      - picorv32:cpu|cpu_state~23                                  ; 1                 ; 6       ;
 ;      - picorv32:cpu|irq_mask~2                                    ; 1                 ; 6       ;
-;      - picorv32:cpu|irq_mask[27]~3                                ; 1                 ; 6       ;
+;      - picorv32:cpu|irq_mask[17]~3                                ; 1                 ; 6       ;
 ;      - picorv32:cpu|irq_mask~4                                    ; 1                 ; 6       ;
 ;      - picorv32:cpu|irq_mask~5                                    ; 1                 ; 6       ;
 ;      - picorv32:cpu|is_beq_bne_blt_bge_bltu_bgeu~3                ; 1                 ; 6       ;
-;      - picorv32:cpu|instr_blt~0                                   ; 1                 ; 6       ;
+;      - picorv32:cpu|instr_slti~0                                  ; 1                 ; 6       ;
 ;      - picorv32:cpu|picorv32_pcpi_mul:pcpi_mul|always3~0          ; 1                 ; 6       ;
 ;      - picorv32:cpu|always16~0                                    ; 1                 ; 6       ;
 ;      - picorv32:cpu|reg_pc~0                                      ; 1                 ; 6       ;
-;      - seg_reg[28]~35                                             ; 1                 ; 6       ;
-;      - gpio_reg[26]~10                                            ; 1                 ; 6       ;
-;      - gpio_reg[12]~11                                            ; 1                 ; 6       ;
-;      - picorv32:cpu|count_instr[46]~68                            ; 1                 ; 6       ;
+;      - seg_reg[30]~35                                             ; 1                 ; 6       ;
+;      - gpio_reg~11                                                ; 1                 ; 6       ;
+;      - gpio_reg[24]~12                                            ; 1                 ; 6       ;
+;      - gpio_reg[13]~13                                            ; 1                 ; 6       ;
+;      - picorv32:cpu|count_instr[3]~68                             ; 1                 ; 6       ;
+;      - simpleuart:simpleuart|recv_state[0]~0                      ; 1                 ; 6       ;
+;      - simpleuart:simpleuart|recv_state[0]~2                      ; 1                 ; 6       ;
+;      - simpleuart:simpleuart|recv_state[0]~6                      ; 1                 ; 6       ;
+;      - simpleuart:simpleuart|recv_divcnt[15]~98                   ; 1                 ; 6       ;
+;      - gpio_reg~14                                                ; 1                 ; 6       ;
+;      - gpio_reg~15                                                ; 1                 ; 6       ;
+;      - gpio_reg~16                                                ; 1                 ; 6       ;
 ;      - simpleuart:simpleuart|recv_buf_data~3                      ; 1                 ; 6       ;
-;      - simpleuart:simpleuart|recv_state[0]~3                      ; 1                 ; 6       ;
-;      - simpleuart:simpleuart|recv_state[2]~5                      ; 1                 ; 6       ;
-;      - simpleuart:simpleuart|recv_state[1]~7                      ; 1                 ; 6       ;
-;      - simpleuart:simpleuart|recv_state[2]~8                      ; 1                 ; 6       ;
-;      - simpleuart:simpleuart|recv_divcnt[11]~98                   ; 1                 ; 6       ;
 ;      - simpleuart:simpleuart|recv_buf_data~4                      ; 1                 ; 6       ;
-;      - simpleuart:simpleuart|recv_pattern[3]~0                    ; 1                 ; 6       ;
+;      - simpleuart:simpleuart|recv_pattern[2]~0                    ; 1                 ; 6       ;
 ;      - simpleuart:simpleuart|recv_buf_data~5                      ; 1                 ; 6       ;
 ;      - picorv32:cpu|reg_pc~1                                      ; 1                 ; 6       ;
 ;      - picorv32:cpu|reg_pc~2                                      ; 1                 ; 6       ;
@@ -1341,13 +1359,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - picorv32:cpu|mem_addr[2]~92                                ; 1                 ; 6       ;
 ;      - picorv32:cpu|mem_valid~6                                   ; 1                 ; 6       ;
 ;      - picorv32:cpu|mem_wdata[0]~2                                ; 1                 ; 6       ;
-;      - picorv32:cpu|timer[14]~67                                  ; 1                 ; 6       ;
+;      - picorv32:cpu|timer[7]~67                                   ; 1                 ; 6       ;
 ;      - picorv32:cpu|irq_mask~34                                   ; 1                 ; 6       ;
 ;      - picorv32:cpu|picorv32_pcpi_div:pcpi_div|quotient_msk[4]~33 ; 1                 ; 6       ;
 ; clk                                                               ;                   ;         ;
+; sw[1]                                                             ;                   ;         ;
+;      - gpio_reg~11                                                ; 1                 ; 0       ;
 ; ser_rx                                                            ;                   ;         ;
-;      - simpleuart:simpleuart|recv_state[2]~1                      ; 0                 ; 6       ;
+;      - simpleuart:simpleuart|recv_state[0]~5                      ; 0                 ; 6       ;
 ;      - simpleuart:simpleuart|recv_pattern~1                       ; 0                 ; 6       ;
+; sw[0]                                                             ;                   ;         ;
+; sw[3]                                                             ;                   ;         ;
+;      - gpio_reg~15                                                ; 1                 ; 0       ;
+; sw[2]                                                             ;                   ;         ;
+;      - gpio_reg~16                                                ; 1                 ; 0       ;
 +-------------------------------------------------------------------+-------------------+---------+
 
 
@@ -1356,66 +1381,66 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------+--------------------+---------+---------------------------------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                       ; Location           ; Fan-Out ; Usage                                 ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------------------------------------------+--------------------+---------+---------------------------------------+--------+----------------------+------------------+---------------------------+
-; clk                                                        ; PIN_J5             ; 1462    ; Clock                                 ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; gpio_reg[0]~1                                              ; LCCOMB_X15_Y7_N12  ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; gpio_reg[12]~11                                            ; LCCOMB_X15_Y7_N28  ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; gpio_reg[18]~9                                             ; LCCOMB_X16_Y7_N4   ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; gpio_reg[26]~10                                            ; LCCOMB_X15_Y7_N10  ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|Equal7~0                                      ; LCCOMB_X20_Y6_N8   ; 45      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|Selector61~0                                  ; LCCOMB_X23_Y9_N6   ; 26      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|always16~1                                    ; LCCOMB_X27_Y10_N4  ; 4       ; Write enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|always3~0                                     ; LCCOMB_X20_Y7_N4   ; 19      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|always9~0                                     ; LCCOMB_X20_Y6_N22  ; 59      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|always9~1                                     ; LCCOMB_X19_Y16_N20 ; 69      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|comb~0                                        ; LCCOMB_X30_Y16_N24 ; 34      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|count_instr[46]~68                            ; LCCOMB_X16_Y9_N18  ; 64      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|cpu_state.cpu_state_exec                      ; FF_X16_Y11_N17     ; 52      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|cpu_state.cpu_state_fetch                     ; FF_X16_Y11_N23     ; 24      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|cpu_state.cpu_state_ld_rs1                    ; FF_X16_Y11_N21     ; 124     ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|cpu_state.cpu_state_ldmem                     ; FF_X17_Y14_N29     ; 24      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|instr_blt~0                                   ; LCCOMB_X19_Y16_N14 ; 23      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|irq_mask[27]~3                                ; LCCOMB_X27_Y15_N8  ; 32      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|latched_rd[4]~0                               ; LCCOMB_X16_Y11_N30 ; 5       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|mem_16bit_buffer[1]~1                         ; LCCOMB_X22_Y10_N26 ; 16      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|mem_addr[2]~92                                ; LCCOMB_X22_Y10_N28 ; 30      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|mem_rdata_q[10]~46                            ; LCCOMB_X24_Y8_N14  ; 2       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|mem_rdata_q[17]~34                            ; LCCOMB_X27_Y7_N26  ; 5       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|mem_rdata_q[20]~67                            ; LCCOMB_X24_Y6_N6   ; 2       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|mem_rdata_q[7]~45                             ; LCCOMB_X23_Y8_N18  ; 2       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|mem_rdata_q~33                                ; LCCOMB_X27_Y7_N16  ; 5       ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|mem_state[1]~7                                ; LCCOMB_X20_Y8_N10  ; 2       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|mem_wdata[0]~2                                ; LCCOMB_X14_Y10_N30 ; 32      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|mem_wordsize.10                               ; FF_X17_Y14_N13     ; 24      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|mem_wordsize~12                               ; LCCOMB_X17_Y14_N8  ; 3       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|mem_wstrb[0]~7                                ; LCCOMB_X22_Y10_N22 ; 4       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|mem_xfer                                      ; LCCOMB_X18_Y10_N28 ; 77      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|picorv32_pcpi_div:pcpi_div|dividend[1]~37     ; LCCOMB_X12_Y9_N28  ; 32      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|picorv32_pcpi_div:pcpi_div|outsign            ; FF_X12_Y9_N11      ; 33      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|picorv32_pcpi_div:pcpi_div|quotient_msk[4]~33 ; LCCOMB_X10_Y7_N0   ; 95      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|picorv32_pcpi_div:pcpi_div|start              ; LCCOMB_X13_Y7_N8   ; 100     ; Sync. clear, Sync. load               ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|picorv32_pcpi_mul:pcpi_mul|always3~0          ; LCCOMB_X16_Y13_N12 ; 33      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|picorv32_pcpi_mul:pcpi_mul|mul_waiting        ; FF_X15_Y15_N17     ; 216     ; Sync. clear, Sync. load               ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|reg_next_pc[24]~31                            ; LCCOMB_X28_Y9_N10  ; 32      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|reg_next_pc[24]~34                            ; LCCOMB_X27_Y10_N26 ; 62      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; clk                                                        ; PIN_J5             ; 1458    ; Clock                                 ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; gpio_reg[0]~2                                              ; LCCOMB_X14_Y17_N18 ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; gpio_reg[13]~13                                            ; LCCOMB_X14_Y17_N10 ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; gpio_reg[22]~10                                            ; LCCOMB_X14_Y17_N30 ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; gpio_reg[24]~12                                            ; LCCOMB_X14_Y15_N10 ; 4       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|Equal7~0                                      ; LCCOMB_X23_Y18_N16 ; 44      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|Selector61~0                                  ; LCCOMB_X28_Y16_N28 ; 26      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|always16~1                                    ; LCCOMB_X28_Y15_N26 ; 4       ; Write enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|always3~0                                     ; LCCOMB_X20_Y18_N18 ; 19      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|always9~0                                     ; LCCOMB_X22_Y16_N26 ; 59      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|always9~1                                     ; LCCOMB_X28_Y11_N24 ; 69      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|comb~0                                        ; LCCOMB_X22_Y16_N2  ; 34      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|count_instr[3]~68                             ; LCCOMB_X17_Y14_N28 ; 64      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|cpu_state.cpu_state_exec                      ; FF_X17_Y15_N9      ; 53      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|cpu_state.cpu_state_fetch                     ; FF_X17_Y15_N23     ; 24      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|cpu_state.cpu_state_ld_rs1                    ; FF_X16_Y15_N19     ; 116     ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|cpu_state.cpu_state_ldmem                     ; FF_X24_Y16_N1      ; 25      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|instr_slti~0                                  ; LCCOMB_X19_Y13_N4  ; 23      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|irq_mask[17]~3                                ; LCCOMB_X28_Y10_N22 ; 32      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|latched_rd[4]~0                               ; LCCOMB_X27_Y17_N28 ; 5       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|mem_16bit_buffer[1]~1                         ; LCCOMB_X19_Y16_N28 ; 16      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|mem_addr[2]~92                                ; LCCOMB_X18_Y15_N26 ; 30      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|mem_rdata_q[11]~45                            ; LCCOMB_X23_Y20_N6  ; 2       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|mem_rdata_q[16]~32                            ; LCCOMB_X24_Y17_N22 ; 5       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|mem_rdata_q[21]~71                            ; LCCOMB_X28_Y20_N4  ; 2       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|mem_rdata_q[7]~44                             ; LCCOMB_X24_Y19_N2  ; 2       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|mem_rdata_q~31                                ; LCCOMB_X24_Y17_N4  ; 5       ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|mem_state[1]~7                                ; LCCOMB_X16_Y18_N8  ; 2       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|mem_wdata[0]~2                                ; LCCOMB_X16_Y18_N30 ; 32      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|mem_wordsize.10                               ; FF_X16_Y11_N21     ; 24      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|mem_wordsize~12                               ; LCCOMB_X16_Y11_N14 ; 3       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|mem_wstrb[0]~7                                ; LCCOMB_X19_Y16_N24 ; 4       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|mem_xfer                                      ; LCCOMB_X19_Y17_N4  ; 76      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|picorv32_pcpi_div:pcpi_div|dividend[1]~37     ; LCCOMB_X6_Y5_N6    ; 32      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|picorv32_pcpi_div:pcpi_div|outsign            ; FF_X9_Y4_N17       ; 33      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|picorv32_pcpi_div:pcpi_div|quotient_msk[4]~33 ; LCCOMB_X9_Y7_N14   ; 95      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|picorv32_pcpi_div:pcpi_div|start              ; LCCOMB_X10_Y4_N8   ; 100     ; Sync. clear, Sync. load               ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|picorv32_pcpi_mul:pcpi_mul|always3~0          ; LCCOMB_X15_Y4_N18  ; 33      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|picorv32_pcpi_mul:pcpi_mul|mul_waiting        ; FF_X14_Y5_N17      ; 216     ; Sync. clear, Sync. load               ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|reg_next_pc[5]~31                             ; LCCOMB_X17_Y14_N8  ; 32      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|reg_next_pc[5]~34                             ; LCCOMB_X25_Y13_N4  ; 62      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
 ; picorv32:cpu|reg_op1[1]~5                                  ; LCCOMB_X19_Y14_N30 ; 30      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|reg_op2[16]~35                                ; LCCOMB_X17_Y11_N0  ; 27      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|reg_op2[16]~36                                ; LCCOMB_X17_Y11_N24 ; 32      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|reg_op2[9]~34                                 ; LCCOMB_X19_Y9_N12  ; 32      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; picorv32:cpu|timer[14]~67                                  ; LCCOMB_X27_Y17_N20 ; 32      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; ram_wren~2                                                 ; LCCOMB_X17_Y8_N30  ; 16      ; Write enable                          ; no     ; --                   ; --               ; --                        ;
-; resetn                                                     ; PIN_J9             ; 665     ; Clock enable, Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
-; seg_reg[10]~6                                              ; LCCOMB_X15_Y7_N20  ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; seg_reg[18]~34                                             ; LCCOMB_X16_Y7_N2   ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; seg_reg[28]~35                                             ; LCCOMB_X15_Y7_N16  ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; seg_reg[3]~1                                               ; LCCOMB_X15_Y7_N8   ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; simpleuart:simpleuart|cfg_divider[10]~2                    ; LCCOMB_X15_Y7_N2   ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; simpleuart:simpleuart|cfg_divider[17]~1                    ; LCCOMB_X16_Y7_N16  ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; simpleuart:simpleuart|cfg_divider[24]~0                    ; LCCOMB_X15_Y7_N0   ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; simpleuart:simpleuart|cfg_divider[7]~3                     ; LCCOMB_X15_Y7_N4   ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; simpleuart:simpleuart|recv_buf_data[6]~1                   ; LCCOMB_X14_Y9_N10  ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; simpleuart:simpleuart|recv_divcnt[11]~98                   ; LCCOMB_X14_Y6_N28  ; 32      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
-; simpleuart:simpleuart|recv_pattern[3]~0                    ; LCCOMB_X16_Y8_N28  ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
-; simpleuart:simpleuart|send_bitcnt[1]~5                     ; LCCOMB_X15_Y5_N18  ; 45      ; Clock enable, Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|reg_op2[22]~35                                ; LCCOMB_X22_Y14_N22 ; 27      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|reg_op2[22]~36                                ; LCCOMB_X24_Y16_N16 ; 32      ; Sync. load                            ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|reg_op2[26]~34                                ; LCCOMB_X22_Y13_N28 ; 32      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; picorv32:cpu|timer[7]~67                                   ; LCCOMB_X27_Y4_N6   ; 32      ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; ram_wren~2                                                 ; LCCOMB_X15_Y13_N20 ; 16      ; Write enable                          ; no     ; --                   ; --               ; --                        ;
+; resetn                                                     ; PIN_J9             ; 668     ; Clock enable, Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
+; seg_reg[0]~1                                               ; LCCOMB_X14_Y17_N6  ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; seg_reg[13]~6                                              ; LCCOMB_X14_Y17_N8  ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; seg_reg[22]~34                                             ; LCCOMB_X14_Y17_N12 ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; seg_reg[30]~35                                             ; LCCOMB_X14_Y17_N16 ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; simpleuart:simpleuart|cfg_divider[14]~2                    ; LCCOMB_X14_Y17_N24 ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; simpleuart:simpleuart|cfg_divider[1]~3                     ; LCCOMB_X14_Y17_N26 ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; simpleuart:simpleuart|cfg_divider[23]~1                    ; LCCOMB_X14_Y17_N14 ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; simpleuart:simpleuart|cfg_divider[29]~0                    ; LCCOMB_X14_Y17_N20 ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; simpleuart:simpleuart|recv_buf_data[2]~1                   ; LCCOMB_X14_Y16_N24 ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; simpleuart:simpleuart|recv_divcnt[15]~98                   ; LCCOMB_X12_Y17_N30 ; 32      ; Sync. clear                           ; no     ; --                   ; --               ; --                        ;
+; simpleuart:simpleuart|recv_pattern[2]~0                    ; LCCOMB_X14_Y16_N16 ; 8       ; Clock enable                          ; no     ; --                   ; --               ; --                        ;
+; simpleuart:simpleuart|send_bitcnt[1]~5                     ; LCCOMB_X16_Y17_N8  ; 45      ; Clock enable, Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
 +------------------------------------------------------------+--------------------+---------+---------------------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1424,7 +1449,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk  ; PIN_J5   ; 1462    ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
+; clk  ; PIN_J5   ; 1458    ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1433,20 +1458,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+------------------+
 ; Name         ; Fan-Out          ;
 +--------------+------------------+
-; resetn~input ; 665              ;
+; resetn~input ; 668              ;
 +--------------+------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
-+----------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
-; Name                                                                                   ; Type ; Mode             ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size   ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF             ; Location                                                                                                                                                                                                                                               ; Mixed Width RDW Mode ; Port A RDW Mode        ; Port B RDW Mode        ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs ;
-+----------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
-; picorv32:cpu|altsyncram:cpuregs_rtl_0|altsyncram_j6d1:auto_generated|ALTSYNCRAM        ; AUTO ; Simple Dual Port ; Single Clock ; 32           ; 32           ; 32           ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 1024   ; 32                          ; 32                          ; 32                          ; 32                          ; 1024                ; 1    ; None            ; M9K_X26_Y11_N0                                                                                                                                                                                                                                         ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-; picorv32:cpu|altsyncram:cpuregs_rtl_1|altsyncram_j6d1:auto_generated|ALTSYNCRAM        ; AUTO ; Simple Dual Port ; Single Clock ; 32           ; 32           ; 32           ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 1024   ; 32                          ; 32                          ; 32                          ; 32                          ; 1024                ; 1    ; None            ; M9K_X26_Y9_N0                                                                                                                                                                                                                                          ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-; ram:ram_inst|altsyncram:altsyncram_component|altsyncram_bkf1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port      ; Single Clock ; 4096         ; 32           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 131072 ; 4096                        ; 32                          ; --                          ; --                          ; 131072              ; 16   ; None            ; M9K_X8_Y8_N0, M9K_X8_Y6_N0, M9K_X5_Y4_N0, M9K_X26_Y4_N0, M9K_X26_Y7_N0, M9K_X8_Y7_N0, M9K_X26_Y13_N0, M9K_X26_Y8_N0, M9K_X26_Y12_N0, M9K_X5_Y5_N0, M9K_X8_Y5_N0, M9K_X8_Y3_N0, M9K_X8_Y4_N0, M9K_X8_Y9_N0, M9K_X5_Y6_N0, M9K_X5_Y9_N0                  ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-; rom:rom_inst|altsyncram:altsyncram_component|altsyncram_6t91:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; Single Clock ; 4096         ; 32           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 131072 ; 4096                        ; 32                          ; --                          ; --                          ; 131072              ; 16   ; hx8kdemo_fw.hex ; M9K_X26_Y15_N0, M9K_X26_Y6_N0, M9K_X26_Y3_N0, M9K_X26_Y14_N0, M9K_X26_Y18_N0, M9K_X26_Y10_N0, M9K_X26_Y20_N0, M9K_X26_Y16_N0, M9K_X26_Y22_N0, M9K_X26_Y2_N0, M9K_X8_Y2_N0, M9K_X26_Y5_N0, M9K_X5_Y7_N0, M9K_X26_Y17_N0, M9K_X26_Y21_N0, M9K_X26_Y19_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
-+----------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ;
++----------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
+; Name                                                                                   ; Type ; Mode             ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size   ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M9Ks ; MIF             ; Location                                                                                                                                                                                                                                       ; Mixed Width RDW Mode ; Port A RDW Mode        ; Port B RDW Mode        ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs ;
++----------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
+; picorv32:cpu|altsyncram:cpuregs_rtl_0|altsyncram_j6d1:auto_generated|ALTSYNCRAM        ; AUTO ; Simple Dual Port ; Single Clock ; 32           ; 32           ; 32           ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 1024   ; 32                          ; 32                          ; 32                          ; 32                          ; 1024                ; 1    ; None            ; M9K_X26_Y12_N0                                                                                                                                                                                                                                 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
+; picorv32:cpu|altsyncram:cpuregs_rtl_1|altsyncram_j6d1:auto_generated|ALTSYNCRAM        ; AUTO ; Simple Dual Port ; Single Clock ; 32           ; 32           ; 32           ; 32           ; yes                    ; no                      ; yes                    ; no                      ; 1024   ; 32                          ; 32                          ; 32                          ; 32                          ; 1024                ; 1    ; None            ; M9K_X26_Y13_N0                                                                                                                                                                                                                                 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
+; ram:ram_inst|altsyncram:altsyncram_component|altsyncram_bkf1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port      ; Single Clock ; 4096         ; 32           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 131072 ; 4096                        ; 32                          ; --                          ; --                          ; 131072              ; 16   ; None            ; M9K_X8_Y9_N0, M9K_X5_Y4_N0, M9K_X26_Y9_N0, M9K_X26_Y10_N0, M9K_X26_Y7_N0, M9K_X26_Y5_N0, M9K_X26_Y11_N0, M9K_X26_Y8_N0, M9K_X26_Y15_N0, M9K_X26_Y17_N0, M9K_X26_Y19_N0, M9K_X5_Y8_N0, M9K_X8_Y7_N0, M9K_X5_Y9_N0, M9K_X5_Y7_N0, M9K_X8_Y8_N0   ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
+; rom:rom_inst|altsyncram:altsyncram_component|altsyncram_6t91:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; Single Clock ; 4096         ; 32           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 131072 ; 4096                        ; 32                          ; --                          ; --                          ; 131072              ; 16   ; hx8kdemo_fw.hex ; M9K_X26_Y16_N0, M9K_X26_Y18_N0, M9K_X8_Y6_N0, M9K_X26_Y14_N0, M9K_X26_Y4_N0, M9K_X8_Y4_N0, M9K_X26_Y2_N0, M9K_X26_Y22_N0, M9K_X26_Y3_N0, M9K_X8_Y3_N0, M9K_X26_Y21_N0, M9K_X8_Y2_N0, M9K_X26_Y6_N0, M9K_X26_Y20_N0, M9K_X5_Y5_N0, M9K_X8_Y5_N0 ; Don't care           ; New data with NBE Read ; New data with NBE Read ; Off      ; No                     ; No - Unknown  ;
++----------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+------------------------+------------------------+----------+------------------------+---------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
 
@@ -1460,10 +1485,10 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 ;8;(00000000000000000000010010010011) (2223) (1171) (493)    ;(00000000000000000000010100010011) (2423) (1299) (513)   ;(00000000000000000000010110010011) (2623) (1427) (593)   ;(00000000000000000000011000010011) (3023) (1555) (613)   ;(00000000000000000000011010010011) (3223) (1683) (693)   ;(00000000000000000000011100010011) (3423) (1811) (713)   ;(00000000000000000000011110010011) (3623) (1939) (793)   ;(00000000000000000000100000010011) (4023) (2067) (813)   ;
 ;16;(00000000000000000000100010010011) (4223) (2195) (893)    ;(00000000000000000000100100010011) (4423) (2323) (913)   ;(00000000000000000000100110010011) (4623) (2451) (993)   ;(00000000000000000000101000010011) (5023) (2579) (A13)   ;(00000000000000000000101010010011) (5223) (2707) (A93)   ;(00000000000000000000101100010011) (5423) (2835) (B13)   ;(00000000000000000000101110010011) (5623) (2963) (B93)   ;(00000000000000000000110000010011) (6023) (3091) (C13)   ;
 ;24;(00000000000000000000110010010011) (6223) (3219) (C93)    ;(00000000000000000000110100010011) (6423) (3347) (D13)   ;(00000000000000000000110110010011) (6623) (3475) (D93)   ;(00000000000000000000111000010011) (7023) (3603) (E13)   ;(00000000000000000000111010010011) (7223) (3731) (E93)   ;(00000000000000000000111100010011) (7423) (3859) (F13)   ;(00000000000000000000111110010011) (7623) (3987) (F93)   ;(00000011000000000000000110110111) (300000667) (50332087) (30001B7)   ;
-;32;(00000000000100100000001000010011) (4401023) (1180179) (120213)    ;(00000000010000011000001000100011) (20301043) (4293155) (418223)   ;(00000000000100100000001000010011) (4401023) (1180179) (120213)   ;(00000000010000011000001010100011) (20301243) (4293283) (4182A3)   ;(00000000100000000000000011101111) (40000357) (8388847) (8000EF)   ;(00000000000000000000000001101111) (157) (111) (6F)   ;(11111110000000010000000100010011) (-177577355) (-33488621) (-1-15-14-15-14-14-13)   ;(00000000100000010010111000100011) (40227043) (8465955) (812E23)   ;
-;40;(00000010000000010000010000010011) (200202023) (33621011) (2010413)    ;(11111110000001000010011000100011) (-176754735) (-33282525) (-1-15-11-13-9-13-13)   ;(11111110000001000010010000100011) (-176755735) (-33283037) (-1-15-11-13-11-13-13)   ;(00000011000000000000011110110111) (300003667) (50333623) (30007B7)   ;(00001010000100000000011100010011) (1204003423) (168822547) (A100713)   ;(00000000111001111010000000100011) (71720043) (15179811) (E7A023)   ;(00000000000000000000011110010011) (3623) (1939) (793)   ;(00000000000001111000010100010011) (1702423) (492819) (78513)   ;
-;48;(00000001110000010010010000000011) (160222003) (29434883) (1C12403)    ;(00000010000000010000000100010011) (200200423) (33620243) (2010113)   ;(00000000000000001000000001100111) (100147) (32871) (8067)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
-;56;(00000000000000000000000000000000) (0) (0) (00)    ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
+;32;(00000000010000011010000000100011) (20320043) (4300835) (41A023)    ;(00000000001100011000001000000011) (14301003) (3244547) (318203)   ;(00000000010000011000001000100011) (20301043) (4293155) (418223)   ;(00000000010000011000001010100011) (20301243) (4293283) (4182A3)   ;(00000000000000000000000110010011) (623) (403) (193)   ;(00000000000000000000001000010011) (1023) (531) (213)   ;(00000000100000000000000011101111) (40000357) (8388847) (8000EF)   ;(00000000000000000000000001101111) (157) (111) (6F)   ;
+;40;(11111110000000010000000100010011) (-177577355) (-33488621) (-1-15-14-15-14-14-13)    ;(00000000100000010010111000100011) (40227043) (8465955) (812E23)   ;(00000010000000010000010000010011) (200202023) (33621011) (2010413)   ;(11111110000001000010011000100011) (-176754735) (-33282525) (-1-15-11-13-9-13-13)   ;(11111110000001000010010000100011) (-176755735) (-33283037) (-1-15-11-13-11-13-13)   ;(11111110000001000010011000100011) (-176754735) (-33282525) (-1-15-11-13-9-13-13)   ;(00000001000000000000000001101111) (100000157) (16777327) (100006F)   ;(11111110110001000010011110000011) (-116754175) (-20699261) (-1-3-11-13-8-7-13)   ;
+;48;(00000000000101111000011110010011) (5703623) (1542035) (178793)    ;(11111110111101000010011000100011) (-102754735) (-17553885) (-10-11-13-9-13-13)   ;(11111110110001000010011100000011) (-116754375) (-20699389) (-1-3-11-13-8-15-13)   ;(00000000000001111010011110110111) (1723667) (501687) (7A7B7)   ;(00010001111101111000011110010011) (-2119263673) (301434771) (11F78793)   ;(11111110111001111101010011100011) (-106025435) (-18361117) (-1-1-8-2-11-1-13)   ;(11111110100001000010011100000011) (-136754375) (-24893693) (-1-7-11-13-8-15-13)   ;(00001111111100000000011110010011) (1774003623) (267388819) (FF00793)   ;
+;56;(00000010111101110110011110110011) (275663663) (49768371) (2F767B3)    ;(11111111111101111100011100010011) (-2034355) (-538861) (-8-3-8-14-13)   ;(00000011000000000000011110110111) (300003667) (50333623) (30007B7)   ;(00000000111001111010000000100011) (71720043) (15179811) (E7A023)   ;(11111110100001000010011110000011) (-136754175) (-24893565) (-1-7-11-13-8-7-13)   ;(00000000000101111000011110010011) (5703623) (1542035) (178793)   ;(11111110111101000010010000100011) (-102755735) (-17554397) (-10-11-13-11-13-13)   ;(11111011100111111111000001101111) (-430007621) (-73404305) (-4-600-15-9-1)   ;
 ;64;(00000000000000000000000000000000) (0) (0) (00)    ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
 ;72;(00000000000000000000000000000000) (0) (0) (00)    ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
 ;80;(00000000000000000000000000000000) (0) (0) (00)    ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
@@ -1975,50 +2000,50 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 6,214 / 27,275 ( 23 % ) ;
-; C16 interconnects     ; 60 / 1,240 ( 5 % )      ;
-; C4 interconnects      ; 4,018 / 20,832 ( 19 % ) ;
-; Direct links          ; 453 / 27,275 ( 2 % )    ;
+; Block interconnects   ; 6,122 / 27,275 ( 22 % ) ;
+; C16 interconnects     ; 75 / 1,240 ( 6 % )      ;
+; C4 interconnects      ; 3,839 / 20,832 ( 18 % ) ;
+; Direct links          ; 474 / 27,275 ( 2 % )    ;
 ; Global clocks         ; 1 / 10 ( 10 % )         ;
-; Local interconnects   ; 1,927 / 8,064 ( 24 % )  ;
-; R24 interconnects     ; 78 / 1,320 ( 6 % )      ;
-; R4 interconnects      ; 4,516 / 28,560 ( 16 % ) ;
+; Local interconnects   ; 1,943 / 8,064 ( 24 % )  ;
+; R24 interconnects     ; 80 / 1,320 ( 6 % )      ;
+; R4 interconnects      ; 4,514 / 28,560 ( 16 % ) ;
 +-----------------------+-------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                          ;
 +---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 13.53) ; Number of LABs  (Total = 286) ;
+; Number of Logic Elements  (Average = 13.48) ; Number of LABs  (Total = 285) ;
 +---------------------------------------------+-------------------------------+
-; 1                                           ; 14                            ;
-; 2                                           ; 5                             ;
-; 3                                           ; 2                             ;
-; 4                                           ; 4                             ;
-; 5                                           ; 3                             ;
-; 6                                           ; 0                             ;
+; 1                                           ; 9                             ;
+; 2                                           ; 4                             ;
+; 3                                           ; 4                             ;
+; 4                                           ; 6                             ;
+; 5                                           ; 4                             ;
+; 6                                           ; 3                             ;
 ; 7                                           ; 2                             ;
-; 8                                           ; 4                             ;
-; 9                                           ; 3                             ;
-; 10                                          ; 7                             ;
-; 11                                          ; 6                             ;
-; 12                                          ; 8                             ;
-; 13                                          ; 15                            ;
-; 14                                          ; 29                            ;
-; 15                                          ; 42                            ;
-; 16                                          ; 142                           ;
+; 8                                           ; 7                             ;
+; 9                                           ; 5                             ;
+; 10                                          ; 6                             ;
+; 11                                          ; 4                             ;
+; 12                                          ; 10                            ;
+; 13                                          ; 16                            ;
+; 14                                          ; 21                            ;
+; 15                                          ; 33                            ;
+; 16                                          ; 151                           ;
 +---------------------------------------------+-------------------------------+
 
 
 +--------------------------------------------------------------------+
 ; LAB-wide Signals                                                   ;
 +------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 1.65) ; Number of LABs  (Total = 286) ;
+; LAB-wide Signals  (Average = 1.59) ; Number of LABs  (Total = 285) ;
 +------------------------------------+-------------------------------+
-; 1 Clock                            ; 223                           ;
-; 1 Clock enable                     ; 109                           ;
-; 1 Sync. clear                      ; 49                            ;
-; 1 Sync. load                       ; 46                            ;
+; 1 Clock                            ; 221                           ;
+; 1 Clock enable                     ; 101                           ;
+; 1 Sync. clear                      ; 44                            ;
+; 1 Sync. load                       ; 41                            ;
 ; 2 Clock enables                    ; 46                            ;
 +------------------------------------+-------------------------------+
 
@@ -2026,117 +2051,119 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +------------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 17.79) ; Number of LABs  (Total = 286) ;
+; Number of Signals Sourced  (Average = 17.73) ; Number of LABs  (Total = 285) ;
 +----------------------------------------------+-------------------------------+
-; 0                                            ; 5                             ;
-; 1                                            ; 16                            ;
-; 2                                            ; 9                             ;
+; 0                                            ; 6                             ;
+; 1                                            ; 11                            ;
+; 2                                            ; 6                             ;
 ; 3                                            ; 2                             ;
-; 4                                            ; 1                             ;
-; 5                                            ; 3                             ;
-; 6                                            ; 3                             ;
-; 7                                            ; 1                             ;
-; 8                                            ; 0                             ;
-; 9                                            ; 2                             ;
+; 4                                            ; 6                             ;
+; 5                                            ; 2                             ;
+; 6                                            ; 5                             ;
+; 7                                            ; 0                             ;
+; 8                                            ; 4                             ;
+; 9                                            ; 1                             ;
 ; 10                                           ; 0                             ;
-; 11                                           ; 2                             ;
-; 12                                           ; 2                             ;
-; 13                                           ; 7                             ;
-; 14                                           ; 8                             ;
-; 15                                           ; 10                            ;
-; 16                                           ; 37                            ;
-; 17                                           ; 19                            ;
+; 11                                           ; 6                             ;
+; 12                                           ; 3                             ;
+; 13                                           ; 1                             ;
+; 14                                           ; 13                            ;
+; 15                                           ; 14                            ;
+; 16                                           ; 35                            ;
+; 17                                           ; 18                            ;
 ; 18                                           ; 27                            ;
-; 19                                           ; 16                            ;
-; 20                                           ; 24                            ;
-; 21                                           ; 15                            ;
-; 22                                           ; 8                             ;
-; 23                                           ; 11                            ;
-; 24                                           ; 12                            ;
-; 25                                           ; 7                             ;
-; 26                                           ; 2                             ;
+; 19                                           ; 18                            ;
+; 20                                           ; 15                            ;
+; 21                                           ; 11                            ;
+; 22                                           ; 16                            ;
+; 23                                           ; 5                             ;
+; 24                                           ; 8                             ;
+; 25                                           ; 9                             ;
+; 26                                           ; 6                             ;
 ; 27                                           ; 2                             ;
-; 28                                           ; 4                             ;
+; 28                                           ; 3                             ;
 ; 29                                           ; 1                             ;
 ; 30                                           ; 3                             ;
 ; 31                                           ; 6                             ;
-; 32                                           ; 21                            ;
+; 32                                           ; 22                            ;
 +----------------------------------------------+-------------------------------+
 
 
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +-------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 8.48) ; Number of LABs  (Total = 286) ;
+; Number of Signals Sourced Out  (Average = 8.39) ; Number of LABs  (Total = 285) ;
 +-------------------------------------------------+-------------------------------+
-; 0                                               ; 5                             ;
-; 1                                               ; 26                            ;
-; 2                                               ; 8                             ;
-; 3                                               ; 6                             ;
-; 4                                               ; 10                            ;
-; 5                                               ; 27                            ;
-; 6                                               ; 19                            ;
-; 7                                               ; 26                            ;
-; 8                                               ; 24                            ;
-; 9                                               ; 27                            ;
-; 10                                              ; 17                            ;
-; 11                                              ; 21                            ;
-; 12                                              ; 12                            ;
-; 13                                              ; 2                             ;
-; 14                                              ; 9                             ;
-; 15                                              ; 1                             ;
-; 16                                              ; 42                            ;
-; 17                                              ; 2                             ;
+; 0                                               ; 6                             ;
+; 1                                               ; 19                            ;
+; 2                                               ; 10                            ;
+; 3                                               ; 7                             ;
+; 4                                               ; 18                            ;
+; 5                                               ; 21                            ;
+; 6                                               ; 28                            ;
+; 7                                               ; 13                            ;
+; 8                                               ; 33                            ;
+; 9                                               ; 28                            ;
+; 10                                              ; 20                            ;
+; 11                                              ; 12                            ;
+; 12                                              ; 10                            ;
+; 13                                              ; 11                            ;
+; 14                                              ; 2                             ;
+; 15                                              ; 7                             ;
+; 16                                              ; 37                            ;
+; 17                                              ; 1                             ;
 ; 18                                              ; 0                             ;
 ; 19                                              ; 1                             ;
 ; 20                                              ; 0                             ;
 ; 21                                              ; 0                             ;
-; 22                                              ; 1                             ;
+; 22                                              ; 0                             ;
+; 23                                              ; 0                             ;
+; 24                                              ; 1                             ;
 +-------------------------------------------------+-------------------------------+
 
 
 +------------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                          ;
 +----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 19.44) ; Number of LABs  (Total = 286) ;
+; Number of Distinct Inputs  (Average = 19.17) ; Number of LABs  (Total = 285) ;
 +----------------------------------------------+-------------------------------+
 ; 0                                            ; 0                             ;
 ; 1                                            ; 0                             ;
-; 2                                            ; 6                             ;
-; 3                                            ; 6                             ;
-; 4                                            ; 11                            ;
-; 5                                            ; 5                             ;
+; 2                                            ; 5                             ;
+; 3                                            ; 10                            ;
+; 4                                            ; 7                             ;
+; 5                                            ; 4                             ;
 ; 6                                            ; 3                             ;
-; 7                                            ; 6                             ;
-; 8                                            ; 6                             ;
-; 9                                            ; 6                             ;
-; 10                                           ; 3                             ;
-; 11                                           ; 8                             ;
+; 7                                            ; 3                             ;
+; 8                                            ; 7                             ;
+; 9                                            ; 13                            ;
+; 10                                           ; 8                             ;
+; 11                                           ; 7                             ;
 ; 12                                           ; 6                             ;
-; 13                                           ; 10                            ;
-; 14                                           ; 7                             ;
-; 15                                           ; 4                             ;
-; 16                                           ; 10                            ;
-; 17                                           ; 16                            ;
-; 18                                           ; 10                            ;
-; 19                                           ; 13                            ;
-; 20                                           ; 12                            ;
-; 21                                           ; 13                            ;
-; 22                                           ; 9                             ;
-; 23                                           ; 10                            ;
-; 24                                           ; 12                            ;
-; 25                                           ; 13                            ;
-; 26                                           ; 10                            ;
-; 27                                           ; 3                             ;
-; 28                                           ; 12                            ;
-; 29                                           ; 11                            ;
-; 30                                           ; 8                             ;
-; 31                                           ; 7                             ;
-; 32                                           ; 11                            ;
-; 33                                           ; 11                            ;
-; 34                                           ; 6                             ;
-; 35                                           ; 0                             ;
-; 36                                           ; 1                             ;
+; 13                                           ; 4                             ;
+; 14                                           ; 10                            ;
+; 15                                           ; 9                             ;
+; 16                                           ; 13                            ;
+; 17                                           ; 14                            ;
+; 18                                           ; 13                            ;
+; 19                                           ; 12                            ;
+; 20                                           ; 8                             ;
+; 21                                           ; 7                             ;
+; 22                                           ; 16                            ;
+; 23                                           ; 11                            ;
+; 24                                           ; 10                            ;
+; 25                                           ; 8                             ;
+; 26                                           ; 8                             ;
+; 27                                           ; 7                             ;
+; 28                                           ; 7                             ;
+; 29                                           ; 4                             ;
+; 30                                           ; 9                             ;
+; 31                                           ; 9                             ;
+; 32                                           ; 12                            ;
+; 33                                           ; 14                            ;
+; 34                                           ; 4                             ;
+; 35                                           ; 1                             ;
+; 36                                           ; 2                             ;
 +----------------------------------------------+-------------------------------+
 
 
@@ -2197,9 +2224,9 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 28           ; 0            ; 28           ; 0            ; 0            ; 30        ; 28           ; 0            ; 30        ; 30        ; 0            ; 27           ; 0            ; 0            ; 3            ; 0            ; 27           ; 3            ; 0            ; 0            ; 0            ; 27           ; 0            ; 0            ; 0            ; 0            ; 0            ; 30        ; 0            ; 0            ;
+; Total Pass         ; 32           ; 0            ; 32           ; 0            ; 0            ; 34        ; 32           ; 0            ; 34        ; 34        ; 0            ; 27           ; 0            ; 0            ; 7            ; 0            ; 27           ; 7            ; 0            ; 0            ; 0            ; 27           ; 0            ; 0            ; 0            ; 0            ; 0            ; 34        ; 0            ; 0            ;
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 2            ; 30           ; 2            ; 30           ; 30           ; 0         ; 2            ; 30           ; 0         ; 0         ; 30           ; 3            ; 30           ; 30           ; 27           ; 30           ; 3            ; 27           ; 30           ; 30           ; 30           ; 3            ; 30           ; 30           ; 30           ; 30           ; 30           ; 0         ; 30           ; 30           ;
+; Total Inapplicable ; 2            ; 34           ; 2            ; 34           ; 34           ; 0         ; 2            ; 34           ; 0         ; 0         ; 34           ; 7            ; 34           ; 34           ; 27           ; 34           ; 7            ; 27           ; 34           ; 34           ; 34           ; 7            ; 34           ; 34           ; 34           ; 34           ; 34           ; 0         ; 34           ; 34           ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; ser_tx             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; led[0]             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -2230,7 +2257,11 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 ; seg2[8]            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; resetn             ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; clk                ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sw[1]              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; ser_rx             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sw[0]              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sw[3]              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; sw[2]              ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -2271,6 +2302,27 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +---------------------------+--------+
 
 
++------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary              ;
++-----------------+----------------------+-------------------+
+; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
++-----------------+----------------------+-------------------+
+Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                                          ;
++----------------------------+-------------------------------------------------------------------------------------------------------+-------------------+
+; Source Register            ; Destination Register                                                                                  ; Delay Added in ns ;
++----------------------------+-------------------------------------------------------------------------------------------------------+-------------------+
+; picorv32:cpu|latched_rd[0] ; picorv32:cpu|altsyncram:cpuregs_rtl_0|altsyncram_j6d1:auto_generated|ram_block1a1~porta_address_reg0  ; 0.096             ;
+; picorv32:cpu|latched_rd[3] ; picorv32:cpu|altsyncram:cpuregs_rtl_1|altsyncram_j6d1:auto_generated|ram_block1a12~porta_address_reg0 ; 0.060             ;
+; picorv32:cpu|latched_rd[4] ; picorv32:cpu|altsyncram:cpuregs_rtl_1|altsyncram_j6d1:auto_generated|ram_block1a12~porta_address_reg0 ; 0.055             ;
++----------------------------+-------------------------------------------------------------------------------------------------------+-------------------+
+Note: This table only shows the top 3 path(s) that have the largest delay added for hold.
+
+
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
@@ -2299,7 +2351,7 @@ Info (12825): nCSO dual-purpose pin not reserved
 Info (12825): DCLK dual-purpose pin not reserved
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
-Critical Warning (169085): No exact pin location assignment(s) for 2 pins of 30 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+Critical Warning (169085): No exact pin location assignment(s) for 2 pins of 34 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Info (332104): Reading SDC File: 'clock.sdc'
 Warning (332174): Ignored filter at clock.sdc(1): get_ports could not be matched with a port File: C:/Users/91947/Desktop/final/soc_noqsys/clock.sdc Line: 1
 Critical Warning (332168): The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
@@ -2324,34 +2376,34 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 2 does not use VREF pins and has 2.5V VCCIO pins. 5 total pin(s) used --  5 pins available
         Info (176213): I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  28 pins available
         Info (176213): I/O bank number 5 does not use VREF pins and has 2.5V VCCIO pins. 9 total pin(s) used --  3 pins available
-        Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  16 pins available
+        Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 4 total pin(s) used --  12 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has 2.5V VCCIO pins. 6 total pin(s) used --  22 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:04
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:08
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:04
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:06
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 15% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 25% of the available device resources in the region that extends from location X10_Y0 to location X20_Y12
+    Info (170196): Router estimated peak interconnect usage is 27% of the available device resources in the region that extends from location X10_Y0 to location X20_Y12
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 1.66 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
+Info (11888): Total time spent on timing analysis during the Fitter is 2.81 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:09
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:17
 Info (144001): Generated suppressed messages file C:/Users/91947/Desktop/final/soc_noqsys/output_files/pico_simpleuart.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5409 megabytes
-    Info: Processing ended: Wed Mar 13 16:59:00 2019
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:41
+    Info: Peak virtual memory: 5474 megabytes
+    Info: Processing ended: Thu Mar 14 10:57:11 2019
+    Info: Elapsed time: 00:00:56
+    Info: Total CPU time (on all processors): 00:01:03
 
 
 +----------------------------+

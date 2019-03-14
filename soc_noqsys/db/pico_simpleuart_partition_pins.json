@@ -104,7 +104,23 @@
 					"strict" : false
 				},
 				{
+					"name" : "sw[1]",
+					"strict" : false
+				},
+				{
 					"name" : "ser_rx",
+					"strict" : false
+				},
+				{
+					"name" : "sw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[2]",
 					"strict" : false
 				}
 			]

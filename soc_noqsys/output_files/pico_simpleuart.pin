@@ -131,7 +131,7 @@ VCCIO6                       : F14       : power  :                   : 2.5V    
 seg2[4]                      : G2        : output : 2.5 V             :         : 1B        : Y              
 GND                          : G4        : gnd    :                   :         :           :                
 seg2[6]                      : G5        : output : 2.5 V             :         : 1A        : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :         : 1B        :                
+ser_tx                       : G7        : output : 2.5 V             :         : 1B        : N              
 VCC_ONE                      : G8        : power  :                   : 3.0V/3.3V :           :                
 GND                          : G9        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G11       :        :                   :         : 6         :                
@@ -139,15 +139,15 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : G12       :        :                   :      
 VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G15       :        :                   :         : 6         :                
 VCCIO1B                      : H2        : power  :                   : 2.5V    : 1B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H3        :        :                   :         : 1B        :                
+ser_rx                       : H3        : input  : 2.5 V             :         : 1B        : N              
 ~ALTERA_TDO~                 : H4        : output : 2.5 V             :         : 1B        : N              
 ~ALTERA_TDI~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H5        : input  : 2.5 V Schmitt Trigger :         : 1B        : N              
 VCC_ONE                      : H7        : power  :                   : 3.0V/3.3V :           :                
 GND                          : H8        : gnd    :                   :         :           :                
 VCC_ONE                      : H9        : power  :                   : 3.0V/3.3V :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H11       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H12       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H13       :        :                   :         : 6         :                
+sw[1]                        : H11       : input  : 2.5 V             :         : 6         : Y              
+sw[2]                        : H12       : input  : 2.5 V             :         : 6         : Y              
+sw[3]                        : H13       : input  : 2.5 V             :         : 6         : Y              
 GND                          : H14       : gnd    :                   :         :           :                
 ~ALTERA_TCK~ / RESERVED_INPUT : J1        : input  : 2.5 V Schmitt Trigger :         : 1B        : N              
 seg2[3]                      : J2        : output : 2.5 V             :         : 1B        : Y              
@@ -157,7 +157,7 @@ GND                          : J7        : gnd    :                   :         
 VCC_ONE                      : J8        : power  :                   : 3.0V/3.3V :           :                
 resetn                       : J9        : input  : 2.5 V             :         : 5         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : J11       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : J12       :        :                   :         : 6         :                
+sw[0]                        : J12       : input  : 2.5 V             :         : 6         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : J14       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J15       :        :                   :         : 6         :                
 seg2[2]                      : K2        : output : 2.5 V             :         : 1B        : Y              
@@ -173,7 +173,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : L5        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : L6        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L7        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L8        :        :                   :         : 3         :                
-ser_rx                       : L9        : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L9        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L10       :        :                   :         : 3         :                
 led[6]                       : L11       : output : 2.5 V             :         : 5         : Y              
 GND                          : L12       : gnd    :                   :         :           :                
@@ -218,5 +218,5 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : R7        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : R9        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R11       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R13       :        :                   :         : 3         :                
-ser_tx                       : R14       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R14       :        :                   :         : 3         :                
 GND                          : R15       : gnd    :                   :         :           :                

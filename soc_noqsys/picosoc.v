@@ -152,7 +152,7 @@ module picosoc (
 			if(mem_wstrb[1]) gpio_reg[15:8] <= mem_wdata[15:8];
 			if(mem_wstrb[2]) gpio_reg[23:16] <= mem_wdata[23:16];
 			//if(mem_wstrb[3]) gpio_reg[31:24] <= mem_wdata[31:24];
-			gpio[27:24] <= sw[3:0];
+			gpio_reg[31:24] <= {3'b000, sw[3:0]};
 		end
 	end
 	

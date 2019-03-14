@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/91947/Desktop/final/soc_noqsys/simulation/modelsim
 vpicorv32
-Z1 !s110 1552466622
+Z1 !s110 1552531007
 !i10b 1
 !s100 69DcXl1]==YAKV`Y9`9M@0
 Ib?`[`^zZh?DoK<@[4L[DN2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1552466622.000000
+Z7 !s108 1552531006.000000
 Z8 !s107 C:/Users/91947/Desktop/final/soc_noqsys/picorv32.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/91947/Desktop/final/soc_noqsys|C:/Users/91947/Desktop/final/soc_noqsys/picorv32.v|
 !i113 1
@@ -185,13 +185,13 @@ R10
 R11
 R12
 vpicosoc
-R1
+!s110 1552531006
 !i10b 1
-!s100 bGGl7eYbiEYX[g__89DUF2
-IHJ]_AgnJojUYC=8XMbFzf0
+!s100 QJAKebO^1QzMeXR?Vl:D42
+IK_<D^kC[4WO1goEAbXGL72
 R2
 R0
-w1552466429
+w1552530564
 8C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v
 FC:/Users/91947/Desktop/final/soc_noqsys/picosoc.v
 Z13 L0 20
@@ -209,11 +209,11 @@ R12
 vpicosoc_tb
 R1
 !i10b 1
-!s100 Q9[TOFKAdlWjVOP]UTf9X2
-IGNgFf21KDW[_^K]_[VzfT0
+!s100 WQ`3:^5QD1LB@G`0ZjPVZ1
+I[X29FBM_g_2;Ih1@l]Y^a2
 R2
 R0
-w1552465502
+w1552530617
 8C:/Users/91947/Desktop/final/soc_noqsys/picosoc_tb.v
 FC:/Users/91947/Desktop/final/soc_noqsys/picosoc_tb.v
 L0 2
@@ -221,7 +221,7 @@ R6
 r1
 !s85 0
 31
-R7
+Z14 !s108 1552531007.000000
 !s107 C:/Users/91947/Desktop/final/soc_noqsys/picosoc_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/91947/Desktop/final/soc_noqsys|C:/Users/91947/Desktop/final/soc_noqsys/picosoc_tb.v|
 !i113 1
@@ -238,17 +238,17 @@ R0
 w1552464878
 8C:/Users/91947/Desktop/final/soc_noqsys/ip/ram.v
 FC:/Users/91947/Desktop/final/soc_noqsys/ip/ram.v
-Z14 L0 39
+Z15 L0 39
 R6
 r1
 !s85 0
 31
-R7
+R14
 !s107 C:/Users/91947/Desktop/final/soc_noqsys/ip/ram.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/91947/Desktop/final/soc_noqsys/ip|C:/Users/91947/Desktop/final/soc_noqsys/ip/ram.v|
 !i113 1
 R10
-Z15 !s92 -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys/ip
+Z16 !s92 -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys/ip
 R12
 vrom
 R1
@@ -260,17 +260,17 @@ R0
 w1552464872
 8C:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v
 FC:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v
-R14
+R15
 R6
 r1
 !s85 0
 31
-R7
+R14
 !s107 C:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/91947/Desktop/final/soc_noqsys/ip|C:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v|
 !i113 1
 R10
-R15
+R16
 R12
 vsegment
 R1
@@ -287,7 +287,7 @@ R6
 r1
 !s85 0
 31
-R7
+R14
 !s107 C:/Users/91947/Desktop/final/soc_noqsys/segment.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/91947/Desktop/final/soc_noqsys|C:/Users/91947/Desktop/final/soc_noqsys/segment.v|
 !i113 1
@@ -309,7 +309,7 @@ R6
 r1
 !s85 0
 31
-R7
+R14
 !s107 C:/Users/91947/Desktop/final/soc_noqsys/simpleuart.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/91947/Desktop/final/soc_noqsys|C:/Users/91947/Desktop/final/soc_noqsys/simpleuart.v|
 !i113 1

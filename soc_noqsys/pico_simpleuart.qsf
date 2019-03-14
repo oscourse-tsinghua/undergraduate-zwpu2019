@@ -113,4 +113,8 @@ set_location_assignment PIN_R2 -to seg1[7]
 set_location_assignment PIN_B1 -to seg1[8]
 set_global_assignment -name EDA_TEST_BENCH_FILE picosoc_tb.v -section_id picosoc_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE rom_tb.v -section_id rom_tb
+set_location_assignment PIN_J12 -to sw[0]
+set_location_assignment PIN_H11 -to sw[1]
+set_location_assignment PIN_H12 -to sw[2]
+set_location_assignment PIN_H13 -to sw[3]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

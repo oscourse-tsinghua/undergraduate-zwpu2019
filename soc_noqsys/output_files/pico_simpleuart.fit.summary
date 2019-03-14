@@ -1,15 +1,15 @@
-Fitter Status : Successful - Wed Mar 13 16:58:59 2019
+Fitter Status : Successful - Thu Mar 14 10:57:08 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : pico_simpleuart
 Top-level Entity Name : picosoc
 Family : MAX 10
 Device : 10M08SAM153C8G
 Timing Models : Final
-Total logic elements : 3,869 / 8,064 ( 48 % )
-    Total combinational functions : 3,743 / 8,064 ( 46 % )
-    Dedicated logic registers : 1,428 / 8,064 ( 18 % )
-Total registers : 1428
-Total pins : 30 / 112 ( 27 % )
+Total logic elements : 3,843 / 8,064 ( 48 % )
+    Total combinational functions : 3,718 / 8,064 ( 46 % )
+    Dedicated logic registers : 1,424 / 8,064 ( 18 % )
+Total registers : 1424
+Total pins : 34 / 112 ( 30 % )
 Total virtual pins : 0
 Total memory bits : 264,192 / 387,072 ( 68 % )
 Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )

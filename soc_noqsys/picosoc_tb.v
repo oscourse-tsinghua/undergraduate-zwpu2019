@@ -22,6 +22,8 @@ picosoc u0 (
 
 	.ser_tx(tx),
 	.ser_rx(tx),
+	
+	.sw(4'b1111),
 	.led(led),
 	.seg1(seg1),
 	.seg2(seg2)
