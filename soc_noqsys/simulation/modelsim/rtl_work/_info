@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/91947/Desktop/final/soc_noqsys/simulation/modelsim
 vpicorv32
-Z1 !s110 1552027859
+Z1 !s110 1552466622
 !i10b 1
 !s100 69DcXl1]==YAKV`Y9`9M@0
 Ib?`[`^zZh?DoK<@[4L[DN2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1552027859.000000
+Z7 !s108 1552466622.000000
 Z8 !s107 C:/Users/91947/Desktop/final/soc_noqsys/picorv32.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/91947/Desktop/final/soc_noqsys|C:/Users/91947/Desktop/final/soc_noqsys/picorv32.v|
 !i113 1
@@ -187,11 +187,11 @@ R12
 vpicosoc
 R1
 !i10b 1
-!s100 BWZohj9IM;1D0bI`bfl;X3
-Im3N3Y<FhFj75GmX[nnjPi3
+!s100 bGGl7eYbiEYX[g__89DUF2
+IHJ]_AgnJojUYC=8XMbFzf0
 R2
 R0
-w1552027028
+w1552466429
 8C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v
 FC:/Users/91947/Desktop/final/soc_noqsys/picosoc.v
 Z13 L0 20
@@ -209,11 +209,11 @@ R12
 vpicosoc_tb
 R1
 !i10b 1
-!s100 _BPkdPFLD0P5YmM;mLYgM1
-IW36dgnPX]1P5[mDD4V>L@2
+!s100 Q9[TOFKAdlWjVOP]UTf9X2
+IGNgFf21KDW[_^K]_[VzfT0
 R2
 R0
-w1551254979
+w1552465502
 8C:/Users/91947/Desktop/final/soc_noqsys/picosoc_tb.v
 FC:/Users/91947/Desktop/final/soc_noqsys/picosoc_tb.v
 L0 2
@@ -235,7 +235,7 @@ R1
 IWZa7_J@=Uh?>[d>eOkN;R1
 R2
 R0
-w1551429050
+w1552464878
 8C:/Users/91947/Desktop/final/soc_noqsys/ip/ram.v
 FC:/Users/91947/Desktop/final/soc_noqsys/ip/ram.v
 Z14 L0 39
@@ -257,7 +257,7 @@ R1
 IEJEWW3RP]Cd08lDIdFiG93
 R2
 R0
-w1551429042
+w1552464872
 8C:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v
 FC:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v
 R14
@@ -271,6 +271,28 @@ R7
 !i113 1
 R10
 R15
+R12
+vsegment
+R1
+!i10b 1
+!s100 VZ_cLRb]V=h[3:AWFng]e1
+InZocFnM70?0@agO_LfT4J2
+R2
+R0
+w1552354476
+8C:/Users/91947/Desktop/final/soc_noqsys/segment.v
+FC:/Users/91947/Desktop/final/soc_noqsys/segment.v
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/91947/Desktop/final/soc_noqsys/segment.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/91947/Desktop/final/soc_noqsys|C:/Users/91947/Desktop/final/soc_noqsys/segment.v|
+!i113 1
+R10
+R11
 R12
 vsimpleuart
 R1

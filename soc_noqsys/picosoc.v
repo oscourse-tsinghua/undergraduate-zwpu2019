@@ -24,8 +24,13 @@ module picosoc (
 	output ser_tx,
 	input  ser_rx,
 	
-	output [7:0] gpio
+	input [3:0] sw,
+	
+	output [7:0] led,
+	output [8:0] seg1,
+	output [8:0] seg2
 );
+
 	parameter [0:0] BARREL_SHIFTER = 1;
 	parameter [0:0] ENABLE_MULDIV = 1;
 	parameter [0:0] ENABLE_COMPRESSED = 1;
@@ -55,18 +60,22 @@ module picosoc (
 	wire        simpleuart_reg_dat_wait;
 
 	reg [31:0] gpio_reg;
+	reg [31:0] seg_reg;
 	
 	reg ram_ready;
 	reg rom_ready;
 	reg gpio_ready;
+	reg seg_ready;
 	
-	assign mem_ready =  rom_ready || ram_ready || simpleuart_reg_div_sel || (simpleuart_reg_dat_sel && !simpleuart_reg_dat_wait) || gpio_ready;
+	
+	assign mem_ready =  rom_ready || ram_ready || simpleuart_reg_div_sel || (simpleuart_reg_dat_sel && !simpleuart_reg_dat_wait) || gpio_ready || seg_ready;
 
 	assign mem_rdata = rom_ready ? rom_rdata :
 							 ram_ready ? ram_rdata :
 							 simpleuart_reg_div_sel ? simpleuart_reg_div_do :
 							 simpleuart_reg_dat_sel ? simpleuart_reg_dat_do : 
-							 gpio_ready ? gpio_reg : 32'h 0000_0000;
+							 gpio_ready ? gpio_reg :
+							 seg_ready ? seg_reg : 32'h 0000_0000;
 			
 	picorv32 #(
 //		.STACKADDR(STACKADDR),
@@ -137,11 +146,40 @@ module picosoc (
 
 	always @(posedge clk) begin
 		if(!resetn) 
-			gpio_reg <= 0;
-		else if (mem_valid && mem_addr == 32'h0300_0000) 
-			gpio_reg <= mem_wdata;
+			gpio_reg <= 8'b11111111;
+		else if (mem_valid && mem_addr == 32'h0300_0000) begin
+			if(mem_wstrb[0]) gpio_reg[7:0] <= mem_wdata[7:0];
+			if(mem_wstrb[1]) gpio_reg[15:8] <= mem_wdata[15:8];
+			if(mem_wstrb[2]) gpio_reg[23:16] <= mem_wdata[23:16];
+			//if(mem_wstrb[3]) gpio_reg[31:24] <= mem_wdata[31:24];
+			gpio[27:24] <= sw[3:0];
+		end
 	end
 	
-	assign gpio = gpio_reg;
+	
+	assign led = gpio_reg[7:0];
+	
+	always @(posedge clk) begin
+		seg_ready <= mem_valid && !mem_ready && mem_addr == 32'h0300_0004;
+	end
+	
+	always @(posedge clk) begin
+		if(!resetn) begin
+			seg_reg <= 0;
+		end
+		else if(mem_valid && mem_addr == 32'h0300_0004) begin
+			if(mem_wstrb[0]) seg_reg[7:0] <= mem_wdata[7:0];
+			if(mem_wstrb[1]) seg_reg[15:8] <= mem_wdata[15:8];
+			if(mem_wstrb[2]) seg_reg[23:16] <= mem_wdata[23:16];
+			if(mem_wstrb[3]) seg_reg[31:24] <= mem_wdata[31:24];
+		end
+	end
+	
+	segment seg_inst(
+		.seg_data_1(seg_reg[3:0]),  //四位输入数据信号
+		.seg_data_2(seg_reg[11:8]),  //四位输入数据信号
+		.segment_led_1(seg1),  //数码管1，MSB~LSB = SEG,DP,G,F,E,D,C,B,A
+		.segment_led_2(seg2)   //数码管2，MSB~LSB = SEG,DP,G,F,E,D,C,B,A
+   );
 	
 endmodule

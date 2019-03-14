@@ -1,0 +1,41 @@
+module rom_test (
+	input clk,
+	input resetn,
+	output reg [7:0] led
+);
+
+	wire [31:0] inst;
+	reg [9:0] inst_addr;
+
+
+	always @(posedge clk) begin
+		if(!resetn) begin
+			inst_addr <= 0;
+		end
+		else begin
+			inst_addr <= inst_addr + 	10'h4;
+		end
+	end
+	
+	always @(posedge clk) begin
+		if(!resetn) begin
+			led <= 8'b10101010;
+		end
+		else begin
+			if(inst_addr == 12'h0 && inst == 32'h00000093) begin
+				led <= 8'b00000001;
+			end
+			else if(inst_addr == 12'h4 && inst == 32'h00005137) begin
+				led <= 8'b00000011;
+			end
+		end
+	end
+	
+	
+	rom rom_inst(
+		.address(inst_addr[9:2]),
+		.clock(clk),
+		.q(inst)
+	);
+	
+endmodule

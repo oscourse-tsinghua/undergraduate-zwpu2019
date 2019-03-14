@@ -10,6 +10,7 @@ vlog -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys {C
 vlog -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys {C:/Users/91947/Desktop/final/soc_noqsys/simpleuart.v}
 vlog -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys/ip {C:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v}
 vlog -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys/ip {C:/Users/91947/Desktop/final/soc_noqsys/ip/ram.v}
+vlog -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys {C:/Users/91947/Desktop/final/soc_noqsys/segment.v}
 
 vlog -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys {C:/Users/91947/Desktop/final/soc_noqsys/picosoc_tb.v}
 

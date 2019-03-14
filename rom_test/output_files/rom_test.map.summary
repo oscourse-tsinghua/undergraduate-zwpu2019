@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Wed Mar 13 15:25:31 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : rom_test
+Top-level Entity Name : rom_test
+Family : MAX 10
+Total logic elements : 32
+    Total combinational functions : 31
+    Dedicated logic registers : 17
+Total registers : 17
+Total pins : 29
+Total virtual pins : 0
+Total memory bits : 256
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

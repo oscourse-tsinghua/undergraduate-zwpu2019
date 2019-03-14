@@ -1,0 +1,18 @@
+Fitter Status : Successful - Wed Mar 13 15:25:43 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : rom_test
+Top-level Entity Name : rom_test
+Family : MAX 10
+Device : 10M08SAM153I7G
+Timing Models : Final
+Total logic elements : 32 / 8,064 ( < 1 % )
+    Total combinational functions : 32 / 8,064 ( < 1 % )
+    Dedicated logic registers : 17 / 8,064 ( < 1 % )
+Total registers : 17
+Total pins : 29 / 112 ( 26 % )
+Total virtual pins : 0
+Total memory bits : 256 / 387,072 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 1 ( 0 % )

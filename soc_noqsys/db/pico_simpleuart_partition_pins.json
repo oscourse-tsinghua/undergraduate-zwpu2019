@@ -8,35 +8,91 @@
 					"strict" : false
 				},
 				{
-					"name" : "gpio[0]",
+					"name" : "led[0]",
 					"strict" : false
 				},
 				{
-					"name" : "gpio[1]",
+					"name" : "led[1]",
 					"strict" : false
 				},
 				{
-					"name" : "gpio[2]",
+					"name" : "led[2]",
 					"strict" : false
 				},
 				{
-					"name" : "gpio[3]",
+					"name" : "led[3]",
 					"strict" : false
 				},
 				{
-					"name" : "gpio[4]",
+					"name" : "led[4]",
 					"strict" : false
 				},
 				{
-					"name" : "gpio[5]",
+					"name" : "led[5]",
 					"strict" : false
 				},
 				{
-					"name" : "gpio[6]",
+					"name" : "led[6]",
 					"strict" : false
 				},
 				{
-					"name" : "gpio[7]",
+					"name" : "led[7]",
+					"strict" : false
+				},
+				{
+					"name" : "seg1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg2[6]",
 					"strict" : false
 				},
 				{

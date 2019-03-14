@@ -3,6 +3,8 @@ module picosoc_tb;
 
 reg clk, rst;
 wire rx, tx;
+wire [7:0] led;
+wire [8:0] seg1, seg2;
 
 initial begin
 	clk = 0;
@@ -19,7 +21,10 @@ picosoc u0 (
 	.resetn(rst),
 
 	.ser_tx(tx),
-	.ser_rx(tx)
+	.ser_rx(tx),
+	.led(led),
+	.seg1(seg1),
+	.seg2(seg2)
 );
 
 

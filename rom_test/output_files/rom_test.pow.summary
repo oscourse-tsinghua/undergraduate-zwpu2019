@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Wed Mar 13 15:25:53 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : rom_test
+Top-level Entity Name : rom_test
+Family : MAX 10
+Device : 10M08SAM153I7G
+Power Models : Final
+Total Thermal Power Dissipation : 116.46 mW
+Core Dynamic Thermal Power Dissipation : 0.84 mW
+Core Static Thermal Power Dissipation : 110.74 mW
+I/O Thermal Power Dissipation : 4.88 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

@@ -53,6 +53,34 @@ set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
 set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name EXTERNAL_FLASH_FALLBACK_ADDRESS 00000000
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE IMAGE WITH ERAM"
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH picosoc_tb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME picosoc_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id picosoc_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME picosoc_tb -section_id picosoc_tb
+set_location_assignment PIN_J5 -to clk
+set_location_assignment PIN_J9 -to resetn
+set_global_assignment -name EDA_TEST_BENCH_NAME rom_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id rom_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME rom_tb -section_id rom_tb
+set_location_assignment PIN_N15 -to led[0]
+set_location_assignment PIN_N14 -to led[1]
+set_location_assignment PIN_M14 -to led[2]
+set_location_assignment PIN_M12 -to led[3]
+set_location_assignment PIN_L15 -to led[4]
+set_location_assignment PIN_K12 -to led[5]
+set_location_assignment PIN_L11 -to led[6]
+set_location_assignment PIN_K11 -to led[7]
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -62,33 +90,27 @@ set_global_assignment -name VERILOG_FILE simpleuart.v
 set_global_assignment -name QIP_FILE ip/rom.qip
 set_global_assignment -name QIP_FILE ip/ram.qip
 set_global_assignment -name SOURCE_FILE db/pico_simpleuart.cmp.rdb
-set_global_assignment -name ENABLE_OCT_DONE OFF
-set_global_assignment -name EXTERNAL_FLASH_FALLBACK_ADDRESS 00000000
-set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
-set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE COMP IMAGE WITH ERAM"
-set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
-set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
-set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
-set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
-set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 set_global_assignment -name VERILOG_FILE picosoc_tb.v
-set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH picosoc_tb -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_NAME picosoc_tb -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id picosoc_tb
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME picosoc_tb -section_id picosoc_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE picosoc_tb.v -section_id picosoc_tb
-set_location_assignment PIN_J5 -to clk
-set_location_assignment PIN_J9 -to resetn
-set_location_assignment PIN_G15 -to ser_rx
-set_location_assignment PIN_C14 -to ser_tx
-set_location_assignment PIN_N15 -to gpio[0]
-set_location_assignment PIN_N14 -to gpio[1]
-set_location_assignment PIN_M14 -to gpio[2]
-set_location_assignment PIN_L15 -to gpio[4]
-set_location_assignment PIN_L11 -to gpio[6]
-set_location_assignment PIN_K11 -to gpio[7]
-set_location_assignment PIN_M12 -to gpio[3]
-set_location_assignment PIN_K12 -to gpio[5]
 set_global_assignment -name SDC_FILE clock.sdc
+set_global_assignment -name VERILOG_FILE segment.v
+set_location_assignment PIN_E1 -to seg2[0]
+set_location_assignment PIN_D2 -to seg2[1]
+set_location_assignment PIN_K2 -to seg2[2]
+set_location_assignment PIN_J2 -to seg2[3]
+set_location_assignment PIN_G2 -to seg2[4]
+set_location_assignment PIN_F5 -to seg2[5]
+set_location_assignment PIN_G5 -to seg2[6]
+set_location_assignment PIN_L1 -to seg2[7]
+set_location_assignment PIN_E2 -to seg2[8]
+set_location_assignment PIN_A3 -to seg1[0]
+set_location_assignment PIN_A2 -to seg1[1]
+set_location_assignment PIN_P2 -to seg1[2]
+set_location_assignment PIN_P1 -to seg1[3]
+set_location_assignment PIN_N1 -to seg1[4]
+set_location_assignment PIN_C1 -to seg1[5]
+set_location_assignment PIN_C2 -to seg1[6]
+set_location_assignment PIN_R2 -to seg1[7]
+set_location_assignment PIN_B1 -to seg1[8]
+set_global_assignment -name EDA_TEST_BENCH_FILE picosoc_tb.v -section_id picosoc_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE rom_tb.v -section_id rom_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
