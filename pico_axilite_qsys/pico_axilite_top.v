@@ -3,7 +3,7 @@ module pico_axilite_top(
 	input rst_n,
 	
 	input rx,
-	output tx,
+	output [35:0] tx,
 	
 	input [3:0] sw,
 	output [7:0] led,
@@ -12,12 +12,15 @@ module pico_axilite_top(
 );
 
 	wire [3:0] seg1_value, seg2_value;
-
+	wire tx_value;
+	
+	assign tx = {36{tx_value}};
+	
 	pico_qsys u0 (
 		.clk_clk       (clk),       //   clk.clk
 		.reset_reset_n (rst_n), // reset.reset_n
 		.uart_rxd      (rx),      //  uart.rxd
-		.uart_txd      (tx),       //      .txd
+		.uart_txd      (tx_value),       //      .txd
 		.led_export		(led),
 		.seg1_export	(seg1_value),
 		.seg2_export	(seg2_value),

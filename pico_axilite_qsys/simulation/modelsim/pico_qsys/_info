@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 d/home/z/Desktop/pico_axilite_qsys/simulation/modelsim
 valtera_avalon_sc_fifo
-Z1 !s110 1551753693
+Z1 !s110 1552821344
 !i10b 1
 !s100 4mK@em][G=j]om3zJIhOc0
 I1l5L8a>K^U2SM<jzVKfEK0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1551753051
+Z3 w1552821071
 8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_avalon_sc_fifo.v
 F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_avalon_sc_fifo.v
 Z4 L0 21
@@ -23,7 +23,7 @@ Z5 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z6 !s108 1551753692.000000
+Z6 !s108 1552821344.000000
 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_avalon_sc_fifo.v|
 !s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_avalon_sc_fifo.v|
 !i113 1
@@ -39,15 +39,15 @@ R2
 Z10 !s105 altera_merlin_arbitrator_sv_unit
 S1
 R0
-R3
-Z11 8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_arbitrator.sv
-Z12 F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_arbitrator.sv
+Z11 w1552821072
+Z12 8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_arbitrator.sv
+Z13 F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_arbitrator.sv
 L0 228
 R5
 r1
 !s85 0
 31
-Z13 !s108 1551753693.000000
+R6
 Z14 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_arbitrator.sv|
 Z15 !s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_arbitrator.sv|
 !i113 1
@@ -63,15 +63,15 @@ R2
 R10
 S1
 R0
-R3
 R11
 R12
+R13
 L0 103
 R5
 r1
 !s85 0
 31
-R13
+R6
 R14
 R15
 !i113 1
@@ -95,7 +95,7 @@ R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv|
 !s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv|
 !i113 1
@@ -119,7 +119,7 @@ R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_burst_uncompressor.sv|
 !s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_burst_uncompressor.sv|
 !i113 1
@@ -143,7 +143,7 @@ R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_slave_agent.sv|
 !s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_slave_agent.sv|
 !i113 1
@@ -151,7 +151,7 @@ R16
 R17
 valtera_merlin_slave_translator
 R9
-R1
+Z18 !s110 1552821345
 !i10b 1
 !s100 k`9[YAn_dLTkg;GE`mOb61
 Ik_3_fA<=TmgJ^f:_obP=W1
@@ -167,7 +167,7 @@ R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_slave_translator.sv|
 !s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_merlin_slave_translator.sv|
 !i113 1
@@ -188,7 +188,7 @@ R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_reset_controller.v|
 !s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_reset_controller.v|
 !i113 1
@@ -209,20 +209,20 @@ R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_reset_synchronizer.v|
 !s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_reset_synchronizer.v|
 !i113 1
 R7
 R8
 vpico_qsys
-!s110 1551753692
+R1
 !i10b 1
-!s100 kiI^0QDTP<?R@2XMXOl;]0
-IT1llGDH^N`6>K`F06i;jK1
+!s100 T>Qn^;9_OWJdimZXX4W6b0
+IkAa[Ymdh^LYW0LcfndB=W2
 R2
 R0
-w1551753048
+Z19 w1552821068
 8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/pico_qsys.v
 F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/pico_qsys.v
 L0 6
@@ -238,7 +238,7 @@ R7
 !s92 -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys
 vpico_qsys_irq_mapper
 R9
-R1
+R18
 !i10b 1
 !s100 Lf6>FCBf8?S9mn<h:5=DQ2
 IY88NWMILJm?mizOA?Eeh@0
@@ -254,17 +254,38 @@ R5
 r1
 !s85 0
 31
-R13
+Z20 !s108 1552821345.000000
 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_irq_mapper.sv|
 !s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_irq_mapper.sv|
 !i113 1
 R16
 R17
+vpico_qsys_led
+R1
+!i10b 1
+!s100 TRFmICKjj>MQc2aT[O9BI1
+IOYQ?SlPc3bMz=L:MkfA?U1
+R2
+R0
+R19
+8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_led.v
+F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_led.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_led.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_led.v|
+!i113 1
+R7
+R8
 vpico_qsys_mm_interconnect_0
 R1
 !i10b 1
-!s100 >zMT`LQzUjUaG8oFkV[c30
-IH<Lh4NHZ]m]N4HDjkZ_M02
+!s100 9=WQeF>>F2nBVB04QzEMH3
+I26Gz[zSzBk]HLbKonlS;P1
 R2
 R0
 R3
@@ -275,7 +296,7 @@ R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0.v|
 !s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0.v|
 !i113 1
@@ -288,7 +309,7 @@ R1
 IC1X^YdgPQz]CjzaWg?Lz90
 R2
 R0
-Z18 w1551753052
+R11
 8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter.v
 F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter.v
 L0 9
@@ -296,7 +317,7 @@ R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter.v|
 !i113 1
@@ -304,7 +325,7 @@ R7
 R8
 vpico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0
 R9
-Z19 !s110 1551753694
+R18
 !i10b 1
 !s100 BMEWI3?][hOS`:ii9DBHL1
 Id4^1G9D`c_hjS;>6=U_;10
@@ -312,7 +333,7 @@ R2
 !s105 pico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0_sv_unit
 S1
 R0
-R18
+R11
 8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
 F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
 L0 66
@@ -320,7 +341,7 @@ R5
 r1
 !s85 0
 31
-R13
+R20
 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
 !s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
 !i113 1
@@ -328,23 +349,23 @@ R16
 R17
 vpico_qsys_mm_interconnect_0_cmd_demux
 R9
-R19
+R18
 !i10b 1
-!s100 zIh>?gGb>368;WG5]^z2:1
-I6VI^kGAQ@_0GC;?g<2@591
+!s100 4g8Qb8V1@l<bcF92P62`I0
+IV2z7dcG]kfi;ji@KU;G@X1
 R2
 !s105 pico_qsys_mm_interconnect_0_cmd_demux_sv_unit
 S1
 R0
-R3
+R11
 8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_demux.sv
 F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_demux.sv
-Z20 L0 43
+Z21 L0 43
 R5
 r1
 !s85 0
 31
-Z21 !s108 1551753694.000000
+R20
 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_demux.sv|
 !s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_demux.sv|
 !i113 1
@@ -352,15 +373,15 @@ R16
 R17
 vpico_qsys_mm_interconnect_0_cmd_mux
 R9
-R19
+R18
 !i10b 1
-!s100 CFo65FonWLEX?APga6PoW2
-I:J_S4iI]g:NaoU`IH]@@b2
+!s100 4c5;4Ioh4gGOEV3>fcLz51
+Ig75j0FGk^oZiYWVUa2dMb0
 R2
 !s105 pico_qsys_mm_interconnect_0_cmd_mux_sv_unit
 S1
 R0
-R3
+R11
 8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_mux.sv
 F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_mux.sv
 Z22 L0 51
@@ -368,7 +389,7 @@ R5
 r1
 !s85 0
 31
-R21
+R20
 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_mux.sv|
 !s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_mux.sv|
 !i113 1
@@ -376,10 +397,10 @@ R16
 R17
 vpico_qsys_mm_interconnect_0_router
 R9
-R19
+R18
 !i10b 1
-!s100 eVGA1RjYAL?_g9@g1Dd^X2
-IL4Qmo:F4na65kH;oS0PSz3
+!s100 R^AozFKWb:?@>iL7:9P2Z3
+Ig6KMJ1]BjZ_oMoMB?XY6L0
 R2
 Z23 !s105 pico_qsys_mm_interconnect_0_router_sv_unit
 S1
@@ -392,7 +413,7 @@ R5
 r1
 !s85 0
 31
-R21
+R20
 Z27 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router.sv|
 Z28 !s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router.sv|
 !i113 1
@@ -400,10 +421,10 @@ R16
 R17
 vpico_qsys_mm_interconnect_0_router_002
 R9
-R19
+R18
 !i10b 1
-!s100 fIi3Lcm4H9HU9N`4`>56g0
-IIh752^PLc7<6Cn=R0NACB1
+!s100 j1^iD;CZR8kU@g0^?YVO83
+IJG>iQe<`mh00Jj9ooIga:1
 R2
 Z29 !s105 pico_qsys_mm_interconnect_0_router_002_sv_unit
 S1
@@ -416,7 +437,7 @@ R5
 r1
 !s85 0
 31
-R21
+R20
 Z32 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router_002.sv|
 Z33 !s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router_002.sv|
 !i113 1
@@ -424,10 +445,10 @@ R16
 R17
 vpico_qsys_mm_interconnect_0_router_002_default_decode
 R9
-R19
+R18
 !i10b 1
-!s100 C@2BNd[mZjRa_c^QjiPl11
-IZ9oYM[Coz<MGUWCX6EE[V3
+!s100 MhiG3ISHlbbMecjRUi;<>2
+Ii0FCL]_ek]_87KNXzX4[A0
 R2
 R29
 S1
@@ -440,7 +461,7 @@ R5
 r1
 !s85 0
 31
-R21
+R20
 R32
 R33
 !i113 1
@@ -448,10 +469,10 @@ R16
 R17
 vpico_qsys_mm_interconnect_0_router_default_decode
 R9
-R19
+R18
 !i10b 1
-!s100 [`CVh9a=Fhc^l;bkh=_fD1
-I[0KK;[CU?f;^O?;`5aBQ:0
+!s100 fXcW<D:eC68[ljP8dh7hj2
+IK_8Z3E`Ja>6IEX=FEbeVE1
 R2
 R23
 S1
@@ -464,7 +485,7 @@ R5
 r1
 !s85 0
 31
-R21
+R20
 R27
 R28
 !i113 1
@@ -472,23 +493,23 @@ R16
 R17
 vpico_qsys_mm_interconnect_0_rsp_demux
 R9
-R19
+R18
 !i10b 1
-!s100 hIjTbL?fHf809?V>OYkCO2
-IeV0@Q<Q9P;Pl6<lPLF7j_1
+!s100 6F0gaaMNh3GdX;7:]YeYo2
+IKV<YiLD;?zB0hTR`9;zJ11
 R2
 !s105 pico_qsys_mm_interconnect_0_rsp_demux_sv_unit
 S1
 R0
-R3
+R11
 8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_demux.sv
 F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_demux.sv
-R20
+R21
 R5
 r1
 !s85 0
 31
-R21
+R20
 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_demux.sv|
 !s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_demux.sv|
 !i113 1
@@ -496,15 +517,15 @@ R16
 R17
 vpico_qsys_mm_interconnect_0_rsp_mux
 R9
-R19
+R18
 !i10b 1
-!s100 9ffIC1hT6NlMC:DbCzn810
-IMoCDcB5E@ziflD7Q7A=ZG1
+!s100 O]lJEOHCQYaEzn;bWJH[P0
+I00dkaFGn:`6=n8h]ckCYM0
 R2
 !s105 pico_qsys_mm_interconnect_0_rsp_mux_sv_unit
 S1
 R0
-R3
+R11
 8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_mux.sv
 F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_mux.sv
 R22
@@ -512,156 +533,200 @@ R5
 r1
 !s85 0
 31
-R21
+R20
 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_mux.sv|
 !s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_mux.sv|
 !i113 1
 R16
 R17
-vpico_qsys_onchip_memory2_0
+vpico_qsys_RAM
 R1
 !i10b 1
-!s100 ffa3I>jYA]KJLnjREGIC:0
-IV<=M0lh17:]?mT_d6^3Q42
+!s100 W3clIK9KPBODNz0ii2[b71
+InT064h]@d;DVJ6i:BQocZ3
 R2
 R0
-Z35 w1551753049
-8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v
-F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v
+R19
+8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_RAM.v
+F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_RAM.v
 R4
 R5
 r1
 !s85 0
 31
-R13
-!s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v|
-!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v|
+R6
+!s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_RAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_RAM.v|
 !i113 1
 R7
 R8
-vpico_qsys_onchip_memory2_1
+npico_qsys_@r@a@m
+vpico_qsys_ROM
 R1
 !i10b 1
-!s100 IoT^ZgbAlC_IV=[`TFEV71
-IVdFnGQ=6n^5<m<=PJE`nf2
+!s100 KlDgW9?g`IfgEiG[U?=JT3
+I;WTkQbMN2ilFJkogmgX333
 R2
 R0
-R35
-8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v
-F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v
+R19
+8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_ROM.v
+F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_ROM.v
 R4
 R5
 r1
 !s85 0
 31
-R13
-!s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v|
+R6
+!s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_ROM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_ROM.v|
+!i113 1
+R7
+R8
+npico_qsys_@r@o@m
+vpico_qsys_seg1
+R1
+!i10b 1
+!s100 InN_hKh<X?ih>LmzhNmPL2
+ITeHikUTfV:OJ21[kM[]zI2
+R2
+R0
+Z35 w1552821069
+8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_seg1.v
+F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_seg1.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_seg1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_seg1.v|
+!i113 1
+R7
+R8
+vpico_qsys_sw
+R1
+!i10b 1
+!s100 YMbKz5<1f9M=OZXE6V24k0
+I>58nT1W71M7klP<PE1Fdn1
+R2
+R0
+R35
+8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_sw.v
+F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_sw.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_sw.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_sw.v|
 !i113 1
 R7
 R8
 vpico_qsys_uart_0
 R1
 !i10b 1
-!s100 jn]L0M65B:eaR0mFkdMX[2
-IHHnWfc=ozdFVXjQbUP6:81
+!s100 melETo]m9YcFV6l3fGTYM2
+I`cXT[ze3i]F0_3IBAKCnb0
 R2
 R0
-Z36 w1551753050
-Z37 8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v
-Z38 F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v
-L0 789
+R35
+Z36 8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v
+Z37 F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v
+L0 800
 R5
 r1
 !s85 0
 31
-R13
-Z39 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v|
-Z40 !s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v|
+R6
+Z38 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v|
+Z39 !s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v|
 !i113 1
 R7
 R8
 vpico_qsys_uart_0_regs
 R1
 !i10b 1
-!s100 WBWJhYLJAoDAc`K9FJ]0m3
-I_TDVBh8af4jhBiZ60@=lS0
+!s100 l<UeiFL^`FM@K^_U:bBWJ1
+IQ;0:^02G@1TjGBbe5OkLN1
 R2
 R0
+R35
 R36
 R37
-R38
 L0 544
 R5
 r1
 !s85 0
 31
-R13
+R6
+R38
 R39
-R40
 !i113 1
 R7
 R8
 vpico_qsys_uart_0_rx
 R1
 !i10b 1
-!s100 hN=[Jo0=1R_kNYC2fIDmD3
-I7kOhm><S0Bg9@0;Xe:d4;1
+!s100 ;nIMz_JUGJa0ET6<1Fb^C1
+Ib1FhnmQ_36a42[WX=Ij:@0
 R2
 R0
+R35
 R36
 R37
-R38
 L0 286
 R5
 r1
 !s85 0
 31
-R13
+R6
+R38
 R39
-R40
 !i113 1
 R7
 R8
 vpico_qsys_uart_0_rx_stimulus_source
 R1
 !i10b 1
-!s100 h^65UWPL_^eO6dXPPMoCc0
-IYd1K_a0Yhjjo0]I=0XBOk3
+!s100 PZ>D5QSB=;Wb_[cPb^EjW1
+IDFRU]YV3MaF9]3oWz;I;I2
 R2
 R0
+R35
 R36
 R37
-R38
 L0 193
 R5
 r1
 !s85 0
 31
-R13
+R6
+R38
 R39
-R40
 !i113 1
 R7
 R8
 vpico_qsys_uart_0_tx
 R1
 !i10b 1
-!s100 ISPLg^X:a;l>Z4^82VjIm0
-I_Q3Q8CiL?7`ET;?ZL5=@T0
+!s100 oFF2la^F6PmAgkAf]C4oF1
+I6jP@DYY@NY:1gN4H1T]>32
 R2
 R0
+R35
 R36
 R37
-R38
 R4
 R5
 r1
 !s85 0
 31
-R13
+R6
+R38
 R39
-R40
 !i113 1
 R7
 R8
@@ -672,17 +737,17 @@ R1
 IWV7KARVAd5[5imP^GDf?F0
 R2
 R0
-R35
-Z41 8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v
-Z42 F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v
+R19
+Z40 8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v
+Z41 F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v
 L0 57
 R5
 r1
 !s85 0
 31
-R13
-Z43 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v|
-Z44 !s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v|
+R6
+Z42 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v|
+Z43 !s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v|
 !i113 1
 R7
 R8
@@ -693,17 +758,17 @@ R1
 I?Qi9?_Cm76<CD=HYkb>8K0
 R2
 R0
-R35
+R19
+R40
 R41
-R42
 L0 2447
 R5
 r1
 !s85 0
 31
-R13
+R6
+R42
 R43
-R44
 !i113 1
 R7
 R8
@@ -714,17 +779,17 @@ R1
 ImEkbF9iiK;c>YSU5^:]>50
 R2
 R0
-R35
+R19
+R40
 R41
-R42
 L0 2661
 R5
 r1
 !s85 0
 31
-R13
+R6
+R42
 R43
-R44
 !i113 1
 R7
 R8
@@ -735,7 +800,7 @@ R1
 IRK<43:^jMjmVCfTOmMoK21
 R2
 R0
-R35
+R19
 8/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v
 F/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v
 L0 1
@@ -743,7 +808,7 @@ R5
 r1
 !s85 0
 31
-R13
+R6
 !s107 /home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v|
 !s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules|/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v|
 !i113 1
@@ -756,17 +821,17 @@ R1
 Ia2WS`R8A25g`D^XL6F6<U1
 R2
 R0
-R35
+R19
+R40
 R41
-R42
 L0 2350
 R5
 r1
 !s85 0
 31
-R13
+R6
+R42
 R43
-R44
 !i113 1
 R7
 R8
@@ -777,17 +842,17 @@ R1
 IFIORNjlCKiaR`MQ]mfCzj2
 R2
 R0
-R35
+R19
+R40
 R41
-R42
 L0 2248
 R5
 r1
 !s85 0
 31
-R13
+R6
+R42
 R43
-R44
 !i113 1
 R7
 R8
@@ -798,17 +863,17 @@ R1
 IO[Yb=45ee`?FRDQR4^oH62
 R2
 R0
-R35
+R19
+R40
 R41
-R42
 L0 2127
 R5
 r1
 !s85 0
 31
-R13
+R6
+R42
 R43
-R44
 !i113 1
 R7
 R8
@@ -819,17 +884,17 @@ R1
 Io@8U3n]7?Cdb=WfV^gE6V0
 R2
 R0
-R35
+R19
+R40
 R41
-R42
 L0 2104
 R5
 r1
 !s85 0
 31
-R13
+R6
+R42
 R43
-R44
 !i113 1
 R7
 R8
@@ -840,17 +905,17 @@ R1
 Io5G6Dm4bjg?mj<:1W5Wb:3
 R2
 R0
-R35
+R19
+R40
 R41
-R42
 L0 2745
 R5
 r1
 !s85 0
 31
-R13
+R6
+R42
 R43
-R44
 !i113 1
 R7
 R8

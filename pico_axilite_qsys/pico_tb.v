@@ -18,7 +18,7 @@ initial begin
 	#100 rst = 1;
 end
 
-assign tx = 1;
+assign rx = 1;
 
 pico_axilite_top uo(
 	.clk(clk),

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="pico_qsys" kind="system" version="16.0" fabric="QSYS">
  <!-- Format version 16.0 211 (Future versions may contain additional information.) -->
- <!-- 2019.03.15.14:10:54 -->
+ <!-- 2019.03.17.18:46:05 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +53,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1552630247</value>
+  <value>1552819555</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -2264,7 +2264,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.RESET_VALUE</name>
-   <value>170</value>
+   <value>255</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -2284,7 +2284,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.resetvalue</name>
-   <value>170</value>
+   <value>255</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -2348,7 +2348,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="resetValue">
    <type>long</type>
-   <value>170</value>
+   <value>255</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -5967,7 +5967,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.FIXED_BAUD</name>
-   <value>1</value>
+   <value>0</value>
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.FREQ</name>
@@ -6043,7 +6043,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="fixedBaud">
    <type>boolean</type>
-   <value>true</value>
+   <value>false</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -11822,5 +11822,5 @@ parameters are a RESULT of the module parameters. -->
   <version>16.0</version>
  </plugin>
  <reportVersion>16.0 211</reportVersion>
- <uniqueIdentifier>28C2DD669EEB000001697FF9782E</uniqueIdentifier>
+ <uniqueIdentifier>28C2DD669EEB000001698B421B00</uniqueIdentifier>
 </EnsembleReport>

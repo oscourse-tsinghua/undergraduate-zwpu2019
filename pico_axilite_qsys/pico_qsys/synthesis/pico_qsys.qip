@@ -2,7 +2,7 @@ set_global_assignment -entity "pico_qsys" -library "pico_qsys" -name IP_TOOL_NAM
 set_global_assignment -entity "pico_qsys" -library "pico_qsys" -name IP_TOOL_VERSION "16.0"
 set_global_assignment -entity "pico_qsys" -library "pico_qsys" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "pico_qsys" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../pico_qsys.sopcinfo"]
-set_global_assignment -entity "pico_qsys" -library "pico_qsys" -name SLD_INFO "QSYS_NAME pico_qsys HAS_SOPCINFO 1 GENERATION_ID 1552630247"
+set_global_assignment -entity "pico_qsys" -library "pico_qsys" -name SLD_INFO "QSYS_NAME pico_qsys HAS_SOPCINFO 1 GENERATION_ID 1552819555"
 set_global_assignment -library "pico_qsys" -name MISC_FILE [file join $::quartus(qip_path) "../pico_qsys.cmp"]
 set_global_assignment -library "pico_qsys" -name SLD_FILE [file join $::quartus(qip_path) "pico_qsys.regmap"]
 set_global_assignment -library "pico_qsys" -name SLD_FILE [file join $::quartus(qip_path) "pico_qsys.debuginfo"]
@@ -16,7 +16,7 @@ set_global_assignment -entity "pico_qsys" -library "pico_qsys" -name IP_COMPONEN
 set_global_assignment -entity "pico_qsys" -library "pico_qsys" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "pico_qsys" -library "pico_qsys" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "pico_qsys" -library "pico_qsys" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "pico_qsys" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTU1MjYzMDI0Nw==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "pico_qsys" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTU1MjgxOTU1NQ==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "pico_qsys" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::TUFYIDEw::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "pico_qsys" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::MTBNMDhTQU0xNTNDOEc=::QXV0byBERVZJQ0U="
 set_global_assignment -entity "pico_qsys" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::OA==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
@@ -453,7 +453,7 @@ set_global_assignment -entity "pico_qsys_uart_0" -library "pico_qsys" -name IP_C
 set_global_assignment -entity "pico_qsys_uart_0" -library "pico_qsys" -name IP_COMPONENT_VERSION "MTYuMA=="
 set_global_assignment -entity "pico_qsys_uart_0" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "YmF1ZA==::MTE1MjAw::QmF1ZCByYXRlIChicHMp"
 set_global_assignment -entity "pico_qsys_uart_0" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "ZGF0YUJpdHM=::OA==::RGF0YSBiaXRz"
-set_global_assignment -entity "pico_qsys_uart_0" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "Zml4ZWRCYXVk::dHJ1ZQ==::Rml4ZWQgYmF1ZCByYXRl"
+set_global_assignment -entity "pico_qsys_uart_0" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "Zml4ZWRCYXVk::ZmFsc2U=::Rml4ZWQgYmF1ZCByYXRl"
 set_global_assignment -entity "pico_qsys_uart_0" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "cGFyaXR5::Tk9ORQ==::UGFyaXR5"
 set_global_assignment -entity "pico_qsys_uart_0" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "c2ltSW50ZXJhY3RpdmVJbnB1dEVuYWJsZQ==::ZmFsc2U=::SW50ZXJhY3RpdmUgc3RpbXVsdXMgd2luZG93"
 set_global_assignment -entity "pico_qsys_uart_0" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "c2ltSW50ZXJhY3RpdmVPdXRwdXRFbmFibGU=::ZmFsc2U=::U3RyZWFtaW5nIG91dHB1dCB3aW5kb3c="
@@ -544,7 +544,7 @@ set_global_assignment -entity "pico_qsys_led" -library "pico_qsys" -name IP_COMP
 set_global_assignment -entity "pico_qsys_led" -library "pico_qsys" -name IP_COMPONENT_VERSION "MTYuMA=="
 set_global_assignment -entity "pico_qsys_led" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "Yml0TW9kaWZ5aW5nT3V0UmVn::ZmFsc2U=::RW5hYmxlIGluZGl2aWR1YWwgYml0IHNldHRpbmcvY2xlYXJpbmc="
 set_global_assignment -entity "pico_qsys_led" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "ZGlyZWN0aW9u::T3V0cHV0::RGlyZWN0aW9u"
-set_global_assignment -entity "pico_qsys_led" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "cmVzZXRWYWx1ZQ==::MTcw::T3V0cHV0IFBvcnQgUmVzZXQgVmFsdWU="
+set_global_assignment -entity "pico_qsys_led" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "cmVzZXRWYWx1ZQ==::MjU1::T3V0cHV0IFBvcnQgUmVzZXQgVmFsdWU="
 set_global_assignment -entity "pico_qsys_led" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "d2lkdGg=::OA==::V2lkdGggKDEtMzIgYml0cyk="
 set_global_assignment -entity "pico_qsys_led" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "Y2xvY2tSYXRl::NTAwMDAwMDA=::Y2xvY2tSYXRl"
 set_global_assignment -entity "pico_qsys_led" -library "pico_qsys" -name IP_COMPONENT_PARAMETER "ZGVyaXZlZF9oYXNfdHJp::ZmFsc2U=::ZGVyaXZlZF9oYXNfdHJp"

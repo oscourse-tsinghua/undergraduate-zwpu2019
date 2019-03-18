@@ -258,7 +258,7 @@
   <parameter name="edgeType" value="RISING" />
   <parameter name="generateIRQ" value="false" />
   <parameter name="irqType" value="LEVEL" />
-  <parameter name="resetValue" value="170" />
+  <parameter name="resetValue" value="255" />
   <parameter name="simDoTestBenchWiring" value="false" />
   <parameter name="simDrivenValue" value="0" />
   <parameter name="width" value="8" />
@@ -337,7 +337,7 @@
   <parameter name="baud" value="115200" />
   <parameter name="clockRate" value="50000000" />
   <parameter name="dataBits" value="8" />
-  <parameter name="fixedBaud" value="true" />
+  <parameter name="fixedBaud" value="false" />
   <parameter name="parity" value="NONE" />
   <parameter name="simCharStream" value="" />
   <parameter name="simInteractiveInputEnable" value="false" />
