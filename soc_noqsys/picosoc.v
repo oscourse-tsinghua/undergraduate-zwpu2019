@@ -28,7 +28,9 @@ module picosoc (
 	
 	output [7:0] led,
 	output [8:0] seg1,
-	output [8:0] seg2
+	output [8:0] seg2,
+	
+	output clk_out
 );
 
 	parameter [0:0] BARREL_SHIFTER = 1;
@@ -37,6 +39,9 @@ module picosoc (
 	parameter [0:0] ENABLE_COUNTERS = 1;
 	parameter [0:0] ENABLE_IRQ_QREGS = 0;
 
+	wire        clk_50M;
+	wire        locked;
+	
 	wire        mem_valid;
 	wire        mem_instr;
 	wire        mem_ready;
@@ -76,7 +81,16 @@ module picosoc (
 							 simpleuart_reg_dat_sel ? simpleuart_reg_dat_do : 
 							 gpio_ready ? gpio_reg :
 							 seg_ready ? seg_reg : 32'h 0000_0000;
-			
+	
+	assign clk_out = clk_50M;
+	
+	pll pll_inst (
+		.areset		(!resetn),
+		.inclk0		(clk),
+		.c0			(clk_50M),
+		.locked		(locked)
+	);	
+		
 	picorv32 #(
 //		.STACKADDR(STACKADDR),
 //		.PROGADDR_RESET(PROGADDR_RESET),
@@ -89,8 +103,8 @@ module picosoc (
 		.ENABLE_IRQ(1),
 		.ENABLE_IRQ_QREGS(ENABLE_IRQ_QREGS)
 	) cpu (
-		.clk         (clk        ),
-		.resetn      (resetn     ),
+		.clk         (clk_50M        ),
+		.resetn      (locked     ),
 		.mem_valid   (mem_valid  ),
 		.mem_instr   (mem_instr  ),
 		.mem_ready   (mem_ready  ),
@@ -101,22 +115,22 @@ module picosoc (
 		.irq         (irq        )
 	);
 
-	always @(posedge clk)
+	always @(posedge clk_50M)
 		rom_ready <= mem_valid && !mem_ready && mem_addr >= 32'h0000_0000 && mem_addr < 32'h0000_4000;
 		
 	rom rom_inst (
 		.address(mem_addr[13:2]),				//16kB
-		.clock(clk),
+		.clock(clk_50M),
 		.q(rom_rdata)
 	);
 	
 
-	always @(posedge clk)
+	always @(posedge clk_50M)
 		ram_ready <= mem_valid && !mem_ready && mem_addr >= 32'h0000_4000 && mem_addr < 32'h0000_8000;
 		
 	ram ram_inst (
 		.address(mem_addr[13:2]),				//16kB
-		.clock(clk),
+		.clock(clk_50M),
 		.data(mem_wdata),
 		.wren(ram_wren),
 		.q(ram_rdata)
@@ -124,8 +138,8 @@ module picosoc (
 	
 	
 	simpleuart simpleuart (
-		.clk         (clk         ),
-		.resetn      (resetn      ),
+		.clk         (clk_50M         ),
+		.resetn      (locked      ),
 
 		.ser_tx      (ser_tx      ),
 		.ser_rx      (ser_rx      ),
@@ -141,11 +155,11 @@ module picosoc (
 		.reg_dat_wait(simpleuart_reg_dat_wait)
 	);
 	
-	always @(posedge clk)
+	always @(posedge clk_50M)
 		gpio_ready <= mem_valid && !mem_ready && mem_addr == 32'h0300_0000;
 
-	always @(posedge clk) begin
-		if(!resetn) 
+	always @(posedge clk_50M) begin
+		if(!locked) 
 			gpio_reg <= 8'b11111111;
 		else if (mem_valid && mem_addr == 32'h0300_0000) begin
 			if(mem_wstrb[0]) gpio_reg[7:0] <= mem_wdata[7:0];
@@ -159,12 +173,12 @@ module picosoc (
 	
 	assign led = gpio_reg[7:0];
 	
-	always @(posedge clk) begin
+	always @(posedge clk_50M) begin
 		seg_ready <= mem_valid && !mem_ready && mem_addr == 32'h0300_0004;
 	end
 	
-	always @(posedge clk) begin
-		if(!resetn) begin
+	always @(posedge clk_50M) begin
+		if(!locked) begin
 			seg_reg <= 0;
 		end
 		else if(mem_valid && mem_addr == 32'h0300_0004) begin

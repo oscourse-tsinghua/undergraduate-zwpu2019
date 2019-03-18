@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pico_simpleuart
-Thu Mar 14 10:56:13 2019
+Mon Mar 18 14:50:09 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -27,18 +27,20 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
  19. Source assignments for picorv32:cpu|altsyncram:cpuregs_rtl_0|altsyncram_j6d1:auto_generated
  20. Source assignments for picorv32:cpu|altsyncram:cpuregs_rtl_1|altsyncram_j6d1:auto_generated
  21. Parameter Settings for User Entity Instance: Top-level Entity: |picosoc
- 22. Parameter Settings for User Entity Instance: picorv32:cpu
- 23. Parameter Settings for User Entity Instance: picorv32:cpu|picorv32_pcpi_mul:pcpi_mul
- 24. Parameter Settings for User Entity Instance: rom:rom_inst|altsyncram:altsyncram_component
- 25. Parameter Settings for User Entity Instance: ram:ram_inst|altsyncram:altsyncram_component
- 26. Parameter Settings for Inferred Entity Instance: picorv32:cpu|altsyncram:cpuregs_rtl_0
- 27. Parameter Settings for Inferred Entity Instance: picorv32:cpu|altsyncram:cpuregs_rtl_1
- 28. altsyncram Parameter Settings by Entity Instance
- 29. Port Connectivity Checks: "picorv32:cpu"
- 30. Post-Synthesis Netlist Statistics for Top Partition
- 31. Elapsed Time Per Partition
- 32. Analysis & Synthesis Messages
- 33. Analysis & Synthesis Suppressed Messages
+ 22. Parameter Settings for User Entity Instance: pll:pll_inst|altpll:altpll_component
+ 23. Parameter Settings for User Entity Instance: picorv32:cpu
+ 24. Parameter Settings for User Entity Instance: picorv32:cpu|picorv32_pcpi_mul:pcpi_mul
+ 25. Parameter Settings for User Entity Instance: rom:rom_inst|altsyncram:altsyncram_component
+ 26. Parameter Settings for User Entity Instance: ram:ram_inst|altsyncram:altsyncram_component
+ 27. Parameter Settings for Inferred Entity Instance: picorv32:cpu|altsyncram:cpuregs_rtl_0
+ 28. Parameter Settings for Inferred Entity Instance: picorv32:cpu|altsyncram:cpuregs_rtl_1
+ 29. altpll Parameter Settings by Entity Instance
+ 30. altsyncram Parameter Settings by Entity Instance
+ 31. Port Connectivity Checks: "picorv32:cpu"
+ 32. Post-Synthesis Netlist Statistics for Top Partition
+ 33. Elapsed Time Per Partition
+ 34. Analysis & Synthesis Messages
+ 35. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -64,20 +66,20 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 14 10:56:12 2019           ;
+; Analysis & Synthesis Status        ; Successful - Mon Mar 18 14:50:09 2019           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                      ; pico_simpleuart                                 ;
 ; Top-level Entity Name              ; picosoc                                         ;
 ; Family                             ; MAX 10                                          ;
-; Total logic elements               ; 3,860                                           ;
-;     Total combinational functions  ; 3,718                                           ;
-;     Dedicated logic registers      ; 1,424                                           ;
-; Total registers                    ; 1424                                            ;
-; Total pins                         ; 34                                              ;
+; Total logic elements               ; 3,869                                           ;
+;     Total combinational functions  ; 3,726                                           ;
+;     Dedicated logic registers      ; 1,425                                           ;
+; Total registers                    ; 1425                                            ;
+; Total pins                         ; 35                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 264,192                                         ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
+; Total PLLs                         ; 1                                               ;
 ; UFM blocks                         ; 0                                               ;
 ; ADC blocks                         ; 0                                               ;
 +------------------------------------+-------------------------------------------------+
@@ -197,11 +199,17 @@ refer to the applicable agreement for further details.
 ; ip/rom.v                         ; yes             ; User Wizard-Generated File             ; C:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v                        ;         ;
 ; ip/ram.v                         ; yes             ; User Wizard-Generated File             ; C:/Users/91947/Desktop/final/soc_noqsys/ip/ram.v                        ;         ;
 ; segment.v                        ; yes             ; User Verilog HDL File                  ; C:/Users/91947/Desktop/final/soc_noqsys/segment.v                       ;         ;
+; pll.v                            ; yes             ; User Wizard-Generated File             ; C:/Users/91947/Desktop/final/soc_noqsys/pll.v                           ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                           ; c:/intelfpga/18.1/quartus/libraries/megafunctions/altpll.tdf            ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                           ; c:/intelfpga/18.1/quartus/libraries/megafunctions/aglobal181.inc        ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                           ; c:/intelfpga/18.1/quartus/libraries/megafunctions/stratix_pll.inc       ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                           ; c:/intelfpga/18.1/quartus/libraries/megafunctions/stratixii_pll.inc     ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                           ; c:/intelfpga/18.1/quartus/libraries/megafunctions/cycloneii_pll.inc     ;         ;
+; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction            ; C:/Users/91947/Desktop/final/soc_noqsys/db/pll_altpll.v                 ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga/18.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga/18.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
 ; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga/18.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                           ; c:/intelfpga/18.1/quartus/libraries/megafunctions/aglobal181.inc        ;         ;
 ; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga/18.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
 ; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga/18.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga/18.1/quartus/libraries/megafunctions/altram.inc            ;         ;
@@ -213,37 +221,40 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+----------------------------------------+-------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 3,860     ;
-;                                             ;           ;
-; Total combinational functions               ; 3718      ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 1727      ;
-;     -- 3 input functions                    ; 1291      ;
-;     -- <=2 input functions                  ; 700       ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2880      ;
-;     -- arithmetic mode                      ; 838       ;
-;                                             ;           ;
-; Total registers                             ; 1424      ;
-;     -- Dedicated logic registers            ; 1424      ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 34        ;
-; Total memory bits                           ; 264192    ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 1552      ;
-; Total fan-out                               ; 18837     ;
-; Average fan-out                             ; 3.53      ;
-+---------------------------------------------+-----------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                   ;
++---------------------------------------------+---------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                           ;
++---------------------------------------------+---------------------------------------------------------------------------------+
+; Estimated Total logic elements              ; 3,869                                                                           ;
+;                                             ;                                                                                 ;
+; Total combinational functions               ; 3726                                                                            ;
+; Logic element usage by number of LUT inputs ;                                                                                 ;
+;     -- 4 input functions                    ; 1753                                                                            ;
+;     -- 3 input functions                    ; 1358                                                                            ;
+;     -- <=2 input functions                  ; 615                                                                             ;
+;                                             ;                                                                                 ;
+; Logic elements by mode                      ;                                                                                 ;
+;     -- normal mode                          ; 2888                                                                            ;
+;     -- arithmetic mode                      ; 838                                                                             ;
+;                                             ;                                                                                 ;
+; Total registers                             ; 1425                                                                            ;
+;     -- Dedicated logic registers            ; 1425                                                                            ;
+;     -- I/O registers                        ; 0                                                                               ;
+;                                             ;                                                                                 ;
+; I/O pins                                    ; 35                                                                              ;
+; Total memory bits                           ; 264192                                                                          ;
+;                                             ;                                                                                 ;
+; Embedded Multiplier 9-bit elements          ; 0                                                                               ;
+;                                             ;                                                                                 ;
+; Total PLLs                                  ; 1                                                                               ;
+;     -- PLLs                                 ; 1                                                                               ;
+;                                             ;                                                                                 ;
+; Maximum fan-out node                        ; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ;
+; Maximum fan-out                             ; 1677                                                                            ;
+; Total fan-out                               ; 18975                                                                           ;
+; Average fan-out                             ; 3.55                                                                            ;
++---------------------------------------------+---------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -251,14 +262,17 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                  ; Entity Name       ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------+-------------------+--------------+
-; |picosoc                                  ; 3718 (221)          ; 1424 (64)                 ; 264192      ; 0          ; 0            ; 0       ; 0         ; 34   ; 0            ; 0          ; |picosoc                                                                             ; picosoc           ; work         ;
-;    |picorv32:cpu|                         ; 3265 (2529)         ; 1229 (774)                ; 2048        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|picorv32:cpu                                                                ; picorv32          ; work         ;
+; |picosoc                                  ; 3726 (229)          ; 1425 (64)                 ; 264192      ; 0          ; 0            ; 0       ; 0         ; 35   ; 0            ; 0          ; |picosoc                                                                             ; picosoc           ; work         ;
+;    |picorv32:cpu|                         ; 3263 (2518)         ; 1229 (774)                ; 2048        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|picorv32:cpu                                                                ; picorv32          ; work         ;
 ;       |altsyncram:cpuregs_rtl_0|          ; 0 (0)               ; 0 (0)                     ; 1024        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|picorv32:cpu|altsyncram:cpuregs_rtl_0                                       ; altsyncram        ; work         ;
 ;          |altsyncram_j6d1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1024        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|picorv32:cpu|altsyncram:cpuregs_rtl_0|altsyncram_j6d1:auto_generated        ; altsyncram_j6d1   ; work         ;
 ;       |altsyncram:cpuregs_rtl_1|          ; 0 (0)               ; 0 (0)                     ; 1024        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|picorv32:cpu|altsyncram:cpuregs_rtl_1                                       ; altsyncram        ; work         ;
 ;          |altsyncram_j6d1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1024        ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|picorv32:cpu|altsyncram:cpuregs_rtl_1|altsyncram_j6d1:auto_generated        ; altsyncram_j6d1   ; work         ;
-;       |picorv32_pcpi_div:pcpi_div|        ; 343 (343)           ; 200 (200)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|picorv32:cpu|picorv32_pcpi_div:pcpi_div                                     ; picorv32_pcpi_div ; work         ;
+;       |picorv32_pcpi_div:pcpi_div|        ; 352 (352)           ; 200 (200)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|picorv32:cpu|picorv32_pcpi_div:pcpi_div                                     ; picorv32_pcpi_div ; work         ;
 ;       |picorv32_pcpi_mul:pcpi_mul|        ; 393 (393)           ; 255 (255)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|picorv32:cpu|picorv32_pcpi_mul:pcpi_mul                                     ; picorv32_pcpi_mul ; work         ;
+;    |pll:pll_inst|                         ; 1 (0)               ; 1 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|pll:pll_inst                                                                ; pll               ; work         ;
+;       |altpll:altpll_component|           ; 1 (0)               ; 1 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|pll:pll_inst|altpll:altpll_component                                        ; altpll            ; work         ;
+;          |pll_altpll:auto_generated|      ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated              ; pll_altpll        ; work         ;
 ;    |ram:ram_inst|                         ; 0 (0)               ; 0 (0)                     ; 131072      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|ram:ram_inst                                                                ; ram               ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 131072      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|ram:ram_inst|altsyncram:altsyncram_component                                ; altsyncram        ; work         ;
 ;          |altsyncram_bkf1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 131072      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|ram:ram_inst|altsyncram:altsyncram_component|altsyncram_bkf1:auto_generated ; altsyncram_bkf1   ; work         ;
@@ -266,7 +280,7 @@ refer to the applicable agreement for further details.
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 131072      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|rom:rom_inst|altsyncram:altsyncram_component                                ; altsyncram        ; work         ;
 ;          |altsyncram_6t91:auto_generated| ; 0 (0)               ; 0 (0)                     ; 131072      ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|rom:rom_inst|altsyncram:altsyncram_component|altsyncram_6t91:auto_generated ; altsyncram_6t91   ; work         ;
 ;    |segment:seg_inst|                     ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|segment:seg_inst                                                            ; segment           ; work         ;
-;    |simpleuart:simpleuart|                ; 218 (218)           ; 131 (131)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|simpleuart:simpleuart                                                       ; simpleuart        ; work         ;
+;    |simpleuart:simpleuart|                ; 219 (219)           ; 131 (131)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |picosoc|simpleuart:simpleuart                                                       ; simpleuart        ; work         ;
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -288,6 +302,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+-----------------------+-----------------+
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance       ; IP Include File ;
 +--------+--------------+---------+--------------+--------------+-----------------------+-----------------+
+; Altera ; ALTPLL       ; 18.1    ; N/A          ; N/A          ; |picosoc|pll:pll_inst ; pll.v           ;
 ; Altera ; RAM: 1-PORT  ; 18.1    ; N/A          ; N/A          ; |picosoc|ram:ram_inst ; ip/ram.v        ;
 ; Altera ; ROM: 1-PORT  ; 18.1    ; N/A          ; N/A          ; |picosoc|rom:rom_inst ; ip/rom.v        ;
 +--------+--------------+---------+--------------+--------------+-----------------------+-----------------+
@@ -322,176 +337,178 @@ Encoding Type:  One-Hot
 +----------------------------+--------------------------+---------------------------+----------------------------+----------------------------+--------------------------+---------------------------+---------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                                       ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------+
-; Register name                                                                                                                                           ; Reason for Removal                                             ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------+
-; picorv32:cpu|decoded_imm_uj[0]                                                                                                                          ; Stuck at GND due to stuck port data_in                         ;
-; picorv32:cpu|instr_getq                                                                                                                                 ; Stuck at GND due to stuck port data_in                         ;
-; picorv32:cpu|instr_setq                                                                                                                                 ; Stuck at GND due to stuck port data_in                         ;
-; picorv32:cpu|picorv32_pcpi_mul:pcpi_mul|rdx[0..3,5..7,9..11,13..15,17..19,21..23,25..27,29..31,33..35,37..39,41..43,45..47,49..51,53..55,57..59,61..63] ; Stuck at GND due to stuck port data_in                         ;
-; picorv32:cpu|mem_addr[0,1]                                                                                                                              ; Stuck at GND due to stuck port data_in                         ;
-; picorv32:cpu|picorv32_pcpi_mul:pcpi_mul|pcpi_wr                                                                                                         ; Merged with picorv32:cpu|picorv32_pcpi_mul:pcpi_mul|pcpi_ready ;
-; picorv32:cpu|picorv32_pcpi_div:pcpi_div|pcpi_wr                                                                                                         ; Merged with picorv32:cpu|picorv32_pcpi_div:pcpi_div|pcpi_ready ;
-; picorv32:cpu|reg_pc[0]                                                                                                                                  ; Merged with picorv32:cpu|reg_next_pc[0]                        ;
-; picorv32:cpu|decoded_imm_uj[21..31]                                                                                                                     ; Merged with picorv32:cpu|decoded_imm_uj[20]                    ;
-; gpio_reg[29..31]                                                                                                                                        ; Merged with gpio_reg[28]                                       ;
-; gpio_reg[28]                                                                                                                                            ; Stuck at GND due to stuck port data_in                         ;
-; picorv32:cpu|irq_pending[3..31]                                                                                                                         ; Stuck at GND due to stuck port data_in                         ;
-; picorv32:cpu|latched_is_lu                                                                                                                              ; Lost fanout                                                    ;
-; picorv32:cpu|is_lbu_lhu_lw                                                                                                                              ; Lost fanout                                                    ;
-; simpleuart:simpleuart|send_pattern[9]                                                                                                                   ; Stuck at VCC due to stuck port data_in                         ;
-; picorv32:cpu|reg_next_pc[0]                                                                                                                             ; Stuck at GND due to stuck port data_in                         ;
-; picorv32:cpu|cpu_state.cpu_state_shift                                                                                                                  ; Merged with picorv32:cpu|cpu_state.cpu_state_ld_rs2            ;
-; picorv32:cpu|cpu_state.cpu_state_ld_rs2                                                                                                                 ; Stuck at GND due to stuck port data_in                         ;
-; segment:seg_inst|seg~0                                                                                                                                  ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~1                                                                                                                                  ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~2                                                                                                                                  ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~3                                                                                                                                  ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~4                                                                                                                                  ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~5                                                                                                                                  ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~6                                                                                                                                  ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~7                                                                                                                                  ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~8                                                                                                                                  ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~9                                                                                                                                  ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~10                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~11                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~12                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~13                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~14                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~15                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~16                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~17                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~18                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~19                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~20                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~21                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~22                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~23                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~24                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~25                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~26                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~27                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~28                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~29                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~30                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~31                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~32                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~33                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~34                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~35                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~36                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~37                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~38                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~39                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~40                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~41                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~42                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~43                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~44                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~45                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~46                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~47                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~48                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~49                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~50                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~51                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~52                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~53                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~54                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~55                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~56                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~57                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~58                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~59                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~60                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~61                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~62                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~63                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~64                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~65                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~66                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~67                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~68                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~69                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~70                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~71                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~72                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~73                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~74                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~75                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~76                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~77                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~78                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~79                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~80                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~81                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~82                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~83                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~84                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~85                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~86                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~87                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~88                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~89                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~90                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~91                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~92                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~93                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~94                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~95                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~96                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~97                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~98                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~99                                                                                                                                 ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~100                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~101                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~102                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~103                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~104                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~105                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~106                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~107                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~108                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~109                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~110                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~111                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~112                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~113                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~114                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~115                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~116                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~117                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~118                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~119                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~120                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~121                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~122                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~123                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~124                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~125                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~126                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~127                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~128                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~129                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~130                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~131                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~132                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~133                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~134                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~135                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~136                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~137                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~138                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~139                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~140                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~141                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~142                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; segment:seg_inst|seg~143                                                                                                                                ; Stuck at GND due to stuck port clock                           ;
-; picorv32:cpu|reg_sh[2..4]                                                                                                                               ; Lost fanout                                                    ;
-; Total Number of Removed Registers = 254                                                                                                                 ;                                                                ;
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                                    ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------+
+; Register name                                                                                                                                           ; Reason for Removal                                          ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------+
+; picorv32:cpu|decoded_imm_uj[0]                                                                                                                          ; Stuck at GND due to stuck port data_in                      ;
+; picorv32:cpu|instr_getq                                                                                                                                 ; Stuck at GND due to stuck port data_in                      ;
+; picorv32:cpu|instr_setq                                                                                                                                 ; Stuck at GND due to stuck port data_in                      ;
+; picorv32:cpu|picorv32_pcpi_mul:pcpi_mul|rdx[0..3,5..7,9..11,13..15,17..19,21..23,25..27,29..31,33..35,37..39,41..43,45..47,49..51,53..55,57..59,61..63] ; Stuck at GND due to stuck port data_in                      ;
+; picorv32:cpu|mem_addr[0,1]                                                                                                                              ; Stuck at GND due to stuck port data_in                      ;
+; gpio_reg[29]                                                                                                                                            ; Merged with gpio_reg[28]                                    ;
+; gpio_reg[31]                                                                                                                                            ; Merged with gpio_reg[30]                                    ;
+; picorv32:cpu|decoded_imm_uj[20..30]                                                                                                                     ; Merged with picorv32:cpu|decoded_imm_uj[31]                 ;
+; picorv32:cpu|reg_next_pc[0]                                                                                                                             ; Merged with picorv32:cpu|reg_pc[0]                          ;
+; picorv32:cpu|picorv32_pcpi_div:pcpi_div|pcpi_ready                                                                                                      ; Merged with picorv32:cpu|picorv32_pcpi_div:pcpi_div|pcpi_wr ;
+; picorv32:cpu|picorv32_pcpi_mul:pcpi_mul|pcpi_ready                                                                                                      ; Merged with picorv32:cpu|picorv32_pcpi_mul:pcpi_mul|pcpi_wr ;
+; gpio_reg[30]                                                                                                                                            ; Merged with gpio_reg[28]                                    ;
+; gpio_reg[28]                                                                                                                                            ; Stuck at GND due to stuck port data_in                      ;
+; picorv32:cpu|irq_pending[3..31]                                                                                                                         ; Stuck at GND due to stuck port data_in                      ;
+; picorv32:cpu|latched_is_lu                                                                                                                              ; Lost fanout                                                 ;
+; picorv32:cpu|is_lbu_lhu_lw                                                                                                                              ; Lost fanout                                                 ;
+; simpleuart:simpleuart|send_pattern[9]                                                                                                                   ; Stuck at VCC due to stuck port data_in                      ;
+; picorv32:cpu|reg_pc[0]                                                                                                                                  ; Stuck at GND due to stuck port data_in                      ;
+; picorv32:cpu|cpu_state.cpu_state_shift                                                                                                                  ; Merged with picorv32:cpu|cpu_state.cpu_state_ld_rs2         ;
+; picorv32:cpu|cpu_state.cpu_state_ld_rs2                                                                                                                 ; Stuck at GND due to stuck port data_in                      ;
+; segment:seg_inst|seg~0                                                                                                                                  ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~1                                                                                                                                  ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~2                                                                                                                                  ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~3                                                                                                                                  ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~4                                                                                                                                  ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~5                                                                                                                                  ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~6                                                                                                                                  ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~7                                                                                                                                  ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~8                                                                                                                                  ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~9                                                                                                                                  ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~10                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~11                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~12                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~13                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~14                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~15                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~16                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~17                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~18                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~19                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~20                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~21                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~22                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~23                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~24                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~25                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~26                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~27                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~28                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~29                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~30                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~31                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~32                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~33                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~34                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~35                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~36                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~37                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~38                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~39                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~40                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~41                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~42                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~43                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~44                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~45                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~46                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~47                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~48                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~49                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~50                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~51                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~52                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~53                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~54                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~55                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~56                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~57                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~58                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~59                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~60                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~61                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~62                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~63                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~64                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~65                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~66                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~67                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~68                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~69                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~70                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~71                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~72                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~73                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~74                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~75                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~76                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~77                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~78                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~79                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~80                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~81                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~82                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~83                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~84                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~85                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~86                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~87                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~88                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~89                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~90                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~91                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~92                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~93                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~94                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~95                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~96                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~97                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~98                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~99                                                                                                                                 ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~100                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~101                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~102                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~103                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~104                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~105                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~106                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~107                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~108                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~109                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~110                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~111                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~112                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~113                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~114                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~115                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~116                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~117                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~118                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~119                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~120                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~121                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~122                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~123                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~124                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~125                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~126                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~127                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~128                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~129                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~130                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~131                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~132                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~133                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~134                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~135                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~136                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~137                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~138                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~139                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~140                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~141                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~142                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; segment:seg_inst|seg~143                                                                                                                                ; Stuck at GND due to stuck port clock                        ;
+; picorv32:cpu|reg_sh[2..4]                                                                                                                               ; Lost fanout                                                 ;
+; Total Number of Removed Registers = 254                                                                                                                 ;                                                             ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -512,10 +529,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1424  ;
+; Total registers                              ; 1425  ;
 ; Number of registers using Synchronous Clear  ; 443   ;
-; Number of registers using Synchronous Load   ; 274   ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Synchronous Load   ; 272   ;
+; Number of registers using Asynchronous Clear ; 1     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 1033  ;
 ; Number of registers using Preset             ; 0     ;
@@ -747,6 +764,380 @@ Encoding Type:  One-Hot
 ; ENABLE_COUNTERS   ; 1     ; Unsigned Binary                             ;
 ; ENABLE_IRQ_QREGS  ; 0     ; Unsigned Binary                             ;
 +-------------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: pll:pll_inst|altpll:altpll_component ;
++-------------------------------+-----------------------+---------------------------+
+; Parameter Name                ; Value                 ; Type                      ;
++-------------------------------+-----------------------+---------------------------+
+; OPERATION_MODE                ; NORMAL                ; Untyped                   ;
+; PLL_TYPE                      ; AUTO                  ; Untyped                   ;
+; LPM_HINT                      ; CBX_MODULE_PREFIX=pll ; Untyped                   ;
+; QUALIFY_CONF_DONE             ; OFF                   ; Untyped                   ;
+; COMPENSATE_CLOCK              ; CLK0                  ; Untyped                   ;
+; SCAN_CHAIN                    ; LONG                  ; Untyped                   ;
+; PRIMARY_CLOCK                 ; INCLK0                ; Untyped                   ;
+; INCLK0_INPUT_FREQUENCY        ; 83333                 ; Signed Integer            ;
+; INCLK1_INPUT_FREQUENCY        ; 0                     ; Untyped                   ;
+; GATE_LOCK_SIGNAL              ; NO                    ; Untyped                   ;
+; GATE_LOCK_COUNTER             ; 0                     ; Untyped                   ;
+; LOCK_HIGH                     ; 1                     ; Untyped                   ;
+; LOCK_LOW                      ; 1                     ; Untyped                   ;
+; VALID_LOCK_MULTIPLIER         ; 1                     ; Untyped                   ;
+; INVALID_LOCK_MULTIPLIER       ; 5                     ; Untyped                   ;
+; SWITCH_OVER_ON_LOSSCLK        ; OFF                   ; Untyped                   ;
+; SWITCH_OVER_ON_GATED_LOCK     ; OFF                   ; Untyped                   ;
+; ENABLE_SWITCH_OVER_COUNTER    ; OFF                   ; Untyped                   ;
+; SKIP_VCO                      ; OFF                   ; Untyped                   ;
+; SWITCH_OVER_COUNTER           ; 0                     ; Untyped                   ;
+; SWITCH_OVER_TYPE              ; AUTO                  ; Untyped                   ;
+; FEEDBACK_SOURCE               ; EXTCLK0               ; Untyped                   ;
+; BANDWIDTH                     ; 0                     ; Untyped                   ;
+; BANDWIDTH_TYPE                ; AUTO                  ; Untyped                   ;
+; SPREAD_FREQUENCY              ; 0                     ; Untyped                   ;
+; DOWN_SPREAD                   ; 0                     ; Untyped                   ;
+; SELF_RESET_ON_GATED_LOSS_LOCK ; OFF                   ; Untyped                   ;
+; SELF_RESET_ON_LOSS_LOCK       ; OFF                   ; Untyped                   ;
+; CLK9_MULTIPLY_BY              ; 0                     ; Untyped                   ;
+; CLK8_MULTIPLY_BY              ; 0                     ; Untyped                   ;
+; CLK7_MULTIPLY_BY              ; 0                     ; Untyped                   ;
+; CLK6_MULTIPLY_BY              ; 0                     ; Untyped                   ;
+; CLK5_MULTIPLY_BY              ; 1                     ; Untyped                   ;
+; CLK4_MULTIPLY_BY              ; 1                     ; Untyped                   ;
+; CLK3_MULTIPLY_BY              ; 1                     ; Untyped                   ;
+; CLK2_MULTIPLY_BY              ; 1                     ; Untyped                   ;
+; CLK1_MULTIPLY_BY              ; 1                     ; Untyped                   ;
+; CLK0_MULTIPLY_BY              ; 1                     ; Signed Integer            ;
+; CLK9_DIVIDE_BY                ; 0                     ; Untyped                   ;
+; CLK8_DIVIDE_BY                ; 0                     ; Untyped                   ;
+; CLK7_DIVIDE_BY                ; 0                     ; Untyped                   ;
+; CLK6_DIVIDE_BY                ; 0                     ; Untyped                   ;
+; CLK5_DIVIDE_BY                ; 1                     ; Untyped                   ;
+; CLK4_DIVIDE_BY                ; 1                     ; Untyped                   ;
+; CLK3_DIVIDE_BY                ; 1                     ; Untyped                   ;
+; CLK2_DIVIDE_BY                ; 1                     ; Untyped                   ;
+; CLK1_DIVIDE_BY                ; 1                     ; Untyped                   ;
+; CLK0_DIVIDE_BY                ; 1                     ; Signed Integer            ;
+; CLK9_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK8_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK7_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK6_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK5_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK4_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK3_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK2_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK1_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK0_PHASE_SHIFT              ; 0                     ; Untyped                   ;
+; CLK5_TIME_DELAY               ; 0                     ; Untyped                   ;
+; CLK4_TIME_DELAY               ; 0                     ; Untyped                   ;
+; CLK3_TIME_DELAY               ; 0                     ; Untyped                   ;
+; CLK2_TIME_DELAY               ; 0                     ; Untyped                   ;
+; CLK1_TIME_DELAY               ; 0                     ; Untyped                   ;
+; CLK0_TIME_DELAY               ; 0                     ; Untyped                   ;
+; CLK9_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK8_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK7_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK6_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK5_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK4_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK3_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK2_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK1_DUTY_CYCLE               ; 50                    ; Untyped                   ;
+; CLK0_DUTY_CYCLE               ; 50                    ; Signed Integer            ;
+; CLK9_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK8_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK7_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK6_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK5_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK4_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK3_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK2_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK1_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK0_USE_EVEN_COUNTER_MODE    ; OFF                   ; Untyped                   ;
+; CLK9_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK8_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK7_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK6_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK5_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK4_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK3_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK2_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK1_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; CLK0_USE_EVEN_COUNTER_VALUE   ; OFF                   ; Untyped                   ;
+; LOCK_WINDOW_UI                ;  0.05                 ; Untyped                   ;
+; LOCK_WINDOW_UI_BITS           ; UNUSED                ; Untyped                   ;
+; VCO_RANGE_DETECTOR_LOW_BITS   ; UNUSED                ; Untyped                   ;
+; VCO_RANGE_DETECTOR_HIGH_BITS  ; UNUSED                ; Untyped                   ;
+; DPA_MULTIPLY_BY               ; 0                     ; Untyped                   ;
+; DPA_DIVIDE_BY                 ; 1                     ; Untyped                   ;
+; DPA_DIVIDER                   ; 0                     ; Untyped                   ;
+; EXTCLK3_MULTIPLY_BY           ; 1                     ; Untyped                   ;
+; EXTCLK2_MULTIPLY_BY           ; 1                     ; Untyped                   ;
+; EXTCLK1_MULTIPLY_BY           ; 1                     ; Untyped                   ;
+; EXTCLK0_MULTIPLY_BY           ; 1                     ; Untyped                   ;
+; EXTCLK3_DIVIDE_BY             ; 1                     ; Untyped                   ;
+; EXTCLK2_DIVIDE_BY             ; 1                     ; Untyped                   ;
+; EXTCLK1_DIVIDE_BY             ; 1                     ; Untyped                   ;
+; EXTCLK0_DIVIDE_BY             ; 1                     ; Untyped                   ;
+; EXTCLK3_PHASE_SHIFT           ; 0                     ; Untyped                   ;
+; EXTCLK2_PHASE_SHIFT           ; 0                     ; Untyped                   ;
+; EXTCLK1_PHASE_SHIFT           ; 0                     ; Untyped                   ;
+; EXTCLK0_PHASE_SHIFT           ; 0                     ; Untyped                   ;
+; EXTCLK3_TIME_DELAY            ; 0                     ; Untyped                   ;
+; EXTCLK2_TIME_DELAY            ; 0                     ; Untyped                   ;
+; EXTCLK1_TIME_DELAY            ; 0                     ; Untyped                   ;
+; EXTCLK0_TIME_DELAY            ; 0                     ; Untyped                   ;
+; EXTCLK3_DUTY_CYCLE            ; 50                    ; Untyped                   ;
+; EXTCLK2_DUTY_CYCLE            ; 50                    ; Untyped                   ;
+; EXTCLK1_DUTY_CYCLE            ; 50                    ; Untyped                   ;
+; EXTCLK0_DUTY_CYCLE            ; 50                    ; Untyped                   ;
+; VCO_MULTIPLY_BY               ; 0                     ; Untyped                   ;
+; VCO_DIVIDE_BY                 ; 0                     ; Untyped                   ;
+; SCLKOUT0_PHASE_SHIFT          ; 0                     ; Untyped                   ;
+; SCLKOUT1_PHASE_SHIFT          ; 0                     ; Untyped                   ;
+; VCO_MIN                       ; 0                     ; Untyped                   ;
+; VCO_MAX                       ; 0                     ; Untyped                   ;
+; VCO_CENTER                    ; 0                     ; Untyped                   ;
+; PFD_MIN                       ; 0                     ; Untyped                   ;
+; PFD_MAX                       ; 0                     ; Untyped                   ;
+; M_INITIAL                     ; 0                     ; Untyped                   ;
+; M                             ; 0                     ; Untyped                   ;
+; N                             ; 1                     ; Untyped                   ;
+; M2                            ; 1                     ; Untyped                   ;
+; N2                            ; 1                     ; Untyped                   ;
+; SS                            ; 1                     ; Untyped                   ;
+; C0_HIGH                       ; 0                     ; Untyped                   ;
+; C1_HIGH                       ; 0                     ; Untyped                   ;
+; C2_HIGH                       ; 0                     ; Untyped                   ;
+; C3_HIGH                       ; 0                     ; Untyped                   ;
+; C4_HIGH                       ; 0                     ; Untyped                   ;
+; C5_HIGH                       ; 0                     ; Untyped                   ;
+; C6_HIGH                       ; 0                     ; Untyped                   ;
+; C7_HIGH                       ; 0                     ; Untyped                   ;
+; C8_HIGH                       ; 0                     ; Untyped                   ;
+; C9_HIGH                       ; 0                     ; Untyped                   ;
+; C0_LOW                        ; 0                     ; Untyped                   ;
+; C1_LOW                        ; 0                     ; Untyped                   ;
+; C2_LOW                        ; 0                     ; Untyped                   ;
+; C3_LOW                        ; 0                     ; Untyped                   ;
+; C4_LOW                        ; 0                     ; Untyped                   ;
+; C5_LOW                        ; 0                     ; Untyped                   ;
+; C6_LOW                        ; 0                     ; Untyped                   ;
+; C7_LOW                        ; 0                     ; Untyped                   ;
+; C8_LOW                        ; 0                     ; Untyped                   ;
+; C9_LOW                        ; 0                     ; Untyped                   ;
+; C0_INITIAL                    ; 0                     ; Untyped                   ;
+; C1_INITIAL                    ; 0                     ; Untyped                   ;
+; C2_INITIAL                    ; 0                     ; Untyped                   ;
+; C3_INITIAL                    ; 0                     ; Untyped                   ;
+; C4_INITIAL                    ; 0                     ; Untyped                   ;
+; C5_INITIAL                    ; 0                     ; Untyped                   ;
+; C6_INITIAL                    ; 0                     ; Untyped                   ;
+; C7_INITIAL                    ; 0                     ; Untyped                   ;
+; C8_INITIAL                    ; 0                     ; Untyped                   ;
+; C9_INITIAL                    ; 0                     ; Untyped                   ;
+; C0_MODE                       ; BYPASS                ; Untyped                   ;
+; C1_MODE                       ; BYPASS                ; Untyped                   ;
+; C2_MODE                       ; BYPASS                ; Untyped                   ;
+; C3_MODE                       ; BYPASS                ; Untyped                   ;
+; C4_MODE                       ; BYPASS                ; Untyped                   ;
+; C5_MODE                       ; BYPASS                ; Untyped                   ;
+; C6_MODE                       ; BYPASS                ; Untyped                   ;
+; C7_MODE                       ; BYPASS                ; Untyped                   ;
+; C8_MODE                       ; BYPASS                ; Untyped                   ;
+; C9_MODE                       ; BYPASS                ; Untyped                   ;
+; C0_PH                         ; 0                     ; Untyped                   ;
+; C1_PH                         ; 0                     ; Untyped                   ;
+; C2_PH                         ; 0                     ; Untyped                   ;
+; C3_PH                         ; 0                     ; Untyped                   ;
+; C4_PH                         ; 0                     ; Untyped                   ;
+; C5_PH                         ; 0                     ; Untyped                   ;
+; C6_PH                         ; 0                     ; Untyped                   ;
+; C7_PH                         ; 0                     ; Untyped                   ;
+; C8_PH                         ; 0                     ; Untyped                   ;
+; C9_PH                         ; 0                     ; Untyped                   ;
+; L0_HIGH                       ; 1                     ; Untyped                   ;
+; L1_HIGH                       ; 1                     ; Untyped                   ;
+; G0_HIGH                       ; 1                     ; Untyped                   ;
+; G1_HIGH                       ; 1                     ; Untyped                   ;
+; G2_HIGH                       ; 1                     ; Untyped                   ;
+; G3_HIGH                       ; 1                     ; Untyped                   ;
+; E0_HIGH                       ; 1                     ; Untyped                   ;
+; E1_HIGH                       ; 1                     ; Untyped                   ;
+; E2_HIGH                       ; 1                     ; Untyped                   ;
+; E3_HIGH                       ; 1                     ; Untyped                   ;
+; L0_LOW                        ; 1                     ; Untyped                   ;
+; L1_LOW                        ; 1                     ; Untyped                   ;
+; G0_LOW                        ; 1                     ; Untyped                   ;
+; G1_LOW                        ; 1                     ; Untyped                   ;
+; G2_LOW                        ; 1                     ; Untyped                   ;
+; G3_LOW                        ; 1                     ; Untyped                   ;
+; E0_LOW                        ; 1                     ; Untyped                   ;
+; E1_LOW                        ; 1                     ; Untyped                   ;
+; E2_LOW                        ; 1                     ; Untyped                   ;
+; E3_LOW                        ; 1                     ; Untyped                   ;
+; L0_INITIAL                    ; 1                     ; Untyped                   ;
+; L1_INITIAL                    ; 1                     ; Untyped                   ;
+; G0_INITIAL                    ; 1                     ; Untyped                   ;
+; G1_INITIAL                    ; 1                     ; Untyped                   ;
+; G2_INITIAL                    ; 1                     ; Untyped                   ;
+; G3_INITIAL                    ; 1                     ; Untyped                   ;
+; E0_INITIAL                    ; 1                     ; Untyped                   ;
+; E1_INITIAL                    ; 1                     ; Untyped                   ;
+; E2_INITIAL                    ; 1                     ; Untyped                   ;
+; E3_INITIAL                    ; 1                     ; Untyped                   ;
+; L0_MODE                       ; BYPASS                ; Untyped                   ;
+; L1_MODE                       ; BYPASS                ; Untyped                   ;
+; G0_MODE                       ; BYPASS                ; Untyped                   ;
+; G1_MODE                       ; BYPASS                ; Untyped                   ;
+; G2_MODE                       ; BYPASS                ; Untyped                   ;
+; G3_MODE                       ; BYPASS                ; Untyped                   ;
+; E0_MODE                       ; BYPASS                ; Untyped                   ;
+; E1_MODE                       ; BYPASS                ; Untyped                   ;
+; E2_MODE                       ; BYPASS                ; Untyped                   ;
+; E3_MODE                       ; BYPASS                ; Untyped                   ;
+; L0_PH                         ; 0                     ; Untyped                   ;
+; L1_PH                         ; 0                     ; Untyped                   ;
+; G0_PH                         ; 0                     ; Untyped                   ;
+; G1_PH                         ; 0                     ; Untyped                   ;
+; G2_PH                         ; 0                     ; Untyped                   ;
+; G3_PH                         ; 0                     ; Untyped                   ;
+; E0_PH                         ; 0                     ; Untyped                   ;
+; E1_PH                         ; 0                     ; Untyped                   ;
+; E2_PH                         ; 0                     ; Untyped                   ;
+; E3_PH                         ; 0                     ; Untyped                   ;
+; M_PH                          ; 0                     ; Untyped                   ;
+; C1_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; C2_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; C3_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; C4_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; C5_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; C6_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; C7_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; C8_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; C9_USE_CASC_IN                ; OFF                   ; Untyped                   ;
+; CLK0_COUNTER                  ; G0                    ; Untyped                   ;
+; CLK1_COUNTER                  ; G0                    ; Untyped                   ;
+; CLK2_COUNTER                  ; G0                    ; Untyped                   ;
+; CLK3_COUNTER                  ; G0                    ; Untyped                   ;
+; CLK4_COUNTER                  ; G0                    ; Untyped                   ;
+; CLK5_COUNTER                  ; G0                    ; Untyped                   ;
+; CLK6_COUNTER                  ; E0                    ; Untyped                   ;
+; CLK7_COUNTER                  ; E1                    ; Untyped                   ;
+; CLK8_COUNTER                  ; E2                    ; Untyped                   ;
+; CLK9_COUNTER                  ; E3                    ; Untyped                   ;
+; L0_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; L1_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; G0_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; G1_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; G2_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; G3_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; E0_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; E1_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; E2_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; E3_TIME_DELAY                 ; 0                     ; Untyped                   ;
+; M_TIME_DELAY                  ; 0                     ; Untyped                   ;
+; N_TIME_DELAY                  ; 0                     ; Untyped                   ;
+; EXTCLK3_COUNTER               ; E3                    ; Untyped                   ;
+; EXTCLK2_COUNTER               ; E2                    ; Untyped                   ;
+; EXTCLK1_COUNTER               ; E1                    ; Untyped                   ;
+; EXTCLK0_COUNTER               ; E0                    ; Untyped                   ;
+; ENABLE0_COUNTER               ; L0                    ; Untyped                   ;
+; ENABLE1_COUNTER               ; L0                    ; Untyped                   ;
+; CHARGE_PUMP_CURRENT           ; 2                     ; Untyped                   ;
+; LOOP_FILTER_R                 ;  1.000000             ; Untyped                   ;
+; LOOP_FILTER_C                 ; 5                     ; Untyped                   ;
+; CHARGE_PUMP_CURRENT_BITS      ; 9999                  ; Untyped                   ;
+; LOOP_FILTER_R_BITS            ; 9999                  ; Untyped                   ;
+; LOOP_FILTER_C_BITS            ; 9999                  ; Untyped                   ;
+; VCO_POST_SCALE                ; 0                     ; Untyped                   ;
+; CLK2_OUTPUT_FREQUENCY         ; 0                     ; Untyped                   ;
+; CLK1_OUTPUT_FREQUENCY         ; 0                     ; Untyped                   ;
+; CLK0_OUTPUT_FREQUENCY         ; 0                     ; Untyped                   ;
+; INTENDED_DEVICE_FAMILY        ; MAX 10                ; Untyped                   ;
+; PORT_CLKENA0                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKENA1                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKENA2                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKENA3                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKENA4                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKENA5                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_EXTCLKENA0               ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_EXTCLKENA1               ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_EXTCLKENA2               ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_EXTCLKENA3               ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_EXTCLK0                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_EXTCLK1                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_EXTCLK2                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_EXTCLK3                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKBAD0                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKBAD1                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK0                     ; PORT_USED             ; Untyped                   ;
+; PORT_CLK1                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK2                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK3                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK4                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK5                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK6                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK7                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK8                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLK9                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCANDATA                 ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCANDATAOUT              ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCANDONE                 ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCLKOUT1                 ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_SCLKOUT0                 ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_ACTIVECLOCK              ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKLOSS                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_INCLK1                   ; PORT_UNUSED           ; Untyped                   ;
+; PORT_INCLK0                   ; PORT_USED             ; Untyped                   ;
+; PORT_FBIN                     ; PORT_UNUSED           ; Untyped                   ;
+; PORT_PLLENA                   ; PORT_UNUSED           ; Untyped                   ;
+; PORT_CLKSWITCH                ; PORT_UNUSED           ; Untyped                   ;
+; PORT_ARESET                   ; PORT_USED             ; Untyped                   ;
+; PORT_PFDENA                   ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCANCLK                  ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCANACLR                 ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCANREAD                 ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCANWRITE                ; PORT_UNUSED           ; Untyped                   ;
+; PORT_ENABLE0                  ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_ENABLE1                  ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_LOCKED                   ; PORT_USED             ; Untyped                   ;
+; PORT_CONFIGUPDATE             ; PORT_UNUSED           ; Untyped                   ;
+; PORT_FBOUT                    ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_PHASEDONE                ; PORT_UNUSED           ; Untyped                   ;
+; PORT_PHASESTEP                ; PORT_UNUSED           ; Untyped                   ;
+; PORT_PHASEUPDOWN              ; PORT_UNUSED           ; Untyped                   ;
+; PORT_SCANCLKENA               ; PORT_UNUSED           ; Untyped                   ;
+; PORT_PHASECOUNTERSELECT       ; PORT_UNUSED           ; Untyped                   ;
+; PORT_VCOOVERRANGE             ; PORT_CONNECTIVITY     ; Untyped                   ;
+; PORT_VCOUNDERRANGE            ; PORT_CONNECTIVITY     ; Untyped                   ;
+; M_TEST_SOURCE                 ; 5                     ; Untyped                   ;
+; C0_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C1_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C2_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C3_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C4_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C5_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C6_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C7_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C8_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; C9_TEST_SOURCE                ; 5                     ; Untyped                   ;
+; CBXI_PARAMETER                ; pll_altpll            ; Untyped                   ;
+; VCO_FREQUENCY_CONTROL         ; AUTO                  ; Untyped                   ;
+; VCO_PHASE_SHIFT_STEP          ; 0                     ; Untyped                   ;
+; WIDTH_CLOCK                   ; 5                     ; Signed Integer            ;
+; WIDTH_PHASECOUNTERSELECT      ; 4                     ; Untyped                   ;
+; USING_FBMIMICBIDIR_PORT       ; OFF                   ; Untyped                   ;
+; DEVICE_FAMILY                 ; MAX 10                ; Untyped                   ;
+; SCAN_CHAIN_MIF_FILE           ; UNUSED                ; Untyped                   ;
+; SIM_GATE_LOCK_DEVICE_BEHAVIOR ; OFF                   ; Untyped                   ;
+; AUTO_CARRY_CHAINS             ; ON                    ; AUTO_CARRY                ;
+; IGNORE_CARRY_BUFFERS          ; OFF                   ; IGNORE_CARRY              ;
+; AUTO_CASCADE_CHAINS           ; ON                    ; AUTO_CASCADE              ;
+; IGNORE_CASCADE_BUFFERS        ; OFF                   ; IGNORE_CASCADE            ;
++-------------------------------+-----------------------+---------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1040,6 +1431,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------+
+; altpll Parameter Settings by Entity Instance                         ;
++-------------------------------+--------------------------------------+
+; Name                          ; Value                                ;
++-------------------------------+--------------------------------------+
+; Number of entity instances    ; 1                                    ;
+; Entity Instance               ; pll:pll_inst|altpll:altpll_component ;
+;     -- OPERATION_MODE         ; NORMAL                               ;
+;     -- PLL_TYPE               ; AUTO                                 ;
+;     -- PRIMARY_CLOCK          ; INCLK0                               ;
+;     -- INCLK0_INPUT_FREQUENCY ; 83333                                ;
+;     -- INCLK1_INPUT_FREQUENCY ; 0                                    ;
+;     -- VCO_MULTIPLY_BY        ; 0                                    ;
+;     -- VCO_DIVIDE_BY          ; 0                                    ;
++-------------------------------+--------------------------------------+
+
+
 +------------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                         ;
 +-------------------------------------------+----------------------------------------------+
@@ -1125,30 +1533,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 34                          ;
-; cycloneiii_ff         ; 1424                        ;
+; boundary_port         ; 35                          ;
+; cycloneiii_ff         ; 1425                        ;
+;     CLR               ; 1                           ;
 ;     ENA               ; 579                         ;
 ;     ENA SCLR          ; 232                         ;
 ;     ENA SCLR SLD      ; 58                          ;
 ;     ENA SLD           ; 164                         ;
 ;     SCLR              ; 151                         ;
 ;     SCLR SLD          ; 2                           ;
-;     SLD               ; 50                          ;
-;     plain             ; 188                         ;
-; cycloneiii_lcell_comb ; 3730                        ;
+;     SLD               ; 48                          ;
+;     plain             ; 190                         ;
+; cycloneiii_lcell_comb ; 3738                        ;
 ;     arith             ; 838                         ;
 ;         2 data inputs ; 356                         ;
 ;         3 data inputs ; 482                         ;
-;     normal            ; 2892                        ;
+;     normal            ; 2900                        ;
 ;         0 data inputs ; 16                          ;
 ;         1 data inputs ; 38                          ;
-;         2 data inputs ; 302                         ;
-;         3 data inputs ; 809                         ;
-;         4 data inputs ; 1727                        ;
+;         2 data inputs ; 217                         ;
+;         3 data inputs ; 876                         ;
+;         4 data inputs ; 1753                        ;
+; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 128                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 16.00                       ;
-; Average LUT depth     ; 6.00                        ;
+; Average LUT depth     ; 6.01                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1157,7 +1567,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:20     ;
+; Top            ; 00:00:18     ;
 +----------------+--------------+
 
 
@@ -1167,7 +1577,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Thu Mar 14 10:55:29 2019
+    Info: Processing started: Mon Mar 18 14:49:31 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pico_simpleuart -c pico_simpleuart
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1218,9 +1628,73 @@ Info (12021): Found 1 design units, including 1 entities, in source file picosoc
     Info (12023): Found entity 1: picosoc_tb File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc_tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file segment.v
     Info (12023): Found entity 1: segment File: C:/Users/91947/Desktop/final/soc_noqsys/segment.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pll.v
+    Info (12023): Found entity 1: pll File: C:/Users/91947/Desktop/final/soc_noqsys/pll.v Line: 39
 Info (12127): Elaborating entity "picosoc" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at picosoc.v(52): truncated value with size 4 to match size of target (1) File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 52
-Info (12128): Elaborating entity "picorv32" for hierarchy "picorv32:cpu" File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 102
+Warning (10230): Verilog HDL assignment warning at picosoc.v(57): truncated value with size 4 to match size of target (1) File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 57
+Info (12128): Elaborating entity "pll" for hierarchy "pll:pll_inst" File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 92
+Info (12128): Elaborating entity "altpll" for hierarchy "pll:pll_inst|altpll:altpll_component" File: C:/Users/91947/Desktop/final/soc_noqsys/pll.v Line: 103
+Info (12130): Elaborated megafunction instantiation "pll:pll_inst|altpll:altpll_component" File: C:/Users/91947/Desktop/final/soc_noqsys/pll.v Line: 103
+Info (12133): Instantiated megafunction "pll:pll_inst|altpll:altpll_component" with the following parameter: File: C:/Users/91947/Desktop/final/soc_noqsys/pll.v Line: 103
+    Info (12134): Parameter "bandwidth_type" = "AUTO"
+    Info (12134): Parameter "clk0_divide_by" = "1"
+    Info (12134): Parameter "clk0_duty_cycle" = "50"
+    Info (12134): Parameter "clk0_multiply_by" = "1"
+    Info (12134): Parameter "clk0_phase_shift" = "0"
+    Info (12134): Parameter "compensate_clock" = "CLK0"
+    Info (12134): Parameter "inclk0_input_frequency" = "83333"
+    Info (12134): Parameter "intended_device_family" = "MAX 10"
+    Info (12134): Parameter "lpm_hint" = "CBX_MODULE_PREFIX=pll"
+    Info (12134): Parameter "lpm_type" = "altpll"
+    Info (12134): Parameter "operation_mode" = "NORMAL"
+    Info (12134): Parameter "pll_type" = "AUTO"
+    Info (12134): Parameter "port_activeclock" = "PORT_UNUSED"
+    Info (12134): Parameter "port_areset" = "PORT_USED"
+    Info (12134): Parameter "port_clkbad0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkloss" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkswitch" = "PORT_UNUSED"
+    Info (12134): Parameter "port_configupdate" = "PORT_UNUSED"
+    Info (12134): Parameter "port_fbin" = "PORT_UNUSED"
+    Info (12134): Parameter "port_inclk0" = "PORT_USED"
+    Info (12134): Parameter "port_inclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_locked" = "PORT_USED"
+    Info (12134): Parameter "port_pfdena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasecounterselect" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasedone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasestep" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phaseupdown" = "PORT_UNUSED"
+    Info (12134): Parameter "port_pllena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanaclr" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclk" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclkena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandata" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandataout" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanread" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanwrite" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk0" = "PORT_USED"
+    Info (12134): Parameter "port_clk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
+    Info (12134): Parameter "self_reset_on_loss_lock" = "OFF"
+    Info (12134): Parameter "width_clock" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
+    Info (12023): Found entity 1: pll_altpll File: C:/Users/91947/Desktop/final/soc_noqsys/db/pll_altpll.v Line: 30
+Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated" File: c:/intelfpga/18.1/quartus/libraries/megafunctions/altpll.tdf Line: 897
+Info (12128): Elaborating entity "picorv32" for hierarchy "picorv32:cpu" File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 116
 Warning (10036): Verilog HDL or VHDL warning at picorv32.v(165): object "dbg_insn_addr" assigned a value but never read File: C:/Users/91947/Desktop/final/soc_noqsys/picorv32.v Line: 165
 Warning (10036): Verilog HDL or VHDL warning at picorv32.v(167): object "dbg_mem_valid" assigned a value but never read File: C:/Users/91947/Desktop/final/soc_noqsys/picorv32.v Line: 167
 Warning (10036): Verilog HDL or VHDL warning at picorv32.v(168): object "dbg_mem_instr" assigned a value but never read File: C:/Users/91947/Desktop/final/soc_noqsys/picorv32.v Line: 168
@@ -1294,7 +1768,7 @@ Warning (10230): Verilog HDL assignment warning at picorv32.v(2243): truncated v
 Info (12128): Elaborating entity "picorv32_pcpi_div" for hierarchy "picorv32:cpu|picorv32_pcpi_div:pcpi_div" File: C:/Users/91947/Desktop/final/soc_noqsys/picorv32.v Line: 301
 Warning (10259): Verilog HDL error at picorv32.v(2408): constant value overflow File: C:/Users/91947/Desktop/final/soc_noqsys/picorv32.v Line: 2408
 Warning (10230): Verilog HDL assignment warning at picorv32.v(2429): truncated value with size 63 to match size of target (32) File: C:/Users/91947/Desktop/final/soc_noqsys/picorv32.v Line: 2429
-Info (12128): Elaborating entity "rom" for hierarchy "rom:rom_inst" File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 111
+Info (12128): Elaborating entity "rom" for hierarchy "rom:rom_inst" File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 125
 Info (12128): Elaborating entity "altsyncram" for hierarchy "rom:rom_inst|altsyncram:altsyncram_component" File: C:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v Line: 81
 Info (12130): Elaborated megafunction instantiation "rom:rom_inst|altsyncram:altsyncram_component" File: C:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v Line: 81
 Info (12133): Instantiated megafunction "rom:rom_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v Line: 81
@@ -1315,8 +1789,8 @@ Info (12133): Instantiated megafunction "rom:rom_inst|altsyncram:altsyncram_comp
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_6t91.tdf
     Info (12023): Found entity 1: altsyncram_6t91 File: C:/Users/91947/Desktop/final/soc_noqsys/db/altsyncram_6t91.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_6t91" for hierarchy "rom:rom_inst|altsyncram:altsyncram_component|altsyncram_6t91:auto_generated" File: c:/intelfpga/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Critical Warning (127005): Memory depth (4096) in the design file differs from memory depth (64) in the Memory Initialization File "C:/Users/91947/Desktop/final/soc_noqsys/hx8kdemo_fw.hex" -- setting initial value for remaining addresses to 0 File: C:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v Line: 81
-Info (12128): Elaborating entity "ram" for hierarchy "ram:ram_inst" File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 123
+Critical Warning (127005): Memory depth (4096) in the design file differs from memory depth (89) in the Memory Initialization File "C:/Users/91947/Desktop/final/soc_noqsys/hx8kdemo_fw.hex" -- setting initial value for remaining addresses to 0 File: C:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v Line: 81
+Info (12128): Elaborating entity "ram" for hierarchy "ram:ram_inst" File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 137
 Info (12128): Elaborating entity "altsyncram" for hierarchy "ram:ram_inst|altsyncram:altsyncram_component" File: C:/Users/91947/Desktop/final/soc_noqsys/ip/ram.v Line: 85
 Info (12130): Elaborated megafunction instantiation "ram:ram_inst|altsyncram:altsyncram_component" File: C:/Users/91947/Desktop/final/soc_noqsys/ip/ram.v Line: 85
 Info (12133): Instantiated megafunction "ram:ram_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/91947/Desktop/final/soc_noqsys/ip/ram.v Line: 85
@@ -1337,12 +1811,12 @@ Info (12133): Instantiated megafunction "ram:ram_inst|altsyncram:altsyncram_comp
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_bkf1.tdf
     Info (12023): Found entity 1: altsyncram_bkf1 File: C:/Users/91947/Desktop/final/soc_noqsys/db/altsyncram_bkf1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_bkf1" for hierarchy "ram:ram_inst|altsyncram:altsyncram_component|altsyncram_bkf1:auto_generated" File: c:/intelfpga/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "simpleuart" for hierarchy "simpleuart:simpleuart" File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 142
+Info (12128): Elaborating entity "simpleuart" for hierarchy "simpleuart:simpleuart" File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 156
 Warning (10230): Verilog HDL assignment warning at simpleuart.v(99): truncated value with size 32 to match size of target (4) File: C:/Users/91947/Desktop/final/soc_noqsys/simpleuart.v Line: 99
 Warning (10230): Verilog HDL assignment warning at simpleuart.v(114): truncated value with size 32 to match size of target (10) File: C:/Users/91947/Desktop/final/soc_noqsys/simpleuart.v Line: 114
 Warning (10230): Verilog HDL assignment warning at simpleuart.v(120): truncated value with size 32 to match size of target (10) File: C:/Users/91947/Desktop/final/soc_noqsys/simpleuart.v Line: 120
 Warning (10230): Verilog HDL assignment warning at simpleuart.v(132): truncated value with size 32 to match size of target (4) File: C:/Users/91947/Desktop/final/soc_noqsys/simpleuart.v Line: 132
-Info (12128): Elaborating entity "segment" for hierarchy "segment:seg_inst" File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 183
+Info (12128): Elaborating entity "segment" for hierarchy "segment:seg_inst" File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 197
 Warning (10030): Net "seg.data_a" at segment.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/91947/Desktop/final/soc_noqsys/segment.v Line: 8
 Warning (10030): Net "seg.waddr_a" at segment.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/91947/Desktop/final/soc_noqsys/segment.v Line: 8
 Warning (10030): Net "seg.we_a" at segment.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/91947/Desktop/final/soc_noqsys/segment.v Line: 8
@@ -1403,23 +1877,24 @@ Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "seg1[7]" is stuck at GND File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 30
     Warning (13410): Pin "seg1[8]" is stuck at GND File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 30
-    Warning (13410): Pin "seg2[7]" is stuck at GND File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 32
-    Warning (13410): Pin "seg2[8]" is stuck at GND File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 32
+    Warning (13410): Pin "seg2[7]" is stuck at GND File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 31
+    Warning (13410): Pin "seg2[8]" is stuck at GND File: C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v Line: 31
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/91947/Desktop/final/soc_noqsys/output_files/pico_simpleuart.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4166 device resources after synthesis - the final resource count might be different
+    Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 4177 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
-    Info (21059): Implemented 27 output pins
-    Info (21061): Implemented 4004 logic cells
+    Info (21059): Implemented 28 output pins
+    Info (21061): Implemented 4013 logic cells
     Info (21064): Implemented 128 RAM segments
+    Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 115 warnings
-    Info: Peak virtual memory: 4815 megabytes
-    Info: Processing ended: Thu Mar 14 10:56:14 2019
-    Info: Elapsed time: 00:00:45
-    Info: Total CPU time (on all processors): 00:01:04
+    Info: Peak virtual memory: 4812 megabytes
+    Info: Processing ended: Mon Mar 18 14:50:09 2019
+    Info: Elapsed time: 00:00:38
+    Info: Total CPU time (on all processors): 00:01:00
 
 
 +------------------------------------------+

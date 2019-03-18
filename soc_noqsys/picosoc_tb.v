@@ -6,6 +6,8 @@ wire rx, tx;
 wire [7:0] led;
 wire [8:0] seg1, seg2;
 
+wire clk_50M;
+
 initial begin
 	clk = 0;
 	forever #10 clk = ~clk;
@@ -26,7 +28,8 @@ picosoc u0 (
 	.sw(4'b1111),
 	.led(led),
 	.seg1(seg1),
-	.seg2(seg2)
+	.seg2(seg2),
+	.clk_out(clk_50M)
 );
 
 

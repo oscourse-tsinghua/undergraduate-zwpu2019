@@ -1,12 +1,12 @@
-Power Analyzer Status : Successful - Thu Mar 14 10:57:29 2019
+Power Analyzer Status : Successful - Mon Mar 18 14:50:59 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : pico_simpleuart
 Top-level Entity Name : picosoc
 Family : MAX 10
 Device : 10M08SAM153C8G
 Power Models : Final
-Total Thermal Power Dissipation : 215.56 mW
-Core Dynamic Thermal Power Dissipation : 97.86 mW
-Core Static Thermal Power Dissipation : 111.15 mW
-I/O Thermal Power Dissipation : 6.55 mW
+Total Thermal Power Dissipation : 168.84 mW
+Core Dynamic Thermal Power Dissipation : 42.03 mW
+Core Static Thermal Power Dissipation : 121.31 mW
+I/O Thermal Power Dissipation : 5.50 mW
 Power Estimation Confidence : Low: user provided insufficient toggle rate data

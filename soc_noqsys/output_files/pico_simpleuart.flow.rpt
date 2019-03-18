@@ -1,5 +1,5 @@
 Flow report for pico_simpleuart
-Thu Mar 14 10:57:49 2019
+Mon Mar 18 14:51:14 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -40,22 +40,22 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Mar 14 10:57:49 2019           ;
+; Flow Status                        ; Successful - Mon Mar 18 14:51:14 2019           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                      ; pico_simpleuart                                 ;
 ; Top-level Entity Name              ; picosoc                                         ;
 ; Family                             ; MAX 10                                          ;
 ; Device                             ; 10M08SAM153C8G                                  ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 3,843 / 8,064 ( 48 % )                          ;
-;     Total combinational functions  ; 3,718 / 8,064 ( 46 % )                          ;
-;     Dedicated logic registers      ; 1,424 / 8,064 ( 18 % )                          ;
-; Total registers                    ; 1424                                            ;
-; Total pins                         ; 34 / 112 ( 30 % )                               ;
+; Total logic elements               ; 3,841 / 8,064 ( 48 % )                          ;
+;     Total combinational functions  ; 3,727 / 8,064 ( 46 % )                          ;
+;     Dedicated logic registers      ; 1,425 / 8,064 ( 18 % )                          ;
+; Total registers                    ; 1425                                            ;
+; Total pins                         ; 35 / 112 ( 31 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 264,192 / 387,072 ( 68 % )                      ;
 ; Embedded Multiplier 9-bit elements ; 0 / 48 ( 0 % )                                  ;
-; Total PLLs                         ; 0 / 1 ( 0 % )                                   ;
+; Total PLLs                         ; 1 / 1 ( 100 % )                                 ;
 ; UFM blocks                         ; 0 / 1 ( 0 % )                                   ;
 ; ADC blocks                         ; 0 / 1 ( 0 % )                                   ;
 +------------------------------------+-------------------------------------------------+
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/14/2019 10:55:30 ;
+; Start date & time ; 03/18/2019 14:49:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pico_simpleuart     ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+-----------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value   ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+-----------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 114379639520033.155253213001296        ; --              ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 114379639520033.155289177208260        ; --              ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --              ; --          ; picosoc_tb     ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --              ; --          ; rom_tb         ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; On                                     ; --              ; --          ; eda_simulation ;
@@ -97,6 +97,8 @@ refer to the applicable agreement for further details.
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --              ; --          ; --             ;
 ; MISC_FILE                            ; ip/rom_bb.v                            ; --              ; --          ; --             ;
 ; MISC_FILE                            ; ip/ram_bb.v                            ; --              ; --          ; --             ;
+; MISC_FILE                            ; pll_bb.v                               ; --              ; --          ; --             ;
+; MISC_FILE                            ; pll.ppf                                ; --              ; --          ; --             ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                      ; --              ; --          ; --             ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                      ; --              ; --          ; --             ;
 ; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                             ; --              ; --          ; --             ;
@@ -117,13 +119,13 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:42     ; 1.0                     ; 4815 MB             ; 00:01:03                           ;
-; Fitter               ; 00:00:53     ; 1.3                     ; 5474 MB             ; 00:01:00                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4709 MB             ; 00:00:02                           ;
-; Power Analyzer       ; 00:00:12     ; 1.4                     ; 4852 MB             ; 00:00:16                           ;
-; Timing Analyzer      ; 00:00:13     ; 1.5                     ; 4822 MB             ; 00:00:17                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4684 MB             ; 00:00:03                           ;
-; Total                ; 00:02:06     ; --                      ; --                  ; 00:02:41                           ;
+; Analysis & Synthesis ; 00:00:37     ; 1.0                     ; 4812 MB             ; 00:00:59                           ;
+; Fitter               ; 00:00:33     ; 1.2                     ; 5407 MB             ; 00:00:45                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4708 MB             ; 00:00:02                           ;
+; Power Analyzer       ; 00:00:08     ; 1.4                     ; 4850 MB             ; 00:00:12                           ;
+; Timing Analyzer      ; 00:00:09     ; 1.5                     ; 4821 MB             ; 00:00:12                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4683 MB             ; 00:00:02                           ;
+; Total                ; 00:01:31     ; --                      ; --                  ; 00:02:12                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

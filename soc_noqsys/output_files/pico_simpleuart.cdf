@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M08SAM153) Path("C:/Users/91947/Desktop/final/soc_noqsys/output_files/") File("pico_simpleuart.pof") MfrSpec(OpMask(1) Child_OpMask(2 1 1));
+		Device PartName(10M08SAM153) Path("C:/Users/91947/Desktop/final/soc_noqsys/output_files/") File("pico_simpleuart.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

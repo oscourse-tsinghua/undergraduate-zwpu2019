@@ -100,10 +100,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk",
-					"strict" : false
-				},
-				{
 					"name" : "sw[1]",
 					"strict" : false
 				},
