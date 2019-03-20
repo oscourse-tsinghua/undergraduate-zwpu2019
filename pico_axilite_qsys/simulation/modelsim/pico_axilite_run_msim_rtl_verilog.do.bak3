@@ -7,17 +7,20 @@ vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+/home/z/Desktop/pico_axilite_qsys {/home/z/Desktop/pico_axilite_qsys/picorv32.v}
 vlog -vlog01compat -work work +incdir+/home/z/Desktop/pico_axilite_qsys {/home/z/Desktop/pico_axilite_qsys/pico_axilite_top.v}
-vlog -vlog01compat -work work +incdir+/home/z/Desktop/pico_axilite_qsys {/home/z/Desktop/pico_axilite_qsys/pico_tb.v}
+vlog -vlog01compat -work work +incdir+/home/z/Desktop/pico_axilite_qsys {/home/z/Desktop/pico_axilite_qsys/segment.v}
 vlib pico_qsys
 vmap pico_qsys pico_qsys
 vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/pico_qsys.v}
 vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_avalon_sc_fifo.v}
 vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_reset_controller.v}
 vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/altera_reset_synchronizer.v}
+vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_RAM.v}
+vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_ROM.v}
+vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_led.v}
 vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0.v}
 vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter.v}
-vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v}
-vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_1.v}
+vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_seg1.v}
+vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_sw.v}
 vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v}
 vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32.v}
 vlog -vlog01compat -work pico_qsys +incdir+/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules {/home/z/Desktop/pico_axilite_qsys/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v}

@@ -8,7 +8,6 @@
    <name preferredWidth="312" />
   </columns>
  </systemtable>
- <library
-   expandedCategories="Library/Processors and Peripherals,Library/Processors and Peripherals/Peripherals,Library/Basic Functions/Configuration and Programming,Library/Basic Functions,Library/University Program,Library,Project,Library/Basic Functions/On Chip Memory,Library/University Program/Generic IO" />
- <window width="1698" height="860" x="78" y="-5" />
+ <library expandedCategories="Project,Library" />
+ <window width="1306" height="747" x="60" y="21" />
 </preferences>

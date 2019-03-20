@@ -2,22 +2,29 @@ Info: Starting: Create block symbol file (.bsf)
 Info: qsys-generate /home/z/Desktop/pico_axilite_qsys/pico_qsys.qsys --block-symbol-file --output-directory=/home/z/Desktop/pico_axilite_qsys/pico_qsys --family="MAX 10" --part=10M08SAM153C8G
 Progress: Loading pico_axilite_qsys/pico_qsys.qsys
 Progress: Reading input file
+Progress: Adding RAM [altera_avalon_onchip_memory2 16.0]
+Progress: Parameterizing module RAM
+Progress: Adding ROM [altera_avalon_onchip_memory2 16.0]
+Progress: Parameterizing module ROM
 Progress: Adding clk_0 [clock_source 16.0]
 Progress: Parameterizing module clk_0
-Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.0]
-Progress: Parameterizing module onchip_memory2_0
-Progress: Adding onchip_memory2_1 [altera_avalon_onchip_memory2 16.0]
-Progress: Parameterizing module onchip_memory2_1
+Progress: Adding led [altera_avalon_pio 16.0]
+Progress: Parameterizing module led
 Progress: Adding pico_axilite_0 [pico_axilite 1.0]
 Progress: Parameterizing module pico_axilite_0
-Progress: Adding pio_0 [altera_avalon_pio 16.0]
-Progress: Parameterizing module pio_0
+Progress: Adding seg1 [altera_avalon_pio 16.0]
+Progress: Parameterizing module seg1
+Progress: Adding seg2 [altera_avalon_pio 16.0]
+Progress: Parameterizing module seg2
+Progress: Adding sw [altera_avalon_pio 16.0]
+Progress: Parameterizing module sw
 Progress: Adding uart_0 [altera_avalon_uart 16.0]
 Progress: Parameterizing module uart_0
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
+Info: pico_qsys.sw: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Warning: pico_qsys.pico_axilite_0: pico_axilite_0.conduit_end_0 must be exported, or connected to a matching conduit.
 Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
@@ -26,52 +33,70 @@ Info: Starting: Create HDL design files for synthesis
 Info: qsys-generate /home/z/Desktop/pico_axilite_qsys/pico_qsys.qsys --synthesis=VERILOG --output-directory=/home/z/Desktop/pico_axilite_qsys/pico_qsys/synthesis --family="MAX 10" --part=10M08SAM153C8G
 Progress: Loading pico_axilite_qsys/pico_qsys.qsys
 Progress: Reading input file
+Progress: Adding RAM [altera_avalon_onchip_memory2 16.0]
+Progress: Parameterizing module RAM
+Progress: Adding ROM [altera_avalon_onchip_memory2 16.0]
+Progress: Parameterizing module ROM
 Progress: Adding clk_0 [clock_source 16.0]
 Progress: Parameterizing module clk_0
-Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.0]
-Progress: Parameterizing module onchip_memory2_0
-Progress: Adding onchip_memory2_1 [altera_avalon_onchip_memory2 16.0]
-Progress: Parameterizing module onchip_memory2_1
+Progress: Adding led [altera_avalon_pio 16.0]
+Progress: Parameterizing module led
 Progress: Adding pico_axilite_0 [pico_axilite 1.0]
 Progress: Parameterizing module pico_axilite_0
-Progress: Adding pio_0 [altera_avalon_pio 16.0]
-Progress: Parameterizing module pio_0
+Progress: Adding seg1 [altera_avalon_pio 16.0]
+Progress: Parameterizing module seg1
+Progress: Adding seg2 [altera_avalon_pio 16.0]
+Progress: Parameterizing module seg2
+Progress: Adding sw [altera_avalon_pio 16.0]
+Progress: Parameterizing module sw
 Progress: Adding uart_0 [altera_avalon_uart 16.0]
 Progress: Parameterizing module uart_0
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
+Info: pico_qsys.sw: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
 Warning: pico_qsys.pico_axilite_0: pico_axilite_0.conduit_end_0 must be exported, or connected to a matching conduit.
 Info: pico_qsys: Generating pico_qsys "pico_qsys" for QUARTUS_SYNTH
-Info: onchip_memory2_0: Starting RTL generation for module 'pico_qsys_onchip_memory2_0'
-Info: onchip_memory2_0:   Generation command is [exec /home/z/altera_lite/16.0/quartus/linux64/perl/bin/perl -I /home/z/altera_lite/16.0/quartus/linux64/perl/lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/europa -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/perl_lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/common -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=pico_qsys_onchip_memory2_0 --dir=/tmp/alt7965_155578021146318846.dir/0001_onchip_memory2_0_gen/ --quartus_dir=/home/z/altera_lite/16.0/quartus --verilog --config=/tmp/alt7965_155578021146318846.dir/0001_onchip_memory2_0_gen//pico_qsys_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
-Info: onchip_memory2_0: Done RTL generation for module 'pico_qsys_onchip_memory2_0'
-Info: onchip_memory2_0: "pico_qsys" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
-Info: onchip_memory2_1: Starting RTL generation for module 'pico_qsys_onchip_memory2_1'
-Info: onchip_memory2_1:   Generation command is [exec /home/z/altera_lite/16.0/quartus/linux64/perl/bin/perl -I /home/z/altera_lite/16.0/quartus/linux64/perl/lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/europa -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/perl_lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/common -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=pico_qsys_onchip_memory2_1 --dir=/tmp/alt7965_155578021146318846.dir/0002_onchip_memory2_1_gen/ --quartus_dir=/home/z/altera_lite/16.0/quartus --verilog --config=/tmp/alt7965_155578021146318846.dir/0002_onchip_memory2_1_gen//pico_qsys_onchip_memory2_1_component_configuration.pl  --do_build_sim=0  ]
-Info: onchip_memory2_1: Done RTL generation for module 'pico_qsys_onchip_memory2_1'
-Info: onchip_memory2_1: "pico_qsys" instantiated altera_avalon_onchip_memory2 "onchip_memory2_1"
+Info: RAM: Starting RTL generation for module 'pico_qsys_RAM'
+Info: RAM:   Generation command is [exec /home/z/altera_lite/16.0/quartus/linux64/perl/bin/perl -I /home/z/altera_lite/16.0/quartus/linux64/perl/lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/europa -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/perl_lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/common -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=pico_qsys_RAM --dir=/tmp/alt7972_428747369881965461.dir/0001_RAM_gen/ --quartus_dir=/home/z/altera_lite/16.0/quartus --verilog --config=/tmp/alt7972_428747369881965461.dir/0001_RAM_gen//pico_qsys_RAM_component_configuration.pl  --do_build_sim=0  ]
+Info: RAM: Done RTL generation for module 'pico_qsys_RAM'
+Info: RAM: "pico_qsys" instantiated altera_avalon_onchip_memory2 "RAM"
+Info: ROM: Starting RTL generation for module 'pico_qsys_ROM'
+Info: ROM:   Generation command is [exec /home/z/altera_lite/16.0/quartus/linux64/perl/bin/perl -I /home/z/altera_lite/16.0/quartus/linux64/perl/lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/europa -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/perl_lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/common -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=pico_qsys_ROM --dir=/tmp/alt7972_428747369881965461.dir/0002_ROM_gen/ --quartus_dir=/home/z/altera_lite/16.0/quartus --verilog --config=/tmp/alt7972_428747369881965461.dir/0002_ROM_gen//pico_qsys_ROM_component_configuration.pl  --do_build_sim=0  ]
+Info: ROM: Done RTL generation for module 'pico_qsys_ROM'
+Info: ROM: "pico_qsys" instantiated altera_avalon_onchip_memory2 "ROM"
+Info: led: Starting RTL generation for module 'pico_qsys_led'
+Info: led:   Generation command is [exec /home/z/altera_lite/16.0/quartus/linux64/perl/bin/perl -I /home/z/altera_lite/16.0/quartus/linux64/perl/lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/europa -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/perl_lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/common -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=pico_qsys_led --dir=/tmp/alt7972_428747369881965461.dir/0003_led_gen/ --quartus_dir=/home/z/altera_lite/16.0/quartus --verilog --config=/tmp/alt7972_428747369881965461.dir/0003_led_gen//pico_qsys_led_component_configuration.pl  --do_build_sim=0  ]
+Info: led: Done RTL generation for module 'pico_qsys_led'
+Info: led: "pico_qsys" instantiated altera_avalon_pio "led"
 Info: pico_axilite_0: "pico_qsys" instantiated pico_axilite "pico_axilite_0"
-Info: pio_0: Starting RTL generation for module 'pico_qsys_pio_0'
-Info: pio_0:   Generation command is [exec /home/z/altera_lite/16.0/quartus/linux64/perl/bin/perl -I /home/z/altera_lite/16.0/quartus/linux64/perl/lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/europa -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/perl_lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/common -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=pico_qsys_pio_0 --dir=/tmp/alt7965_155578021146318846.dir/0004_pio_0_gen/ --quartus_dir=/home/z/altera_lite/16.0/quartus --verilog --config=/tmp/alt7965_155578021146318846.dir/0004_pio_0_gen//pico_qsys_pio_0_component_configuration.pl  --do_build_sim=0  ]
-Info: pio_0: Done RTL generation for module 'pico_qsys_pio_0'
-Info: pio_0: "pico_qsys" instantiated altera_avalon_pio "pio_0"
+Info: seg1: Starting RTL generation for module 'pico_qsys_seg1'
+Info: seg1:   Generation command is [exec /home/z/altera_lite/16.0/quartus/linux64/perl/bin/perl -I /home/z/altera_lite/16.0/quartus/linux64/perl/lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/europa -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/perl_lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/common -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=pico_qsys_seg1 --dir=/tmp/alt7972_428747369881965461.dir/0005_seg1_gen/ --quartus_dir=/home/z/altera_lite/16.0/quartus --verilog --config=/tmp/alt7972_428747369881965461.dir/0005_seg1_gen//pico_qsys_seg1_component_configuration.pl  --do_build_sim=0  ]
+Info: seg1: Done RTL generation for module 'pico_qsys_seg1'
+Info: seg1: "pico_qsys" instantiated altera_avalon_pio "seg1"
+Info: sw: Starting RTL generation for module 'pico_qsys_sw'
+Info: sw:   Generation command is [exec /home/z/altera_lite/16.0/quartus/linux64/perl/bin/perl -I /home/z/altera_lite/16.0/quartus/linux64/perl/lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/europa -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/perl_lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/common -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=pico_qsys_sw --dir=/tmp/alt7972_428747369881965461.dir/0006_sw_gen/ --quartus_dir=/home/z/altera_lite/16.0/quartus --verilog --config=/tmp/alt7972_428747369881965461.dir/0006_sw_gen//pico_qsys_sw_component_configuration.pl  --do_build_sim=0  ]
+Info: sw: Done RTL generation for module 'pico_qsys_sw'
+Info: sw: "pico_qsys" instantiated altera_avalon_pio "sw"
 Info: uart_0: Starting RTL generation for module 'pico_qsys_uart_0'
-Info: uart_0:   Generation command is [exec /home/z/altera_lite/16.0/quartus/linux64/perl/bin/perl -I /home/z/altera_lite/16.0/quartus/linux64/perl/lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/europa -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/perl_lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/common -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=pico_qsys_uart_0 --dir=/tmp/alt7965_155578021146318846.dir/0005_uart_0_gen/ --quartus_dir=/home/z/altera_lite/16.0/quartus --verilog --config=/tmp/alt7965_155578021146318846.dir/0005_uart_0_gen//pico_qsys_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: uart_0:   Generation command is [exec /home/z/altera_lite/16.0/quartus/linux64/perl/bin/perl -I /home/z/altera_lite/16.0/quartus/linux64/perl/lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/europa -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin/perl_lib -I /home/z/altera_lite/16.0/quartus/sopc_builder/bin -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/common -I /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- /home/z/altera_lite/16.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=pico_qsys_uart_0 --dir=/tmp/alt7972_428747369881965461.dir/0007_uart_0_gen/ --quartus_dir=/home/z/altera_lite/16.0/quartus --verilog --config=/tmp/alt7972_428747369881965461.dir/0007_uart_0_gen//pico_qsys_uart_0_component_configuration.pl  --do_build_sim=0  ]
 Info: uart_0: Done RTL generation for module 'pico_qsys_uart_0'
 Info: uart_0: "pico_qsys" instantiated altera_avalon_uart "uart_0"
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
 Info: mm_interconnect_0: "pico_qsys" instantiated altera_mm_interconnect "mm_interconnect_0"
 Info: irq_mapper: "pico_qsys" instantiated altera_irq_mapper "irq_mapper"
 Info: rst_controller: "pico_qsys" instantiated altera_reset_controller "rst_controller"
-Info: onchip_memory2_0_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "onchip_memory2_0_s1_translator"
+Info: RAM_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "RAM_s1_translator"
 Info: pico_axilite_0_altera_axi4lite_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "pico_axilite_0_altera_axi4lite_master_agent"
-Info: onchip_memory2_0_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "onchip_memory2_0_s1_agent"
-Info: onchip_memory2_0_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "onchip_memory2_0_s1_agent_rsp_fifo"
+Info: RAM_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "RAM_s1_agent"
+Info: RAM_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "RAM_s1_agent_rsp_fifo"
 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
@@ -81,6 +106,6 @@ Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_m
 Info: Reusing file /home/z/Desktop/pico_axilite_qsys/pico_qsys/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
-Info: pico_qsys: Done "pico_qsys" with 21 modules, 28 files
+Info: pico_qsys: Done "pico_qsys" with 23 modules, 30 files
 Info: qsys-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

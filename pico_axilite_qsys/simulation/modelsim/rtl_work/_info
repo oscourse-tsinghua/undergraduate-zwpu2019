@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 d/home/z/Desktop/pico_axilite_qsys/simulation/modelsim
 vpico_axilite_top
-Z1 !s110 1551753692
+Z1 !s110 1552821344
 !i10b 1
-!s100 ;P5QUz7JBO`hXfGMJL^3`0
-IOd1m`^ZJ`V7C_=J2<DeDo0
+!s100 P0GTmKf<3JcXAfnR2g`^Q0
+IM_Xj_KZG2NfE86UT@0X[81
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1551233559
+w1552806503
 8/home/z/Desktop/pico_axilite_qsys/pico_axilite_top.v
 F/home/z/Desktop/pico_axilite_qsys/pico_axilite_top.v
 L0 1
@@ -23,20 +23,20 @@ Z3 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z4 !s108 1551753692.000000
+Z4 !s108 1552821344.000000
 !s107 /home/z/Desktop/pico_axilite_qsys/pico_axilite_top.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/z/Desktop/pico_axilite_qsys|/home/z/Desktop/pico_axilite_qsys/pico_axilite_top.v|
 !i113 1
 Z5 o-vlog01compat -work work
 Z6 !s92 -vlog01compat -work work +incdir+/home/z/Desktop/pico_axilite_qsys
 vpico_tb
-!s110 1551753694
+!s110 1552821345
 !i10b 1
-!s100 l0X`ea7T@TdcZoo?<0P490
-I@VGVN^PoV;:XIjlc@TnL61
+!s100 lS947USo>7Rm0=ObUKmG40
+IT9VmMVaFge47=cf3a^^Re1
 R2
 R0
-w1551240728
+w1552723873
 8/home/z/Desktop/pico_axilite_qsys/pico_tb.v
 F/home/z/Desktop/pico_axilite_qsys/pico_tb.v
 L0 3
@@ -44,7 +44,7 @@ R3
 r1
 !s85 0
 31
-!s108 1551753694.000000
+!s108 1552821345.000000
 !s107 /home/z/Desktop/pico_axilite_qsys/pico_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/z/Desktop/pico_axilite_qsys|/home/z/Desktop/pico_axilite_qsys/pico_tb.v|
 !i113 1
@@ -65,9 +65,9 @@ R3
 r1
 !s85 0
 31
-R4
-Z10 !s107 /home/z/Desktop/pico_axilite_qsys/picorv32.v|
-Z11 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/z/Desktop/pico_axilite_qsys|/home/z/Desktop/pico_axilite_qsys/picorv32.v|
+Z10 !s108 1552821343.000000
+Z11 !s107 /home/z/Desktop/pico_axilite_qsys/picorv32.v|
+Z12 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/z/Desktop/pico_axilite_qsys|/home/z/Desktop/pico_axilite_qsys/picorv32.v|
 !i113 1
 R5
 R6
@@ -86,9 +86,9 @@ R3
 r1
 !s85 0
 31
-R4
 R10
 R11
+R12
 !i113 1
 R5
 R6
@@ -107,9 +107,9 @@ R3
 r1
 !s85 0
 31
-R4
 R10
 R11
+R12
 !i113 1
 R5
 R6
@@ -128,9 +128,9 @@ R3
 r1
 !s85 0
 31
-R4
 R10
 R11
+R12
 !i113 1
 R5
 R6
@@ -149,9 +149,9 @@ R3
 r1
 !s85 0
 31
-R4
 R10
 R11
+R12
 !i113 1
 R5
 R6
@@ -170,9 +170,9 @@ R3
 r1
 !s85 0
 31
-R4
 R10
 R11
+R12
 !i113 1
 R5
 R6
@@ -191,9 +191,9 @@ R3
 r1
 !s85 0
 31
-R4
 R10
 R11
+R12
 !i113 1
 R5
 R6
@@ -212,9 +212,30 @@ R3
 r1
 !s85 0
 31
-R4
 R10
 R11
+R12
+!i113 1
+R5
+R6
+vsegment
+R1
+!i10b 1
+!s100 VZ_cLRb]V=h[3:AWFng]e1
+I5hIVY1Y^1Gfc<[804[d4o1
+R2
+R0
+w1552627469
+8/home/z/Desktop/pico_axilite_qsys/segment.v
+F/home/z/Desktop/pico_axilite_qsys/segment.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/z/Desktop/pico_axilite_qsys/segment.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/z/Desktop/pico_axilite_qsys|/home/z/Desktop/pico_axilite_qsys/segment.v|
 !i113 1
 R5
 R6

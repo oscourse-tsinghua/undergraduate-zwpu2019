@@ -1,5 +1,5 @@
 Flow report for pico_axilite
-Sun Mar 10 09:45:49 2019
+Mon Mar 18 15:16:04 2019
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Mar 10 09:45:49 2019       ;
+; Flow Status                        ; Successful - Mon Mar 18 15:16:04 2019       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; pico_axilite                                ;
 ; Top-level Entity Name              ; pico_axilite_top                            ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M08SAM153C8G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 2,206 / 8,064 ( 27 % )                      ;
-;     Total combinational functions  ; 2,125 / 8,064 ( 26 % )                      ;
-;     Dedicated logic registers      ; 1,001 / 8,064 ( 12 % )                      ;
-; Total registers                    ; 1001                                        ;
-; Total pins                         ; 12 / 112 ( 11 % )                           ;
+; Total logic elements               ; 2,535 / 8,064 ( 31 % )                      ;
+;     Total combinational functions  ; 2,425 / 8,064 ( 30 % )                      ;
+;     Dedicated logic registers      ; 1,193 / 8,064 ( 15 % )                      ;
+; Total registers                    ; 1193                                        ;
+; Total pins                         ; 69 / 112 ( 62 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 264,192 / 387,072 ( 68 % )                  ;
 ; Embedded Multiplier 9-bit elements ; 0 / 48 ( 0 % )                              ;
@@ -67,7 +67,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/10/2019 09:44:11 ;
+; Start date & time ; 03/18/2019 15:14:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pico_axilite        ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+------------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name      ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+------------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 0.155218225104739                     ; --            ; --               ; --             ;
+; COMPILER_SIGNATURE_ID                ; 0.155289327203359                     ; --            ; --               ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --               ; pico_tb        ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; pico_tb                               ; --            ; --               ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --               ; eda_simulation ;
@@ -111,13 +111,13 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:41     ; 1.0                     ; 1261 MB             ; 00:01:34                           ;
-; Fitter                    ; 00:00:35     ; 1.0                     ; 1457 MB             ; 00:00:34                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 1081 MB             ; 00:00:01                           ;
-; PowerPlay Power Analyzer  ; 00:00:08     ; 1.0                     ; 1179 MB             ; 00:00:08                           ;
-; TimeQuest Timing Analyzer ; 00:00:08     ; 1.0                     ; 1119 MB             ; 00:00:08                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1384 MB             ; 00:00:01                           ;
-; Total                     ; 00:01:34     ; --                      ; --                  ; 00:02:26                           ;
+; Analysis & Synthesis      ; 00:00:46     ; 1.0                     ; 1278 MB             ; 00:01:49                           ;
+; Fitter                    ; 00:00:22     ; 1.0                     ; 1464 MB             ; 00:00:23                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 1076 MB             ; 00:00:01                           ;
+; PowerPlay Power Analyzer  ; 00:00:08     ; 1.0                     ; 1151 MB             ; 00:00:08                           ;
+; TimeQuest Timing Analyzer ; 00:00:08     ; 1.0                     ; 1125 MB             ; 00:00:08                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1391 MB             ; 00:00:01                           ;
+; Total                     ; 00:01:26     ; --                      ; --                  ; 00:02:30                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

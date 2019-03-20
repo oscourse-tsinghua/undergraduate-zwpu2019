@@ -1,5 +1,5 @@
 EDA Netlist Writer report for pico_axilite
-Sun Mar 10 09:45:49 2019
+Mon Mar 18 15:16:04 2019
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Mar 10 09:45:49 2019 ;
+; EDA Netlist Writer Status ; Successful - Mon Mar 18 15:16:04 2019 ;
 ; Revision Name             ; pico_axilite                          ;
 ; Top-level Entity Name     ; pico_axilite_top                      ;
 ; Family                    ; MAX 10                                ;
@@ -82,13 +82,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Sun Mar 10 09:45:48 2019
+    Info: Processing started: Mon Mar 18 15:16:03 2019
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off pico_axilite -c pico_axilite
 Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
 Info (204019): Generated file pico_axilite.vo in folder "/home/z/Desktop/pico_axilite_qsys/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1384 megabytes
-    Info: Processing ended: Sun Mar 10 09:45:49 2019
+    Info: Peak virtual memory: 1391 megabytes
+    Info: Processing ended: Mon Mar 18 15:16:04 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

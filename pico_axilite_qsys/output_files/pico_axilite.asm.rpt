@@ -1,5 +1,5 @@
 Assembler report for pico_axilite
-Sun Mar 10 09:45:29 2019
+Mon Mar 18 15:15:45 2019
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Mar 10 09:45:29 2019 ;
+; Assembler Status      ; Successful - Mon Mar 18 15:15:45 2019 ;
 ; Revision Name         ; pico_axilite                          ;
 ; Top-level Entity Name ; pico_axilite_top                      ;
 ; Family                ; MAX 10                                ;
@@ -68,8 +68,8 @@ agreement for further details.
 ; Option         ; Setting                   ;
 +----------------+---------------------------+
 ; Device         ; 10M08SAM153C8G            ;
-; JTAG usercode  ; 0x001F7694                ;
-; Checksum       ; 0x001F7694                ;
+; JTAG usercode  ; 0x002325CC                ;
+; Checksum       ; 0x002325CC                ;
 +----------------+---------------------------+
 
 
@@ -79,13 +79,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Sun Mar 10 09:45:28 2019
+    Info: Processing started: Mon Mar 18 15:15:44 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off pico_axilite -c pico_axilite
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1081 megabytes
-    Info: Processing ended: Sun Mar 10 09:45:29 2019
+    Info: Peak virtual memory: 1076 megabytes
+    Info: Processing ended: Mon Mar 18 15:15:45 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
