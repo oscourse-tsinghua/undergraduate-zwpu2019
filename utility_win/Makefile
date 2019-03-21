@@ -17,7 +17,7 @@ hx8kdemo_fw.elf: sections.lds start.s firmware.c
 # ---- Clean ----
 
 clean:
-	rm -f hx8kdemo_fw.elf hx8kdemo_fw.hex hx8kdemo_fw.bin
+	rm -f hx8kdemo_fw.elf hx8kdemo_fw.hex hx8kdemo_fw.bin hx8kdemo_fw.coe
 
 .PHONY: clean
 

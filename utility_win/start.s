@@ -35,27 +35,6 @@ addi x29, zero, 0
 addi x30, zero, 0
 addi x31, zero, 0
 
-
-
-lui  x3, 0x02000
-lw   x4, 0x4(x3)
-
-lui  x3, 0x03000
-
-ori  x5, x5, 15
-and  x6, x5, x4
-xor  x6, x6, 0xff
-sb   x6, 0x0(x3)
-
-srli x4, x4, 4
-and  x6, x5, x4
-sb   x6, 0x4(x3)
-
-srli x4, x4, 4
-and  x6, x5, x4
-sb   x4, 0x5(x3)
-
-
 # call main
 call main
 loop:

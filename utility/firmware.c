@@ -4,6 +4,7 @@
 #define uart_rx (*(volatile uint32_t*)0x02000000)
 #define uart_tx (*(volatile uint32_t*)0x02000004)
 #define uart_divisor (*(volatile uint32_t*)0x02000010)
+#define uart_status (*(volatile uint32_t*)0x02000008)
 
 #define reg_gpio (*(volatile uint32_t*)0x03000000)
 #define reg_seg1 (*(volatile uint32_t*)0x04000000)
@@ -11,12 +12,10 @@
 int main()
 {
 	char greet[] = "Booting......\n\r.";
-	char receive;
-
 	int i = 0;
 	int j = 0;
 	int div = 104;
-
+	char tmp;
 
 	reg_seg1 = ( uart_divisor >> 8 ) & 15;
 	reg_seg2 = ( uart_divisor >> 4 ) & 15;
@@ -27,15 +26,19 @@ int main()
 	reg_seg1 = ( uart_divisor >> 4 ) & 15;
 	reg_seg2 = ( uart_divisor >> 0 ) & 15;
 
-	for(j = 0; j < 15; j++) {
-		uart_tx = greet[j];
-		reg_gpio = 255 >> j;
-		for(i = 0; i < 30000; i++);
-	}
+		
+
 	while(1) {		
-		receive = uart_rx;
-		uart_tx = receive;
-		for(i = 0; i < 1000; i++);		
+		for(j = 0; j < 15; j++) {
+			uart_tx = greet[j];
+			reg_gpio = 255 >> j;
+			
+			if(uart_status & 0x0080) {
+				tmp = uart_tx;
+				greet[j] = 'C';		
+			}
+			for(i = 0; i < 100000; i++);
+		}
 	}
 
 	return 0;
