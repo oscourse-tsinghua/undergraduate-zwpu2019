@@ -1,0 +1,16 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="38ca2ab9ba8ac856c414"/>
+  </project>
+  <file_info>
+    <file device="10M08SAM153I7G" path="soc_axilite.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="pico_qsys:u0" name="u0">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME pico_qsys HAS_SOPCINFO 1 GENERATION_ID 1553177399"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

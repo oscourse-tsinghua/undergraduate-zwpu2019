@@ -1,0 +1,402 @@
+Power Analyzer report for soc_axilite
+Thu Mar 21 22:11:37 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Parallel Compilation
+  3. Power Analyzer Summary
+  4. Power Analyzer Settings
+  5. Indeterminate Toggle Rates
+  6. Operating Conditions Used
+  7. Thermal Power Dissipation by Block
+  8. Thermal Power Dissipation by Block Type
+  9. Thermal Power Dissipation by Hierarchy
+ 10. Core Dynamic Thermal Power Dissipation by Clock Domain
+ 11. Current Drawn from Voltage Supplies Summary
+ 12. VCCIO Supply Current Drawn by I/O Bank
+ 13. VCCIO Supply Current Drawn by Voltage
+ 14. Confidence Metric Details
+ 15. Signal Activities
+ 16. Power Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.47        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;  47.2%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Power Analyzer Summary                                                                    ;
++----------------------------------------+--------------------------------------------------+
+; Power Analyzer Status                  ; Successful - Thu Mar 21 22:11:37 2019            ;
+; Quartus Prime Version                  ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition  ;
+; Revision Name                          ; soc_axilite                                      ;
+; Top-level Entity Name                  ; pico_axilite_top                                 ;
+; Family                                 ; MAX 10                                           ;
+; Device                                 ; 10M08SAM153I7G                                   ;
+; Power Models                           ; Final                                            ;
+; Total Thermal Power Dissipation        ; 132.39 mW                                        ;
+; Core Dynamic Thermal Power Dissipation ; 16.56 mW                                         ;
+; Core Static Thermal Power Dissipation  ; 110.80 mW                                        ;
+; I/O Thermal Power Dissipation          ; 5.03 mW                                          ;
+; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
++----------------------------------------+--------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Power Analyzer Settings                                                                                                  ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+; Option                                                           ; Setting                               ; Default Value ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+; Use smart compilation                                            ; Off                                   ; Off           ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                                    ; On            ;
+; Enable compact report table                                      ; Off                                   ; Off           ;
+; Default Power Input I/O Toggle Rate                              ; 12.5%                                 ; 12.5%         ;
+; Preset Cooling Solution                                          ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ;               ;
+; Board thermal model                                              ; None (CONSERVATIVE)                   ;               ;
+; Default Power Toggle Rate                                        ; 12.5%                                 ; 12.5%         ;
+; Use vectorless estimation                                        ; On                                    ; On            ;
+; Use Input Files                                                  ; Off                                   ; Off           ;
+; Filter Glitches in VCD File Reader                               ; On                                    ; On            ;
+; Power Analyzer Report Signal Activity                            ; Off                                   ; Off           ;
+; Power Analyzer Report Power Dissipation                          ; Off                                   ; Off           ;
+; Device Power Characteristics                                     ; TYPICAL                               ; TYPICAL       ;
+; Automatically Compute Junction Temperature                       ; On                                    ; On            ;
+; Specified Junction Temperature                                   ; 25                                    ; 25            ;
+; Ambient Temperature                                              ; 25                                    ; 25            ;
+; Use Custom Cooling Solution                                      ; Off                                   ; Off           ;
+; Board Temperature                                                ; 25                                    ; 25            ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+
+
++-------------------------------------+
+; Indeterminate Toggle Rates          ;
++-------+-----------------------------+
+; Node  ; Reason                      ;
++-------+-----------------------------+
+; rst_n ; No valid clock domain found ;
++-------+-----------------------------+
+
+
++--------------------------------------------------------------------------+
+; Operating Conditions Used                                                ;
++---------------------------------------------+----------------------------+
+; Setting                                     ; Value                      ;
++---------------------------------------------+----------------------------+
+; Device power characteristics                ; Typical                    ;
+;                                             ;                            ;
+; Voltages                                    ;                            ;
+;     VCCA                                    ; 3.00 V                     ;
+;     VCC_ONE                                 ; 3.00 V                     ;
+;     2.5 V I/O Standard                      ; 2.5 V                      ;
+;     2.5 V Schmitt Trigger I/O Standard      ; 2.5 V                      ;
+;                                             ;                            ;
+; Auto computed junction temperature          ; 28.4 degrees Celsius       ;
+;     Ambient temperature                     ; 25.0 degrees Celsius       ;
+;     Junction-to-Case thermal resistance     ; 11.00 degrees Celsius/Watt ;
+;     Case-to-Heat Sink thermal resistance    ; 0.10 degrees Celsius/Watt  ;
+;     Heat Sink-to-Ambient thermal resistance ; 14.30 degrees Celsius/Watt ;
+;                                             ;                            ;
+; Board model used                            ; None                       ;
++---------------------------------------------+----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block                                                                                                           ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+; Block Name ; Block Type ; Total Thermal Power ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+(1) The "Thermal Power Dissipation by Block" Table has been hidden. To show this table, please select the "Write power dissipation by block to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block Type                                                                                                                                                                            ;
++---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Block Type          ; Total Thermal Power by Block Type ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ; Block Average Toggle Rate (millions of transitions / sec) ;
++---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; M9K                 ; 0.45 mW                           ; 0.41 mW                     ; --                             ; 0.04 mW                       ;    0.655                                                  ;
+; Combinational cell  ; 1.66 mW                           ; 0.77 mW                     ; --                             ; 0.88 mW                       ;    1.183                                                  ;
+; Clock control block ; 1.47 mW                           ; 0.00 mW                     ; --                             ; 1.47 mW                       ;   24.001                                                  ;
+; Register cell       ; 3.03 mW                           ; 1.88 mW                     ; --                             ; 1.15 mW                       ;    1.486                                                  ;
+; I/O                 ; 0.65 mW                           ; 0.48 mW                     ; 0.17 mW                        ; 0.00 mW                       ;    1.256                                                  ;
+; Voltage Regulator   ; 9.95 mW                           ; 9.95 mW                     ; 0.00 mW                        ; --                            ; --                                                        ;
++---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+(1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Hierarchy                                                                                                                                                                                                                                                                                                                                                                       ;
++--------------------------------------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Compilation Hierarchy Node                                                           ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                                                                                                                  ;
++--------------------------------------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; |pico_axilite_top                                                                    ; 17.21 mW (11.54 mW)                  ; 13.48 mW (10.42 mW)             ; 0.17 mW (0.17 mW)                 ; 3.56 mW (0.94 mW)                 ; |pico_axilite_top                                                                                                                                                    ;
+;     |hard_block:auto_generated_inst                                                  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|hard_block:auto_generated_inst                                                                                                                     ;
+;     |segment:seg_inst                                                                ; 0.01 mW (0.01 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |pico_axilite_top|segment:seg_inst                                                                                                                                   ;
+;     |pico_qsys:u0                                                                    ; 5.66 mW (0.00 mW)                    ; 3.05 mW (0.00 mW)               ; --                                ; 2.61 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0                                                                                                                                       ;
+;         |pico_qsys_led:led                                                           ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_led:led                                                                                                                     ;
+;         |pico_qsys_mm_interconnect_0:mm_interconnect_0                               ; 0.98 mW (0.00 mW)                    ; 0.63 mW (0.00 mW)               ; --                                ; 0.35 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0                                                                                         ;
+;             |pico_qsys_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter                         ;
+;             |pico_qsys_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter_001     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter_001                     ;
+;             |pico_qsys_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter_002     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter_002                     ;
+;             |pico_qsys_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter_003     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter_003                     ;
+;             |pico_qsys_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter_004     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter_004                     ;
+;             |pico_qsys_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter_005     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter_005                     ;
+;             |pico_qsys_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter_006     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_avalon_st_adapter:avalon_st_adapter_006                     ;
+;             |pico_qsys_mm_interconnect_0_cmd_demux:cmd_demux                         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_cmd_demux:cmd_demux                                         ;
+;             |pico_qsys_mm_interconnect_0_cmd_demux:cmd_demux_001                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_cmd_demux:cmd_demux_001                                     ;
+;             |pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux                             ; 0.12 mW (0.11 mW)                    ; 0.02 mW (0.01 mW)               ; --                                ; 0.10 mW (0.10 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux                                             ;
+;                 |altera_merlin_arbitrator:arb                                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux|altera_merlin_arbitrator:arb                ;
+;             |pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_001                         ; 0.13 mW (0.13 mW)                    ; 0.02 mW (0.02 mW)               ; --                                ; 0.11 mW (0.11 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_001                                         ;
+;                 |altera_merlin_arbitrator:arb                                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_001|altera_merlin_arbitrator:arb            ;
+;             |pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_002                         ; 0.02 mW (0.02 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_002                                         ;
+;                 |altera_merlin_arbitrator:arb                                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_002|altera_merlin_arbitrator:arb            ;
+;             |pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_003                         ; 0.02 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_003                                         ;
+;                 |altera_merlin_arbitrator:arb                                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_003|altera_merlin_arbitrator:arb            ;
+;             |pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_004                         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_004                                         ;
+;                 |altera_merlin_arbitrator:arb                                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_004|altera_merlin_arbitrator:arb            ;
+;             |pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_005                         ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_005                                         ;
+;                 |altera_merlin_arbitrator:arb                                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_005|altera_merlin_arbitrator:arb            ;
+;             |pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_006                         ; 0.02 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_006                                         ;
+;                 |altera_merlin_arbitrator:arb                                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_cmd_mux:cmd_mux_006|altera_merlin_arbitrator:arb            ;
+;             |altera_merlin_slave_agent:led_s1_agent                                  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:led_s1_agent                                                  ;
+;                 |altera_merlin_burst_uncompressor:uncompressor                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:led_s1_agent|altera_merlin_burst_uncompressor:uncompressor    ;
+;             |altera_avalon_sc_fifo:led_s1_agent_rdata_fifo                           ; 0.04 mW (0.04 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:led_s1_agent_rdata_fifo                                           ;
+;             |altera_avalon_sc_fifo:led_s1_agent_rsp_fifo                             ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:led_s1_agent_rsp_fifo                                             ;
+;             |altera_merlin_slave_translator:led_s1_translator                        ; 0.03 mW (0.03 mW)                    ; 0.02 mW (0.02 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:led_s1_translator                                        ;
+;             |altera_merlin_axi_master_ni:pico_axilite_0_altera_axi4lite_master_agent ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_axi_master_ni:pico_axilite_0_altera_axi4lite_master_agent                 ;
+;             |altera_merlin_slave_agent:ram_s1_agent                                  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:ram_s1_agent                                                  ;
+;                 |altera_merlin_burst_uncompressor:uncompressor                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:ram_s1_agent|altera_merlin_burst_uncompressor:uncompressor    ;
+;             |altera_avalon_sc_fifo:ram_s1_agent_rdata_fifo                           ; 0.10 mW (0.10 mW)                    ; 0.09 mW (0.09 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:ram_s1_agent_rdata_fifo                                           ;
+;             |altera_avalon_sc_fifo:ram_s1_agent_rsp_fifo                             ; 0.02 mW (0.02 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:ram_s1_agent_rsp_fifo                                             ;
+;             |altera_merlin_slave_translator:ram_s1_translator                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:ram_s1_translator                                        ;
+;             |altera_merlin_slave_agent:rom_s1_agent                                  ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:rom_s1_agent                                                  ;
+;                 |altera_merlin_burst_uncompressor:uncompressor                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:rom_s1_agent|altera_merlin_burst_uncompressor:uncompressor    ;
+;             |altera_avalon_sc_fifo:rom_s1_agent_rdata_fifo                           ; 0.09 mW (0.09 mW)                    ; 0.08 mW (0.08 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:rom_s1_agent_rdata_fifo                                           ;
+;             |altera_avalon_sc_fifo:rom_s1_agent_rsp_fifo                             ; 0.02 mW (0.02 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:rom_s1_agent_rsp_fifo                                             ;
+;             |altera_merlin_slave_translator:rom_s1_translator                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:rom_s1_translator                                        ;
+;             |pico_qsys_mm_interconnect_0_router:router                               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_router:router                                               ;
+;             |pico_qsys_mm_interconnect_0_router:router_001                           ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_router:router_001                                           ;
+;             |pico_qsys_mm_interconnect_0_router_002:router_002                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_router_002:router_002                                       ;
+;             |pico_qsys_mm_interconnect_0_router_002:router_003                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_router_002:router_003                                       ;
+;             |pico_qsys_mm_interconnect_0_router_002:router_004                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_router_002:router_004                                       ;
+;             |pico_qsys_mm_interconnect_0_router_002:router_005                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_router_002:router_005                                       ;
+;             |pico_qsys_mm_interconnect_0_router_002:router_006                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_router_002:router_006                                       ;
+;             |pico_qsys_mm_interconnect_0_router_002:router_007                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_router_002:router_007                                       ;
+;             |pico_qsys_mm_interconnect_0_router_002:router_008                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_router_002:router_008                                       ;
+;             |pico_qsys_mm_interconnect_0_rsp_demux:rsp_demux                         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_rsp_demux:rsp_demux                                         ;
+;             |pico_qsys_mm_interconnect_0_rsp_demux:rsp_demux_001                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_rsp_demux:rsp_demux_001                                     ;
+;             |pico_qsys_mm_interconnect_0_rsp_demux:rsp_demux_002                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_rsp_demux:rsp_demux_002                                     ;
+;             |pico_qsys_mm_interconnect_0_rsp_demux:rsp_demux_003                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_rsp_demux:rsp_demux_003                                     ;
+;             |pico_qsys_mm_interconnect_0_rsp_demux:rsp_demux_005                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_rsp_demux:rsp_demux_005                                     ;
+;             |pico_qsys_mm_interconnect_0_rsp_demux:rsp_demux_006                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_rsp_demux:rsp_demux_006                                     ;
+;             |pico_qsys_mm_interconnect_0_rsp_mux:rsp_mux                             ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_rsp_mux:rsp_mux                                             ;
+;                 |altera_merlin_arbitrator:arb                                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_rsp_mux:rsp_mux|altera_merlin_arbitrator:arb                ;
+;             |pico_qsys_mm_interconnect_0_rsp_mux:rsp_mux_001                         ; 0.06 mW (0.06 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.04 mW (0.04 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_rsp_mux:rsp_mux_001                                         ;
+;                 |altera_merlin_arbitrator:arb                                        ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|pico_qsys_mm_interconnect_0_rsp_mux:rsp_mux_001|altera_merlin_arbitrator:arb            ;
+;             |altera_merlin_slave_agent:seg1_s1_agent                                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:seg1_s1_agent                                                 ;
+;                 |altera_merlin_burst_uncompressor:uncompressor                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:seg1_s1_agent|altera_merlin_burst_uncompressor:uncompressor   ;
+;             |altera_avalon_sc_fifo:seg1_s1_agent_rdata_fifo                          ; 0.02 mW (0.02 mW)                    ; 0.02 mW (0.02 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:seg1_s1_agent_rdata_fifo                                          ;
+;             |altera_avalon_sc_fifo:seg1_s1_agent_rsp_fifo                            ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:seg1_s1_agent_rsp_fifo                                            ;
+;             |altera_merlin_slave_translator:seg1_s1_translator                       ; 0.03 mW (0.03 mW)                    ; 0.02 mW (0.02 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:seg1_s1_translator                                       ;
+;             |altera_merlin_slave_agent:seg2_s1_agent                                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:seg2_s1_agent                                                 ;
+;                 |altera_merlin_burst_uncompressor:uncompressor                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:seg2_s1_agent|altera_merlin_burst_uncompressor:uncompressor   ;
+;             |altera_avalon_sc_fifo:seg2_s1_agent_rdata_fifo                          ; 0.03 mW (0.03 mW)                    ; 0.02 mW (0.02 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:seg2_s1_agent_rdata_fifo                                          ;
+;             |altera_avalon_sc_fifo:seg2_s1_agent_rsp_fifo                            ; 0.02 mW (0.02 mW)                    ; 0.02 mW (0.02 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:seg2_s1_agent_rsp_fifo                                            ;
+;             |altera_merlin_slave_translator:seg2_s1_translator                       ; 0.02 mW (0.02 mW)                    ; 0.02 mW (0.02 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:seg2_s1_translator                                       ;
+;             |altera_merlin_slave_agent:sw_s1_agent                                   ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:sw_s1_agent                                                   ;
+;             |altera_avalon_sc_fifo:sw_s1_agent_rdata_fifo                            ; 0.02 mW (0.02 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sw_s1_agent_rdata_fifo                                            ;
+;             |altera_avalon_sc_fifo:sw_s1_agent_rsp_fifo                              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:sw_s1_agent_rsp_fifo                                              ;
+;             |altera_merlin_slave_translator:sw_s1_translator                         ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:sw_s1_translator                                         ;
+;             |altera_merlin_slave_agent:uart_0_s1_agent                               ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:uart_0_s1_agent                                               ;
+;                 |altera_merlin_burst_uncompressor:uncompressor                       ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_agent:uart_0_s1_agent|altera_merlin_burst_uncompressor:uncompressor ;
+;             |altera_avalon_sc_fifo:uart_0_s1_agent_rdata_fifo                        ; 0.05 mW (0.05 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:uart_0_s1_agent_rdata_fifo                                        ;
+;             |altera_avalon_sc_fifo:uart_0_s1_agent_rsp_fifo                          ; 0.02 mW (0.02 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_avalon_sc_fifo:uart_0_s1_agent_rsp_fifo                                          ;
+;             |altera_merlin_slave_translator:uart_0_s1_translator                     ; 0.03 mW (0.03 mW)                    ; 0.02 mW (0.02 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_mm_interconnect_0:mm_interconnect_0|altera_merlin_slave_translator:uart_0_s1_translator                                     ;
+;         |picorv32_axi_wrapper:pico_axilite_0                                         ; 3.74 mW (0.00 mW)                    ; 2.16 mW (0.00 mW)               ; --                                ; 1.58 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|picorv32_axi_wrapper:pico_axilite_0                                                                                                   ;
+;             |picorv32_axi:uut                                                        ; 3.74 mW (0.00 mW)                    ; 2.16 mW (0.00 mW)               ; --                                ; 1.58 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|picorv32_axi_wrapper:pico_axilite_0|picorv32_axi:uut                                                                                  ;
+;                 |picorv32_axi_adapter:axi_adapter                                    ; 0.02 mW (0.02 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|picorv32_axi_wrapper:pico_axilite_0|picorv32_axi:uut|picorv32_axi_adapter:axi_adapter                                                 ;
+;                 |picorv32:picorv32_core                                              ; 3.73 mW (2.59 mW)                    ; 2.15 mW (1.31 mW)               ; --                                ; 1.58 mW (1.28 mW)                 ; |pico_axilite_top|pico_qsys:u0|picorv32_axi_wrapper:pico_axilite_0|picorv32_axi:uut|picorv32:picorv32_core                                                           ;
+;                     |altsyncram:cpuregs_rtl_0                                        ; 0.18 mW (0.00 mW)                    ; 0.18 mW (0.00 mW)               ; --                                ; 0.01 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|picorv32_axi_wrapper:pico_axilite_0|picorv32_axi:uut|picorv32:picorv32_core|altsyncram:cpuregs_rtl_0                                  ;
+;                         |altsyncram_t6d1:auto_generated                              ; 0.18 mW (0.18 mW)                    ; 0.18 mW (0.18 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |pico_axilite_top|pico_qsys:u0|picorv32_axi_wrapper:pico_axilite_0|picorv32_axi:uut|picorv32:picorv32_core|altsyncram:cpuregs_rtl_0|altsyncram_t6d1:auto_generated   ;
+;                     |altsyncram:cpuregs_rtl_1                                        ; 0.19 mW (0.00 mW)                    ; 0.18 mW (0.00 mW)               ; --                                ; 0.01 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|picorv32_axi_wrapper:pico_axilite_0|picorv32_axi:uut|picorv32:picorv32_core|altsyncram:cpuregs_rtl_1                                  ;
+;                         |altsyncram_t6d1:auto_generated                              ; 0.19 mW (0.19 mW)                    ; 0.18 mW (0.18 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |pico_axilite_top|pico_qsys:u0|picorv32_axi_wrapper:pico_axilite_0|picorv32_axi:uut|picorv32:picorv32_core|altsyncram:cpuregs_rtl_1|altsyncram_t6d1:auto_generated   ;
+;                     |picorv32_pcpi_div:pcpi_div                                      ; 0.39 mW (0.39 mW)                    ; 0.21 mW (0.21 mW)               ; --                                ; 0.17 mW (0.17 mW)                 ; |pico_axilite_top|pico_qsys:u0|picorv32_axi_wrapper:pico_axilite_0|picorv32_axi:uut|picorv32:picorv32_core|picorv32_pcpi_div:pcpi_div                                ;
+;                     |picorv32_pcpi_mul:pcpi_mul                                      ; 0.38 mW (0.38 mW)                    ; 0.27 mW (0.27 mW)               ; --                                ; 0.11 mW (0.11 mW)                 ; |pico_axilite_top|pico_qsys:u0|picorv32_axi_wrapper:pico_axilite_0|picorv32_axi:uut|picorv32:picorv32_core|picorv32_pcpi_mul:pcpi_mul                                ;
+;         |pico_qsys_ram:ram                                                           ; 0.04 mW (0.00 mW)                    ; 0.03 mW (0.00 mW)               ; --                                ; 0.01 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_ram:ram                                                                                                                     ;
+;             |altsyncram:the_altsyncram                                               ; 0.04 mW (0.00 mW)                    ; 0.03 mW (0.00 mW)               ; --                                ; 0.01 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_ram:ram|altsyncram:the_altsyncram                                                                                           ;
+;                 |altsyncram_mff1:auto_generated                                      ; 0.04 mW (0.04 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_ram:ram|altsyncram:the_altsyncram|altsyncram_mff1:auto_generated                                                            ;
+;         |pico_qsys_rom:rom                                                           ; 0.04 mW (0.00 mW)                    ; 0.03 mW (0.00 mW)               ; --                                ; 0.01 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_rom:rom                                                                                                                     ;
+;             |altsyncram:the_altsyncram                                               ; 0.04 mW (0.00 mW)                    ; 0.03 mW (0.00 mW)               ; --                                ; 0.01 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_rom:rom|altsyncram:the_altsyncram                                                                                           ;
+;                 |altsyncram_gri1:auto_generated                                      ; 0.04 mW (0.04 mW)                    ; 0.03 mW (0.03 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_rom:rom|altsyncram:the_altsyncram|altsyncram_gri1:auto_generated                                                            ;
+;         |altera_reset_controller:rst_controller                                      ; 0.57 mW (0.57 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.56 mW (0.56 mW)                 ; |pico_axilite_top|pico_qsys:u0|altera_reset_controller:rst_controller                                                                                                ;
+;             |altera_reset_synchronizer:alt_rst_req_sync_uq1                          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1                                                 ;
+;             |altera_reset_synchronizer:alt_rst_sync_uq1                              ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1                                                     ;
+;         |pico_qsys_seg1:seg1                                                         ; 0.02 mW (0.02 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_seg1:seg1                                                                                                                   ;
+;         |pico_qsys_seg1:seg2                                                         ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_seg1:seg2                                                                                                                   ;
+;         |pico_qsys_sw:sw                                                             ; 0.01 mW (0.01 mW)                    ; 0.01 mW (0.01 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_sw:sw                                                                                                                       ;
+;         |pico_qsys_uart_0:uart_0                                                     ; 0.24 mW (0.00 mW)                    ; 0.17 mW (0.00 mW)               ; --                                ; 0.07 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_uart_0:uart_0                                                                                                               ;
+;             |pico_qsys_uart_0_regs:the_pico_qsys_uart_0_regs                         ; 0.09 mW (0.09 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.04 mW (0.04 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_uart_0:uart_0|pico_qsys_uart_0_regs:the_pico_qsys_uart_0_regs                                                               ;
+;             |pico_qsys_uart_0_rx:the_pico_qsys_uart_0_rx                             ; 0.09 mW (0.08 mW)                    ; 0.07 mW (0.06 mW)               ; --                                ; 0.02 mW (0.02 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_uart_0:uart_0|pico_qsys_uart_0_rx:the_pico_qsys_uart_0_rx                                                                   ;
+;                 |altera_std_synchronizer:the_altera_std_synchronizer                 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_uart_0:uart_0|pico_qsys_uart_0_rx:the_pico_qsys_uart_0_rx|altera_std_synchronizer:the_altera_std_synchronizer               ;
+;             |pico_qsys_uart_0_tx:the_pico_qsys_uart_0_tx                             ; 0.06 mW (0.06 mW)                    ; 0.05 mW (0.05 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |pico_axilite_top|pico_qsys:u0|pico_qsys_uart_0:uart_0|pico_qsys_uart_0_tx:the_pico_qsys_uart_0_tx                                                                   ;
++--------------------------------------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+(1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
+
+(2) The "Block Thermal Static Power" for all levels of hierarchy except the top-level hierarchy is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++--------------------------------------------------------------------+
+; Core Dynamic Thermal Power Dissipation by Clock Domain             ;
++-----------------+-----------------------+--------------------------+
+; Clock Domain    ; Clock Frequency (MHz) ; Total Core Dynamic Power ;
++-----------------+-----------------------+--------------------------+
+; clk             ; 12.00                 ; 6.61                     ;
+; No clock domain ; 0.00                  ; 0.00                     ;
++-----------------+-----------------------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Current Drawn from Voltage Supplies Summary                                                                                        ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; Voltage Supply ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO          ; 2.04 mA                 ; 0.18 mA                   ; 1.86 mA                  ; 2.04 mA                          ;
+; VCCA           ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
+; VCC_ONE        ; 42.46 mA                ; 5.53 mA                   ; 36.93 mA                 ; 42.46 mA                         ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-----------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by I/O Bank                                                        ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; 1A       ; 2.5V          ; 0.30 mA             ; 0.03 mA               ; 0.27 mA              ;
+; 1B       ; 2.5V          ; 0.28 mA             ; 0.01 mA               ; 0.27 mA              ;
+; 2        ; 2.5V          ; 0.29 mA             ; 0.02 mA               ; 0.26 mA              ;
+; 3        ; 2.5V          ; 0.27 mA             ; 0.01 mA               ; 0.26 mA              ;
+; 4        ; --            ; --                  ; --                    ; --                   ;
+; 5        ; 2.5V          ; 0.37 mA             ; 0.09 mA               ; 0.27 mA              ;
+; 6        ; 2.5V          ; 0.26 mA             ; 0.00 mA               ; 0.26 mA              ;
+; 7        ; --            ; --                  ; --                    ; --                   ;
+; 8        ; 2.5V          ; 0.27 mA             ; 0.01 mA               ; 0.26 mA              ;
++----------+---------------+---------------------+-----------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by Voltage                                                                                             ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; 2.5V          ; 2.04 mA                 ; 0.18 mA                   ; 1.86 mA                  ; 2.04 mA                          ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                          ;
++----------------------------------------------------------------------------------------+--------------+------------+---------------+---------------+
+; Data Source                                                                            ; Total        ; Pin        ; Registered    ; Combinational ;
++----------------------------------------------------------------------------------------+--------------+------------+---------------+---------------+
+; Simulation (from file)                                                                 ;              ;            ;               ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
+;                                                                                        ;              ;            ;               ;               ;
+; Node, entity or clock assignment                                                       ;              ;            ;               ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 3 (0.0%)     ; 1 (2.4%)   ; 0 (0.0%)      ; 2 (0.0%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 3 (0.0%)     ; 1 (2.4%)   ; 0 (0.0%)      ; 2 (0.0%)      ;
+;                                                                                        ;              ;            ;               ;               ;
+; Vectorless estimation                                                                  ;              ;            ;               ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 6396 (99.8%) ; 29 (69.0%) ; 1760 (100.0%) ; 4607 (100.0%) ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 70 (1.1%)    ; 5 (11.9%)  ; 16 (0.9%)     ; 49 (1.1%)     ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 6396 (99.8%) ; 29 (69.0%) ; 1760 (100.0%) ; 4607 (100.0%) ;
+;                                                                                        ;              ;            ;               ;               ;
+; Default assignment                                                                     ;              ;            ;               ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 5 (0.1%)     ; 5 (11.9%)  ; 0 (0.0%)      ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 12 (0.2%)    ; 12 (28.6%) ; 0 (0.0%)      ; 0 (0.0%)      ;
+;                                                                                        ;              ;            ;               ;               ;
+; Assumed 0                                                                              ;              ;            ;               ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 7 (0.1%)     ; 7 (16.7%)  ; 0 (0.0%)      ; 0 (0.0%)      ;
++----------------------------------------------------------------------------------------+--------------+------------+---------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                           ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source ; Static Probability ; Static Probability Data Source ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-------------------------+
+; Power Analyzer Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Power Analyzer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+    Info: Processing started: Thu Mar 21 22:11:28 2019
+Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off soc_axilite -c soc_axilite
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (21077): Low junction temperature is -40 degrees C
+Info (21077): High junction temperature is 100 degrees C
+Info (332164): Evaluating HDL-embedded SDC commands
+    Info (332165): Entity altera_std_synchronizer
+        Info (332166): set_false_path -to [get_keepers {*altera_std_synchronizer:*|din_s1}]
+Info (332104): Reading SDC File: 'output_files/clock.sdc'
+Info (332104): Reading SDC File: 'c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_reset_controller.sdc'
+Critical Warning (332168): The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
+    Critical Warning (332169): From clk_input (Rise) to clk_input (Rise) (setup and hold)
+Info (223000): Starting Vectorless Power Activity Estimation
+Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
+Info (223001): Completed Vectorless Power Activity Estimation
+Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specified board trace model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (215049): Average toggle rate for this design is 1.264 millions of transitions / sec
+Info (215031): Total thermal power estimate for the design is 132.39 mW
+Info: Quartus Prime Power Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4839 megabytes
+    Info: Processing ended: Thu Mar 21 22:11:38 2019
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:14
+
+

@@ -1,0 +1,982 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/91947/Desktop/final/soc_axilite/simulation/modelsim
+valtera_avalon_sc_fifo
+Z1 !s110 1553177276
+!i10b 1
+!s100 4mK@em][G=j]om3zJIhOc0
+IS:^d@^kM>D[?Q5:c2cLII2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1553177230
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_avalon_sc_fifo.v
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_avalon_sc_fifo.v
+Z4 L0 21
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1553177276.000000
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_avalon_sc_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_avalon_sc_fifo.v|
+!i113 1
+Z7 o-vlog01compat -work pico_qsys
+Z8 !s92 -vlog01compat -work pico_qsys +incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules
+Z9 tCvgOpt 0
+valtera_merlin_arb_adder
+Z10 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z11 !s110 1553177278
+!i10b 1
+!s100 1Jn[a;@5nZmTN?DFKQNzj2
+IGh2R7eNzX4TVcU^Ua5Mjj2
+R2
+Z12 !s105 altera_merlin_arbitrator_sv_unit
+S1
+R0
+R3
+Z13 8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_arbitrator.sv
+Z14 Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_arbitrator.sv
+L0 228
+R5
+r1
+!s85 0
+31
+Z15 !s108 1553177278.000000
+Z16 !s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_arbitrator.sv|
+Z17 !s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_arbitrator.sv|
+!i113 1
+Z18 o-sv -work pico_qsys
+Z19 !s92 -sv -work pico_qsys +incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules
+R9
+valtera_merlin_arbitrator
+R10
+R11
+!i10b 1
+!s100 NQTehjm2fNQROUMUzShGa1
+IdkYb89FIfj2;]YD2>_EPg1
+R2
+R12
+S1
+R0
+R3
+R13
+R14
+L0 103
+R5
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 1
+R18
+R19
+R9
+valtera_merlin_axi_master_ni
+R10
+Z20 !s110 1553177279
+!i10b 1
+!s100 3_AI>HiSXNYzWC0UYFJ8?0
+I_VF>9bj4QIEaNYGX4o1[I3
+R2
+!s105 altera_merlin_axi_master_ni_sv_unit
+S1
+R0
+R3
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv
+L0 27
+R5
+r1
+!s85 0
+31
+R15
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv|
+!s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_axi_master_ni.sv|
+!i113 1
+R18
+R19
+R9
+valtera_merlin_burst_uncompressor
+R10
+R20
+!i10b 1
+!s100 f1?Rb<=9U?R9LJoHl;7>T3
+I[Nh<JdJ5G3IcR4P_ekJh_2
+R2
+!s105 altera_merlin_burst_uncompressor_sv_unit
+S1
+R0
+R3
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_burst_uncompressor.sv
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_burst_uncompressor.sv
+L0 40
+R5
+r1
+!s85 0
+31
+Z21 !s108 1553177279.000000
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_burst_uncompressor.sv|
+!s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_burst_uncompressor.sv|
+!i113 1
+R18
+R19
+R9
+valtera_merlin_slave_agent
+R10
+R20
+!i10b 1
+!s100 ePZN1d?B062J`OBb?blff3
+IYh1Mz=c2W2]_z;T4IYiIo1
+R2
+!s105 altera_merlin_slave_agent_sv_unit
+S1
+R0
+R3
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_slave_agent.sv
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_slave_agent.sv
+L0 34
+R5
+r1
+!s85 0
+31
+R21
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_slave_agent.sv|
+!s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_slave_agent.sv|
+!i113 1
+R18
+R19
+R9
+valtera_merlin_slave_translator
+R10
+R20
+!i10b 1
+!s100 k`9[YAn_dLTkg;GE`mOb61
+Ij>VR6]L6JPmH3VRIFZBaR1
+R2
+!s105 altera_merlin_slave_translator_sv_unit
+S1
+R0
+R3
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_slave_translator.sv
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_slave_translator.sv
+L0 35
+R5
+r1
+!s85 0
+31
+R21
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_slave_translator.sv|
+!s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_merlin_slave_translator.sv|
+!i113 1
+R18
+R19
+R9
+valtera_reset_controller
+Z22 !s110 1553177277
+!i10b 1
+!s100 z[H_hRO9gO=:^2E3_jWH03
+IQHR`?ZJA3D^0M[Rc0z7QH0
+R2
+R0
+R3
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_reset_controller.v
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_reset_controller.v
+L0 42
+R5
+r1
+!s85 0
+31
+Z23 !s108 1553177277.000000
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_reset_controller.v|
+!i113 1
+R7
+R8
+R9
+valtera_reset_synchronizer
+R22
+!i10b 1
+!s100 oWLYmSO[EOX[G0PgQhZ2=0
+I<W@V9XY47e3^W>NBEHe?;2
+R2
+R0
+R3
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_reset_synchronizer.v
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_reset_synchronizer.v
+L0 24
+R5
+r1
+!s85 0
+31
+R23
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/altera_reset_synchronizer.v|
+!i113 1
+R7
+R8
+R9
+vpico_qsys
+R1
+!i10b 1
+!s100 Bkb0m^Ad;e?_KkIN>fY]M2
+I@_D6OMN=AHHLLCa69T<L@0
+R2
+R0
+w1553177217
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/pico_qsys.v
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/pico_qsys.v
+L0 6
+R5
+r1
+!s85 0
+31
+R6
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/pico_qsys.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/pico_qsys.v|
+!i113 1
+R7
+!s92 -vlog01compat -work pico_qsys +incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys
+R9
+vpico_qsys_irq_mapper
+R10
+R20
+!i10b 1
+!s100 Lf6>FCBf8?S9mn<h:5=DQ2
+IWOn]03`3HOh8zee6WQlM`1
+R2
+!s105 pico_qsys_irq_mapper_sv_unit
+S1
+R0
+R3
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_irq_mapper.sv
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_irq_mapper.sv
+L0 31
+R5
+r1
+!s85 0
+31
+R21
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_irq_mapper.sv|
+!s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_irq_mapper.sv|
+!i113 1
+R18
+R19
+R9
+vpico_qsys_led
+R22
+!i10b 1
+!s100 M1:B0<<GCNAzb5zbGlHc50
+I@B4C>ZO0Ka`QVSS9V?jSc1
+R2
+R0
+Z24 w1553177218
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_led.v
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_led.v
+R4
+R5
+r1
+!s85 0
+31
+R23
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_led.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_led.v|
+!i113 1
+R7
+R8
+R9
+vpico_qsys_mm_interconnect_0
+R22
+!i10b 1
+!s100 ?cgXIX3@;KFA]1K4aCl5D2
+I6mWzQi`c99LPdXP6ZnG=90
+R2
+R0
+R3
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0.v
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0.v
+L0 9
+R5
+r1
+!s85 0
+31
+R23
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0.v|
+!i113 1
+R7
+R8
+R9
+vpico_qsys_mm_interconnect_0_avalon_st_adapter
+R22
+!i10b 1
+!s100 AX]mgPlCURC];h2lQaSP_3
+IUXYIZFGXGJ?5KlbB:H?jl3
+R2
+R0
+Z25 w1553177231
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter.v
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter.v
+L0 9
+R5
+r1
+!s85 0
+31
+R23
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter.v|
+!i113 1
+R7
+R8
+R9
+vpico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+R10
+Z26 !s110 1553177280
+!i10b 1
+!s100 BMEWI3?][hOS`:ii9DBHL1
+II]5V>Y=Mf_bLzT^e8Ifdn2
+R2
+!s105 pico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0_sv_unit
+S1
+R0
+R25
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+L0 66
+R5
+r1
+!s85 0
+31
+R21
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!i113 1
+R18
+R19
+R9
+vpico_qsys_mm_interconnect_0_cmd_demux
+R10
+R26
+!i10b 1
+!s100 4g8Qb8V1@l<bcF92P62`I0
+IZcVkMeQ:Anc`a5MU7?_DS2
+R2
+!s105 pico_qsys_mm_interconnect_0_cmd_demux_sv_unit
+S1
+R0
+R3
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_demux.sv
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_demux.sv
+Z27 L0 43
+R5
+r1
+!s85 0
+31
+Z28 !s108 1553177280.000000
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_demux.sv|
+!s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_demux.sv|
+!i113 1
+R18
+R19
+R9
+vpico_qsys_mm_interconnect_0_cmd_mux
+R10
+R26
+!i10b 1
+!s100 4c5;4Ioh4gGOEV3>fcLz51
+ID<g06P<21F>jg:O9I<PRh0
+R2
+!s105 pico_qsys_mm_interconnect_0_cmd_mux_sv_unit
+S1
+R0
+R3
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_mux.sv
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_mux.sv
+Z29 L0 51
+R5
+r1
+!s85 0
+31
+R28
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_mux.sv|
+!s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_cmd_mux.sv|
+!i113 1
+R18
+R19
+R9
+vpico_qsys_mm_interconnect_0_router
+R10
+R26
+!i10b 1
+!s100 PCnbBDc[?;E:g@fZQ3nAX3
+ISg[EW9eb?<KE8^HX0j[Ca2
+R2
+Z30 !s105 pico_qsys_mm_interconnect_0_router_sv_unit
+S1
+R0
+R3
+Z31 8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router.sv
+Z32 Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router.sv
+Z33 L0 84
+R5
+r1
+!s85 0
+31
+R28
+Z34 !s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router.sv|
+Z35 !s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router.sv|
+!i113 1
+R18
+R19
+R9
+vpico_qsys_mm_interconnect_0_router_002
+R10
+R26
+!i10b 1
+!s100 j1^iD;CZR8kU@g0^?YVO83
+If`0U?g3Yh`>JdIe^]A5053
+R2
+Z36 !s105 pico_qsys_mm_interconnect_0_router_002_sv_unit
+S1
+R0
+R3
+Z37 8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router_002.sv
+Z38 Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router_002.sv
+R33
+R5
+r1
+!s85 0
+31
+R28
+Z39 !s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router_002.sv|
+Z40 !s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_router_002.sv|
+!i113 1
+R18
+R19
+R9
+vpico_qsys_mm_interconnect_0_router_002_default_decode
+R10
+R26
+!i10b 1
+!s100 MhiG3ISHlbbMecjRUi;<>2
+Ie8NIGM`oaWcCj?:0geT]32
+R2
+R36
+S1
+R0
+R3
+R37
+R38
+Z41 L0 45
+R5
+r1
+!s85 0
+31
+R28
+R39
+R40
+!i113 1
+R18
+R19
+R9
+vpico_qsys_mm_interconnect_0_router_default_decode
+R10
+R26
+!i10b 1
+!s100 ooL=USXSh9i@V7kQ04=fa0
+IB=]ZYe;=M0m:^9^[ij^Ma0
+R2
+R30
+S1
+R0
+R3
+R31
+R32
+R41
+R5
+r1
+!s85 0
+31
+R28
+R34
+R35
+!i113 1
+R18
+R19
+R9
+vpico_qsys_mm_interconnect_0_rsp_demux
+R10
+R26
+!i10b 1
+!s100 6F0gaaMNh3GdX;7:]YeYo2
+IiVh8=DO6g;]fL=UI?H2]n1
+R2
+!s105 pico_qsys_mm_interconnect_0_rsp_demux_sv_unit
+S1
+R0
+R3
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_demux.sv
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_demux.sv
+R27
+R5
+r1
+!s85 0
+31
+R28
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_demux.sv|
+!s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_demux.sv|
+!i113 1
+R18
+R19
+R9
+vpico_qsys_mm_interconnect_0_rsp_mux
+R10
+R26
+!i10b 1
+!s100 O]lJEOHCQYaEzn;bWJH[P0
+I1RVzSSAnXLU95D?4nRm0W0
+R2
+!s105 pico_qsys_mm_interconnect_0_rsp_mux_sv_unit
+S1
+R0
+R3
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_mux.sv
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_mux.sv
+R29
+R5
+r1
+!s85 0
+31
+R28
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_mux.sv|
+!s90 -reportprogress|300|-sv|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_mm_interconnect_0_rsp_mux.sv|
+!i113 1
+R18
+R19
+R9
+vpico_qsys_onchip_memory2_0
+!s110 1553148091
+!i10b 1
+!s100 GYWbdaCCfh1:mZNCiZOl83
+I:A=bg?HZHBmokOgnijnC90
+R2
+R0
+w1553147994
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1553148090.000000
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_onchip_memory2_0.v|
+!i113 1
+R7
+R8
+R9
+vpico_qsys_ram
+R22
+!i10b 1
+!s100 M;HOCIR9idQ?[<Ld:8lDe3
+IE4i2FDanRAj87DdDAjXhO0
+R2
+R0
+R24
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_ram.v
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_ram.v
+R4
+R5
+r1
+!s85 0
+31
+R23
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_ram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_ram.v|
+!i113 1
+R7
+R8
+R9
+vpico_qsys_rom
+R22
+!i10b 1
+!s100 YE=jY3z;k[42>7B;<VicP2
+IaQi_4iOd;ho`OZDM0;7@T1
+R2
+R0
+Z42 w1553177219
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_rom.v
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_rom.v
+R4
+R5
+r1
+!s85 0
+31
+R23
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_rom.v|
+!i113 1
+R7
+R8
+R9
+vpico_qsys_seg1
+R11
+!i10b 1
+!s100 l8RbB]=h]AD:4VLiQV9o^3
+I`QMQda]NQg>CMUM_NMJC_2
+R2
+R0
+R42
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_seg1.v
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_seg1.v
+R4
+R5
+r1
+!s85 0
+31
+R15
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_seg1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_seg1.v|
+!i113 1
+R7
+R8
+R9
+vpico_qsys_sw
+R11
+!i10b 1
+!s100 LY?;N3F3:lTODn4PV=[m>3
+IO4<BEToOoAzWNlSR6`dAF3
+R2
+R0
+R42
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_sw.v
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_sw.v
+R4
+R5
+r1
+!s85 0
+31
+R15
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_sw.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_sw.v|
+!i113 1
+R7
+R8
+R9
+vpico_qsys_uart_0
+R11
+!i10b 1
+!s100 4g[NIPd>gcDlFj<]H<K2K2
+I_<1C9EI8IKF_AlZI5Be3>0
+R2
+R0
+Z43 w1553177220
+Z44 8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v
+Z45 Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v
+L0 804
+R5
+r1
+!s85 0
+31
+R15
+Z46 !s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v|
+Z47 !s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/pico_qsys_uart_0.v|
+!i113 1
+R7
+R8
+R9
+vpico_qsys_uart_0_regs
+R11
+!i10b 1
+!s100 a`c`HV15>ECQ79=0mG[dM2
+IY:8P9ZRd89C:nJGWLZ]M23
+R2
+R0
+R43
+R44
+R45
+L0 547
+R5
+r1
+!s85 0
+31
+R15
+R46
+R47
+!i113 1
+R7
+R8
+R9
+vpico_qsys_uart_0_rx
+R11
+!i10b 1
+!s100 ZeFF`?^6SF9azg0ob_?1U0
+IQDmJlmlG`^9@UEU;8TbCL1
+R2
+R0
+R43
+R44
+R45
+L0 288
+R5
+r1
+!s85 0
+31
+R15
+R46
+R47
+!i113 1
+R7
+R8
+R9
+vpico_qsys_uart_0_rx_stimulus_source
+R11
+!i10b 1
+!s100 C=?Ygk8PID]MSOkR81IRC2
+I<608<]T@7ho9PJgOND`YK3
+R2
+R0
+R43
+R44
+R45
+L0 194
+R5
+r1
+!s85 0
+31
+R15
+R46
+R47
+!i113 1
+R7
+R8
+R9
+vpico_qsys_uart_0_tx
+R11
+!i10b 1
+!s100 <ZMPEChFD3TzN[<36Plk01
+Iz<b>OZd`[z84AAL:80Ib:2
+R2
+R0
+R43
+R44
+R45
+R4
+R5
+r1
+!s85 0
+31
+R15
+R46
+R47
+!i113 1
+R7
+R8
+R9
+vpicorv32
+R11
+!i10b 1
+!s100 69DcXl1]==YAKV`Y9`9M@0
+IAUeS8B?06gTRQL]L^d^o`3
+R2
+R0
+R24
+Z48 8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/picorv32.v
+Z49 Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/picorv32.v
+L0 57
+R5
+r1
+!s85 0
+31
+R15
+Z50 !s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/picorv32.v|
+Z51 !s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/picorv32.v|
+!i113 1
+R7
+R8
+R9
+vpicorv32_axi
+R11
+!i10b 1
+!s100 Ymme;gObcYHBhIF`GQoI^0
+I6cheIY?6TY94:0@bPETiT0
+R2
+R0
+R24
+R48
+R49
+L0 2447
+R5
+r1
+!s85 0
+31
+R15
+R50
+R51
+!i113 1
+R7
+R8
+R9
+vpicorv32_axi_adapter
+R11
+!i10b 1
+!s100 E;zRUdnl5lY80A;galdQK3
+IDF2^_KMC6G0BK^DefPa8Q0
+R2
+R0
+R24
+R48
+R49
+L0 2661
+R5
+r1
+!s85 0
+31
+R15
+R50
+R51
+!i113 1
+R7
+R8
+R9
+vpicorv32_axi_wrapper
+R11
+!i10b 1
+!s100 ?YWQV4mdgzmWJQI?F?52Q2
+I9Pa1@JT4>Bk`452Ce_nDM1
+R2
+R0
+R24
+8c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v
+Fc:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v
+L0 1
+R5
+r1
+!s85 0
+31
+R15
+!s107 c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|pico_qsys|+incdir+c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules|c:/users/91947/desktop/final/soc_axilite/db/ip/pico_qsys/submodules/picorv32_axi_wrapper.v|
+!i113 1
+R7
+R8
+R9
+vpicorv32_pcpi_div
+R11
+!i10b 1
+!s100 Uj:UOEDMTkU;Q2B95niCA1
+IGR3XZ8DFk:B1NT0odEDER2
+R2
+R0
+R24
+R48
+R49
+L0 2350
+R5
+r1
+!s85 0
+31
+R15
+R50
+R51
+!i113 1
+R7
+R8
+R9
+vpicorv32_pcpi_fast_mul
+R11
+!i10b 1
+!s100 B<^:Q1HE;VAkF;TQLW6P<2
+I:BK3_eZjR[GKE[3:oeFW80
+R2
+R0
+R24
+R48
+R49
+L0 2248
+R5
+r1
+!s85 0
+31
+R15
+R50
+R51
+!i113 1
+R7
+R8
+R9
+vpicorv32_pcpi_mul
+R11
+!i10b 1
+!s100 ^g=0?g8R?_P2V@WR0=oFN1
+IjUQK8MTYGZ@lnGRUB_P=l1
+R2
+R0
+R24
+R48
+R49
+L0 2127
+R5
+r1
+!s85 0
+31
+R15
+R50
+R51
+!i113 1
+R7
+R8
+R9
+vpicorv32_regs
+R11
+!i10b 1
+!s100 K215cNCz?lRbi7^zaNmR;3
+I:`]bf=f`b<?jQofUei:LM1
+R2
+R0
+R24
+R48
+R49
+L0 2104
+R5
+r1
+!s85 0
+31
+R15
+R50
+R51
+!i113 1
+R7
+R8
+R9
+vpicorv32_wb
+R11
+!i10b 1
+!s100 zUQn];l9?WC7h2gYLK5Nn3
+I8izDDG[;FSfG>YT<XX1`S1
+R2
+R0
+R24
+R48
+R49
+L0 2745
+R5
+r1
+!s85 0
+31
+R15
+R50
+R51
+!i113 1
+R7
+R8
+R9

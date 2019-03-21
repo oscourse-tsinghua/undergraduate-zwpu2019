@@ -1,0 +1,14 @@
+	component pico_qsys is
+		port (
+			clk_clk       : in  std_logic                    := 'X';             -- clk
+			led_export    : out std_logic_vector(7 downto 0);                    -- export
+			reset_reset_n : in  std_logic                    := 'X';             -- reset_n
+			seg1_export   : out std_logic_vector(7 downto 0);                    -- export
+			seg2_export   : out std_logic_vector(7 downto 0);                    -- export
+			sw_export     : in  std_logic_vector(7 downto 0) := (others => 'X'); -- export
+			trap_export   : out std_logic;                                       -- export
+			uart_rxd      : in  std_logic                    := 'X';             -- rxd
+			uart_txd      : out std_logic                                        -- txd
+		);
+	end component pico_qsys;
+
