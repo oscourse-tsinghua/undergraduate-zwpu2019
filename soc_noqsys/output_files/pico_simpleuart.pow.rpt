@@ -1,5 +1,5 @@
 Power Analyzer report for pico_simpleuart
-Mon Mar 18 14:50:59 2019
+Thu Mar 21 21:38:02 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -52,29 +52,29 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.44        ;
+; Average used               ; 1.48        ;
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  43.6%      ;
+;     Processor 2            ;  48.5%      ;
 +----------------------------+-------------+
 
 
 +-------------------------------------------------------------------------------------------+
 ; Power Analyzer Summary                                                                    ;
 +----------------------------------------+--------------------------------------------------+
-; Power Analyzer Status                  ; Successful - Mon Mar 18 14:50:59 2019            ;
+; Power Analyzer Status                  ; Successful - Thu Mar 21 21:38:02 2019            ;
 ; Quartus Prime Version                  ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition  ;
 ; Revision Name                          ; pico_simpleuart                                  ;
 ; Top-level Entity Name                  ; picosoc                                          ;
 ; Family                                 ; MAX 10                                           ;
 ; Device                                 ; 10M08SAM153C8G                                   ;
 ; Power Models                           ; Final                                            ;
-; Total Thermal Power Dissipation        ; 168.84 mW                                        ;
-; Core Dynamic Thermal Power Dissipation ; 42.03 mW                                         ;
-; Core Static Thermal Power Dissipation  ; 121.31 mW                                        ;
-; I/O Thermal Power Dissipation          ; 5.50 mW                                          ;
+; Total Thermal Power Dissipation        ; 236.63 mW                                        ;
+; Core Dynamic Thermal Power Dissipation ; 108.59 mW                                        ;
+; Core Static Thermal Power Dissipation  ; 121.61 mW                                        ;
+; I/O Thermal Power Dissipation          ; 6.43 mW                                          ;
 ; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
 +----------------------------------------+--------------------------------------------------+
 
@@ -127,7 +127,7 @@ refer to the applicable agreement for further details.
 ;     2.5 V I/O Standard                      ; 2.5 V                      ;
 ;     2.5 V Schmitt Trigger I/O Standard      ; 2.5 V                      ;
 ;                                             ;                            ;
-; Auto computed junction temperature          ; 29.3 degrees Celsius       ;
+; Auto computed junction temperature          ; 31.0 degrees Celsius       ;
 ;     Ambient temperature                     ; 25.0 degrees Celsius       ;
 ;     Junction-to-Case thermal resistance     ; 11.00 degrees Celsius/Watt ;
 ;     Case-to-Heat Sink thermal resistance    ; 0.10 degrees Celsius/Watt  ;
@@ -150,13 +150,13 @@ refer to the applicable agreement for further details.
 +---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
 ; Block Type          ; Total Thermal Power by Block Type ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ; Block Average Toggle Rate (millions of transitions / sec) ;
 +---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
-; PLL                 ; 11.17 mW                          ; 11.17 mW                    ; --                             ; 0.00 mW                       ;    8.000                                                  ;
-; M9K                 ; 3.79 mW                           ; 3.66 mW                     ; --                             ; 0.13 mW                       ;    2.908                                                  ;
-; Combinational cell  ; 2.07 mW                           ; 0.97 mW                     ; --                             ; 1.10 mW                       ;    1.457                                                  ;
-; Clock control block ; 1.00 mW                           ; 0.00 mW                     ; --                             ; 1.00 mW                       ;   24.001                                                  ;
-; Register cell       ; 2.54 mW                           ; 1.33 mW                     ; --                             ; 1.21 mW                       ;    1.499                                                  ;
-; I/O                 ; 1.13 mW                           ; 0.95 mW                     ; 0.18 mW                        ; 0.01 mW                       ;    1.777                                                  ;
-; Voltage Regulator   ; 22.21 mW                          ; 21.45 mW                    ; 0.76 mW                        ; --                            ; --                                                        ;
+; PLL                 ; 7.13 mW                           ; 7.13 mW                     ; --                             ; 0.00 mW                       ;   33.335                                                  ;
+; M9K                 ; 15.83 mW                          ; 15.27 mW                    ; --                             ; 0.56 mW                       ;   11.053                                                  ;
+; Combinational cell  ; 7.66 mW                           ; 3.73 mW                     ; --                             ; 3.93 mW                       ;    5.462                                                  ;
+; Clock control block ; 4.05 mW                           ; 0.00 mW                     ; --                             ; 4.05 mW                       ;  100.005                                                  ;
+; Register cell       ; 11.08 mW                          ; 5.81 mW                     ; --                             ; 5.27 mW                       ;    6.246                                                  ;
+; I/O                 ; 2.07 mW                           ; 1.87 mW                     ; 0.17 mW                        ; 0.02 mW                       ;    3.447                                                  ;
+; Voltage Regulator   ; 63.59 mW                          ; 62.82 mW                    ; 0.77 mW                        ; --                            ; --                                                        ;
 +---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
 (1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
 
@@ -166,26 +166,26 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------+
 ; Compilation Hierarchy Node                  ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                                  ;
 +---------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------+
-; |picosoc                                    ; 43.92 mW (23.61 mW)                  ; 39.53 mW (22.56 mW)             ; 0.94 mW (0.94 mW)                 ; 3.44 mW (0.10 mW)                 ; |picosoc                                                                             ;
+; |picosoc                                    ; 111.41 mW (66.94 mW)                 ; 96.64 mW (65.56 mW)             ; 0.94 mW (0.94 mW)                 ; 13.83 mW (0.44 mW)                ; |picosoc                                                                             ;
 ;     |hard_block:auto_generated_inst         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |picosoc|hard_block:auto_generated_inst                                              ;
-;     |picorv32:cpu                           ; 4.47 mW (3.40 mW)                    ; 2.25 mW (1.59 mW)               ; --                                ; 2.21 mW (1.81 mW)                 ; |picosoc|picorv32:cpu                                                                ;
-;         |altsyncram:cpuregs_rtl_0           ; 0.20 mW (0.00 mW)                    ; 0.15 mW (0.00 mW)               ; --                                ; 0.05 mW (0.00 mW)                 ; |picosoc|picorv32:cpu|altsyncram:cpuregs_rtl_0                                       ;
-;             |altsyncram_j6d1:auto_generated ; 0.20 mW (0.20 mW)                    ; 0.15 mW (0.15 mW)               ; --                                ; 0.05 mW (0.05 mW)                 ; |picosoc|picorv32:cpu|altsyncram:cpuregs_rtl_0|altsyncram_j6d1:auto_generated        ;
-;         |altsyncram:cpuregs_rtl_1           ; 0.19 mW (0.00 mW)                    ; 0.15 mW (0.00 mW)               ; --                                ; 0.04 mW (0.00 mW)                 ; |picosoc|picorv32:cpu|altsyncram:cpuregs_rtl_1                                       ;
-;             |altsyncram_j6d1:auto_generated ; 0.19 mW (0.19 mW)                    ; 0.15 mW (0.15 mW)               ; --                                ; 0.04 mW (0.04 mW)                 ; |picosoc|picorv32:cpu|altsyncram:cpuregs_rtl_1|altsyncram_j6d1:auto_generated        ;
-;         |picorv32_pcpi_div:pcpi_div         ; 0.40 mW (0.40 mW)                    ; 0.19 mW (0.19 mW)               ; --                                ; 0.21 mW (0.21 mW)                 ; |picosoc|picorv32:cpu|picorv32_pcpi_div:pcpi_div                                     ;
-;         |picorv32_pcpi_mul:pcpi_mul         ; 0.28 mW (0.28 mW)                    ; 0.18 mW (0.18 mW)               ; --                                ; 0.10 mW (0.10 mW)                 ; |picosoc|picorv32:cpu|picorv32_pcpi_mul:pcpi_mul                                     ;
-;     |pll:pll_inst                           ; 12.18 mW (0.00 mW)                   ; 11.17 mW (0.00 mW)              ; --                                ; 1.00 mW (0.00 mW)                 ; |picosoc|pll:pll_inst                                                                ;
-;         |altpll:altpll_component            ; 12.18 mW (0.00 mW)                   ; 11.17 mW (0.00 mW)              ; --                                ; 1.00 mW (0.00 mW)                 ; |picosoc|pll:pll_inst|altpll:altpll_component                                        ;
-;             |pll_altpll:auto_generated      ; 12.18 mW (12.18 mW)                  ; 11.17 mW (11.17 mW)             ; --                                ; 1.00 mW (1.00 mW)                 ; |picosoc|pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated              ;
-;     |ram:ram_inst                           ; 1.72 mW (0.00 mW)                    ; 1.71 mW (0.00 mW)               ; --                                ; 0.02 mW (0.00 mW)                 ; |picosoc|ram:ram_inst                                                                ;
-;         |altsyncram:altsyncram_component    ; 1.72 mW (0.00 mW)                    ; 1.71 mW (0.00 mW)               ; --                                ; 0.02 mW (0.00 mW)                 ; |picosoc|ram:ram_inst|altsyncram:altsyncram_component                                ;
-;             |altsyncram_bkf1:auto_generated ; 1.72 mW (1.72 mW)                    ; 1.71 mW (1.71 mW)               ; --                                ; 0.02 mW (0.02 mW)                 ; |picosoc|ram:ram_inst|altsyncram:altsyncram_component|altsyncram_bkf1:auto_generated ;
-;     |rom:rom_inst                           ; 1.68 mW (0.00 mW)                    ; 1.66 mW (0.00 mW)               ; --                                ; 0.02 mW (0.00 mW)                 ; |picosoc|rom:rom_inst                                                                ;
-;         |altsyncram:altsyncram_component    ; 1.68 mW (0.00 mW)                    ; 1.66 mW (0.00 mW)               ; --                                ; 0.02 mW (0.00 mW)                 ; |picosoc|rom:rom_inst|altsyncram:altsyncram_component                                ;
-;             |altsyncram_6t91:auto_generated ; 1.68 mW (1.68 mW)                    ; 1.66 mW (1.66 mW)               ; --                                ; 0.02 mW (0.02 mW)                 ; |picosoc|rom:rom_inst|altsyncram:altsyncram_component|altsyncram_6t91:auto_generated ;
-;     |segment:seg_inst                       ; 0.01 mW (0.01 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |picosoc|segment:seg_inst                                                            ;
-;     |simpleuart:simpleuart                  ; 0.25 mW (0.25 mW)                    ; 0.17 mW (0.17 mW)               ; --                                ; 0.08 mW (0.08 mW)                 ; |picosoc|simpleuart:simpleuart                                                       ;
+;     |picorv32:cpu                           ; 17.90 mW (13.67 mW)                  ; 9.10 mW (6.40 mW)               ; --                                ; 8.80 mW (7.27 mW)                 ; |picosoc|picorv32:cpu                                                                ;
+;         |altsyncram:cpuregs_rtl_0           ; 0.92 mW (0.00 mW)                    ; 0.61 mW (0.00 mW)               ; --                                ; 0.31 mW (0.00 mW)                 ; |picosoc|picorv32:cpu|altsyncram:cpuregs_rtl_0                                       ;
+;             |altsyncram_t6d1:auto_generated ; 0.92 mW (0.92 mW)                    ; 0.61 mW (0.61 mW)               ; --                                ; 0.31 mW (0.31 mW)                 ; |picosoc|picorv32:cpu|altsyncram:cpuregs_rtl_0|altsyncram_t6d1:auto_generated        ;
+;         |altsyncram:cpuregs_rtl_1           ; 0.74 mW (0.00 mW)                    ; 0.61 mW (0.00 mW)               ; --                                ; 0.13 mW (0.00 mW)                 ; |picosoc|picorv32:cpu|altsyncram:cpuregs_rtl_1                                       ;
+;             |altsyncram_t6d1:auto_generated ; 0.74 mW (0.74 mW)                    ; 0.61 mW (0.61 mW)               ; --                                ; 0.13 mW (0.13 mW)                 ; |picosoc|picorv32:cpu|altsyncram:cpuregs_rtl_1|altsyncram_t6d1:auto_generated        ;
+;         |picorv32_pcpi_div:pcpi_div         ; 1.39 mW (1.39 mW)                    ; 0.72 mW (0.72 mW)               ; --                                ; 0.67 mW (0.67 mW)                 ; |picosoc|picorv32:cpu|picorv32_pcpi_div:pcpi_div                                     ;
+;         |picorv32_pcpi_mul:pcpi_mul         ; 1.18 mW (1.18 mW)                    ; 0.76 mW (0.76 mW)               ; --                                ; 0.42 mW (0.42 mW)                 ; |picosoc|picorv32:cpu|picorv32_pcpi_mul:pcpi_mul                                     ;
+;     |pll:pll_inst                           ; 11.18 mW (0.00 mW)                   ; 7.13 mW (0.00 mW)               ; --                                ; 4.05 mW (0.00 mW)                 ; |picosoc|pll:pll_inst                                                                ;
+;         |altpll:altpll_component            ; 11.18 mW (0.00 mW)                   ; 7.13 mW (0.00 mW)               ; --                                ; 4.05 mW (0.00 mW)                 ; |picosoc|pll:pll_inst|altpll:altpll_component                                        ;
+;             |pll_altpll:auto_generated      ; 11.18 mW (11.18 mW)                  ; 7.13 mW (7.13 mW)               ; --                                ; 4.05 mW (4.05 mW)                 ; |picosoc|pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated              ;
+;     |ram:ram_inst                           ; 7.16 mW (0.00 mW)                    ; 7.11 mW (0.00 mW)               ; --                                ; 0.05 mW (0.00 mW)                 ; |picosoc|ram:ram_inst                                                                ;
+;         |altsyncram:altsyncram_component    ; 7.16 mW (0.00 mW)                    ; 7.11 mW (0.00 mW)               ; --                                ; 0.05 mW (0.00 mW)                 ; |picosoc|ram:ram_inst|altsyncram:altsyncram_component                                ;
+;             |altsyncram_bkf1:auto_generated ; 7.16 mW (7.16 mW)                    ; 7.11 mW (7.11 mW)               ; --                                ; 0.05 mW (0.05 mW)                 ; |picosoc|ram:ram_inst|altsyncram:altsyncram_component|altsyncram_bkf1:auto_generated ;
+;     |rom:rom_inst                           ; 7.01 mW (0.00 mW)                    ; 6.93 mW (0.00 mW)               ; --                                ; 0.07 mW (0.00 mW)                 ; |picosoc|rom:rom_inst                                                                ;
+;         |altsyncram:altsyncram_component    ; 7.01 mW (0.00 mW)                    ; 6.93 mW (0.00 mW)               ; --                                ; 0.07 mW (0.00 mW)                 ; |picosoc|rom:rom_inst|altsyncram:altsyncram_component                                ;
+;             |altsyncram_6t91:auto_generated ; 7.01 mW (7.01 mW)                    ; 6.93 mW (6.93 mW)               ; --                                ; 0.07 mW (0.07 mW)                 ; |picosoc|rom:rom_inst|altsyncram:altsyncram_component|altsyncram_6t91:auto_generated ;
+;     |segment:seg_inst                       ; 0.05 mW (0.05 mW)                    ; 0.02 mW (0.02 mW)               ; --                                ; 0.03 mW (0.03 mW)                 ; |picosoc|segment:seg_inst                                                            ;
+;     |simpleuart:simpleuart                  ; 1.17 mW (1.17 mW)                    ; 0.78 mW (0.78 mW)               ; --                                ; 0.39 mW (0.39 mW)                 ; |picosoc|simpleuart:simpleuart                                                       ;
 +---------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+--------------------------------------------------------------------------------------+
 (1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
 
@@ -197,7 +197,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+-----------------------+--------------------------+
 ; Clock Domain                                                                    ; Clock Frequency (MHz) ; Total Core Dynamic Power ;
 +---------------------------------------------------------------------------------+-----------------------+--------------------------+
-; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; 12.00                 ; 20.58                    ;
+; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; 50.00                 ; 45.77                    ;
 ; clk                                                                             ; 12.00                 ; 0.00                     ;
 ; No clock domain                                                                 ; 0.00                  ; 0.00                     ;
 +---------------------------------------------------------------------------------+-----------------------+--------------------------+
@@ -208,9 +208,9 @@ refer to the applicable agreement for further details.
 +----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
 ; Voltage Supply ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
 +----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
-; VCCIO          ; 2.23 mA                 ; 0.36 mA                   ; 1.86 mA                  ; 2.23 mA                          ;
-; VCCA           ; 5.13 mA                 ; 2.10 mA                   ; 3.03 mA                  ; 5.13 mA                          ;
-; VCC_ONE        ; 49.32 mA                ; 11.91 mA                  ; 37.41 mA                 ; 49.32 mA                         ;
+; VCCIO          ; 2.58 mA                 ; 0.72 mA                   ; 1.86 mA                  ; 2.58 mA                          ;
+; VCCA           ; 4.34 mA                 ; 1.32 mA                   ; 3.03 mA                  ; 4.34 mA                          ;
+; VCC_ONE        ; 72.41 mA                ; 34.90 mA                  ; 37.51 mA                 ; 72.41 mA                         ;
 +----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
 (1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
 (2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
@@ -221,15 +221,15 @@ refer to the applicable agreement for further details.
 +----------+---------------+---------------------+-----------------------+----------------------+
 ; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
 +----------+---------------+---------------------+-----------------------+----------------------+
-; 1A       ; 2.5V          ; 0.29 mA             ; 0.02 mA               ; 0.27 mA              ;
-; 1B       ; 2.5V          ; 0.28 mA             ; 0.01 mA               ; 0.27 mA              ;
-; 2        ; 2.5V          ; 0.29 mA             ; 0.03 mA               ; 0.26 mA              ;
-; 3        ; 2.5V          ; 0.26 mA             ; 0.01 mA               ; 0.25 mA              ;
+; 1A       ; 2.5V          ; 0.38 mA             ; 0.11 mA               ; 0.27 mA              ;
+; 1B       ; 2.5V          ; 0.33 mA             ; 0.06 mA               ; 0.27 mA              ;
+; 2        ; 2.5V          ; 0.33 mA             ; 0.07 mA               ; 0.26 mA              ;
+; 3        ; 2.5V          ; 0.31 mA             ; 0.05 mA               ; 0.26 mA              ;
 ; 4        ; --            ; --                  ; --                    ; --                   ;
-; 5        ; 2.5V          ; 0.37 mA             ; 0.09 mA               ; 0.27 mA              ;
-; 6        ; 2.5V          ; 0.26 mA             ; 0.00 mA               ; 0.26 mA              ;
+; 5        ; 2.5V          ; 0.66 mA             ; 0.39 mA               ; 0.27 mA              ;
+; 6        ; 2.5V          ; 0.27 mA             ; 0.01 mA               ; 0.26 mA              ;
 ; 7        ; --            ; --                  ; --                    ; --                   ;
-; 8        ; 2.5V          ; 0.46 mA             ; 0.20 mA               ; 0.27 mA              ;
+; 8        ; 2.5V          ; 0.30 mA             ; 0.04 mA               ; 0.26 mA              ;
 +----------+---------------+---------------------+-----------------------+----------------------+
 
 
@@ -238,7 +238,7 @@ refer to the applicable agreement for further details.
 +---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
 ; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
 +---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
-; 2.5V          ; 2.23 mA                 ; 0.36 mA                   ; 1.86 mA                  ; 2.23 mA                          ;
+; 2.5V          ; 2.58 mA                 ; 0.72 mA                   ; 1.86 mA                  ; 2.58 mA                          ;
 +---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
 (1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
 (2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
@@ -254,20 +254,20 @@ refer to the applicable agreement for further details.
 ;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)     ; 0 (0.0%)   ; 0 (0.0%)      ; 0 (0.0%)      ;
 ;                                                                                        ;              ;            ;               ;               ;
 ; Node, entity or clock assignment                                                       ;              ;            ;               ;               ;
-;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 3 (0.0%)     ; 1 (2.3%)   ; 0 (0.0%)      ; 2 (0.0%)      ;
-;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 3 (0.0%)     ; 1 (2.3%)   ; 0 (0.0%)      ; 2 (0.0%)      ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 3 (0.0%)     ; 1 (2.4%)   ; 0 (0.0%)      ; 2 (0.0%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 3 (0.0%)     ; 1 (2.4%)   ; 0 (0.0%)      ; 2 (0.0%)      ;
 ;                                                                                        ;              ;            ;               ;               ;
 ; Vectorless estimation                                                                  ;              ;            ;               ;               ;
-;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 6095 (99.8%) ; 30 (69.8%) ; 1425 (100.0%) ; 4640 (100.0%) ;
-;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 184 (3.0%)   ; 5 (11.6%)  ; 1 (0.1%)      ; 178 (3.8%)    ;
-;     -- Number of signals with Static Probability from Vectorless estimation            ; 6095 (99.8%) ; 30 (69.8%) ; 1425 (100.0%) ; 4640 (100.0%) ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 6239 (99.8%) ; 29 (69.0%) ; 1471 (100.0%) ; 4739 (100.0%) ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 215 (3.4%)   ; 5 (11.9%)  ; 1 (0.1%)      ; 209 (4.4%)    ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 6239 (99.8%) ; 29 (69.0%) ; 1471 (100.0%) ; 4739 (100.0%) ;
 ;                                                                                        ;              ;            ;               ;               ;
 ; Default assignment                                                                     ;              ;            ;               ;               ;
-;     -- Number of signals with Toggle Rate from Default assignment                      ; 5 (0.1%)     ; 5 (11.6%)  ; 0 (0.0%)      ; 0 (0.0%)      ;
-;     -- Number of signals with Static Probability from Default assignment               ; 12 (0.2%)    ; 12 (27.9%) ; 0 (0.0%)      ; 0 (0.0%)      ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 5 (0.1%)     ; 5 (11.9%)  ; 0 (0.0%)      ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 12 (0.2%)    ; 12 (28.6%) ; 0 (0.0%)      ; 0 (0.0%)      ;
 ;                                                                                        ;              ;            ;               ;               ;
 ; Assumed 0                                                                              ;              ;            ;               ;               ;
-;     -- Number of signals with Toggle Rate assumed 0                                    ; 7 (0.1%)     ; 7 (16.3%)  ; 0 (0.0%)      ; 0 (0.0%)      ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 7 (0.1%)     ; 7 (16.7%)  ; 0 (0.0%)      ; 0 (0.0%)      ;
 +----------------------------------------------------------------------------------------+--------------+------------+---------------+---------------+
 
 
@@ -285,7 +285,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Power Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Mar 18 14:50:51 2019
+    Info: Processing started: Thu Mar 21 21:37:52 2019
 Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off pico_simpleuart -c pico_simpleuart
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (21077): Low junction temperature is 0 degrees C
@@ -293,7 +293,7 @@ Info (21077): High junction temperature is 85 degrees C
 Info (332104): Reading SDC File: 'clock.sdc'
 Warning (332174): Ignored filter at clock.sdc(1): get_ports could not be matched with a port File: C:/Users/91947/Desktop/final/soc_noqsys/clock.sdc Line: 1
 Info (332110): Deriving PLL clocks
-    Info (332110): create_generated_clock -source {pll_inst|altpll_component|auto_generated|pll1|inclk[0]} -duty_cycle 50.00 -name {pll_inst|altpll_component|auto_generated|pll1|clk[0]} {pll_inst|altpll_component|auto_generated|pll1|clk[0]}
+    Info (332110): create_generated_clock -source {pll_inst|altpll_component|auto_generated|pll1|inclk[0]} -divide_by 6 -multiply_by 25 -duty_cycle 50.00 -name {pll_inst|altpll_component|auto_generated|pll1|clk[0]} {pll_inst|altpll_component|auto_generated|pll1|clk[0]}
 Warning (332056): PLL cross checking found inconsistent PLL clock settings:
     Warning (332056): Clock: pll_inst|altpll_component|auto_generated|pll1|clk[0] with master clock period: 83.330 found on PLL node: pll_inst|altpll_component|auto_generated|pll1|clk[0] does not match the master clock period requirement: 83.333
 Critical Warning (332168): The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
@@ -304,12 +304,12 @@ Info (223001): Completed Vectorless Power Activity Estimation
 Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specified board trace model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (215049): Average toggle rate for this design is 1.507 millions of transitions / sec
-Info (215031): Total thermal power estimate for the design is 168.84 mW
+Info (215049): Average toggle rate for this design is 5.778 millions of transitions / sec
+Info (215031): Total thermal power estimate for the design is 236.63 mW
 Info: Quartus Prime Power Analyzer was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4850 megabytes
-    Info: Processing ended: Mon Mar 18 14:51:00 2019
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:12
+    Info: Peak virtual memory: 4853 megabytes
+    Info: Processing ended: Thu Mar 21 21:38:03 2019
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:15
 
 

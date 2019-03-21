@@ -1,15 +1,42 @@
-
+`timescale 1ns / 1ps
 module picosoc_tb;
 
-reg clk, rst;
-wire rx, tx;
+reg clk, rst, rx;
+wire tx;
+wire [7:0] led;
+wire [8:0] seg1, seg2;
+
+wire clk_50M;
+
+
+task rx_task(input [7:0] data, output reg rx_value);
+	begin
+	rx = 0;
+	#4340 rx = data[0];
+	#4340 rx = data[1];
+	#4340 rx = data[2];
+	#4340 rx = data[3];
+	#4340 rx = data[4];
+	#4340 rx = data[5];
+	#4340 rx = data[6];
+	#4340 rx = data[7];
+	#4340 rx = 1;
+	end
+endtask
+
+
 
 initial begin
 	clk = 0;
 	forever #10 clk = ~clk;
-	
+end
+
+initial begin
 	rst = 0;
 	#100 rst = 1;
+end
+initial begin
+	#1000 rx_task(8'b10101010, rx);
 end
 
 picosoc u0 (
@@ -17,8 +44,15 @@ picosoc u0 (
 	.resetn(rst),
 
 	.ser_tx(tx),
-	.ser_rx(tx)
+	.ser_rx(tx),
+	
+	.sw(4'b1111),
+	.led(led),
+	.seg1(seg1),
+	.seg2(seg2),
+	.clk_out(clk_50M)
 );
+
 
 
 endmodule

@@ -3,18 +3,18 @@ clk => clk.IN1
 resetn => _.IN1
 ser_tx << simpleuart:simpleuart.ser_tx
 ser_rx => ser_rx.IN1
-sw[0] => gpio_reg.DATAB
-sw[1] => gpio_reg.DATAB
-sw[2] => gpio_reg.DATAB
-sw[3] => gpio_reg.DATAB
-led[0] << gpio_reg[0].DB_MAX_OUTPUT_PORT_TYPE
-led[1] << gpio_reg[1].DB_MAX_OUTPUT_PORT_TYPE
-led[2] << gpio_reg[2].DB_MAX_OUTPUT_PORT_TYPE
-led[3] << gpio_reg[3].DB_MAX_OUTPUT_PORT_TYPE
-led[4] << gpio_reg[4].DB_MAX_OUTPUT_PORT_TYPE
-led[5] << gpio_reg[5].DB_MAX_OUTPUT_PORT_TYPE
-led[6] << gpio_reg[6].DB_MAX_OUTPUT_PORT_TYPE
-led[7] << gpio_reg[7].DB_MAX_OUTPUT_PORT_TYPE
+sw[0] => mem_rdata.DATAB
+sw[1] => mem_rdata.DATAB
+sw[2] => mem_rdata.DATAB
+sw[3] => mem_rdata.DATAB
+led[0] << led_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+led[1] << led_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+led[2] << led_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+led[3] << led_reg[3].DB_MAX_OUTPUT_PORT_TYPE
+led[4] << led_reg[4].DB_MAX_OUTPUT_PORT_TYPE
+led[5] << led_reg[5].DB_MAX_OUTPUT_PORT_TYPE
+led[6] << led_reg[6].DB_MAX_OUTPUT_PORT_TYPE
+led[7] << led_reg[7].DB_MAX_OUTPUT_PORT_TYPE
 seg1[0] << segment:seg_inst.segment_led_1
 seg1[1] << segment:seg_inst.segment_led_1
 seg1[2] << segment:seg_inst.segment_led_1
@@ -33,7 +33,6 @@ seg2[5] << segment:seg_inst.segment_led_2
 seg2[6] << segment:seg_inst.segment_led_2
 seg2[7] << segment:seg_inst.segment_led_2
 seg2[8] << segment:seg_inst.segment_led_2
-clk_out << clk_50M.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |picosoc|pll:pll_inst

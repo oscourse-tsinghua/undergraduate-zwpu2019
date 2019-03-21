@@ -41,7 +41,6 @@ module simpleuart (
 	reg [7:0] recv_pattern;
 	reg [7:0] recv_buf_data;
 	reg recv_buf_valid;
-
 	reg [9:0] send_pattern;
 	reg [3:0] send_bitcnt;
 	reg [31:0] send_divcnt;
@@ -50,11 +49,11 @@ module simpleuart (
 	assign reg_div_do = cfg_divider;
 
 	assign reg_dat_wait = reg_dat_we && (send_bitcnt || send_dummy);
-	assign reg_dat_do = recv_buf_valid ? recv_buf_data : ~0;
+	assign reg_dat_do = recv_buf_valid ? {24'b0, recv_buf_data} : ~0;
 
 	always @(posedge clk) begin
 		if (!resetn) begin
-			cfg_divider <= 104;
+			cfg_divider <= 434;
 		end else begin
 			if (reg_div_we[0]) cfg_divider[ 7: 0] <= reg_div_di[ 7: 0];
 			if (reg_div_we[1]) cfg_divider[15: 8] <= reg_div_di[15: 8];
@@ -74,33 +73,35 @@ module simpleuart (
 			recv_divcnt <= recv_divcnt + 1;
 			if (reg_dat_re)
 				recv_buf_valid <= 0;
-			case (recv_state)
-				0: begin
-					if (!ser_rx)
-						recv_state <= 1;
-					recv_divcnt <= 0;
-				end
-				1: begin
-					if (2*recv_divcnt > cfg_divider) begin
-						recv_state <= 2;			//state为2,则往后进入default进行接收，持续8个周期
+			if (!recv_buf_valid) begin
+				case (recv_state)
+					0: begin
+						if (!ser_rx)
+							recv_state <= 1;
 						recv_divcnt <= 0;
 					end
-				end
-				10: begin							//10是10进制
-					if (recv_divcnt > cfg_divider) begin
-						recv_buf_data <= recv_pattern;
-						recv_buf_valid <= 1;
-						recv_state <= 0;
+					1: begin
+						if (2*recv_divcnt > cfg_divider) begin
+							recv_state <= 2;			//state为2,则往后进入default进行接收，持续8个周期
+							recv_divcnt <= 0;
+						end
 					end
-				end
-				default: begin
-					if (recv_divcnt > cfg_divider) begin
-						recv_pattern <= {ser_rx, recv_pattern[7:1]};
-						recv_state <= recv_state + 1;
-						recv_divcnt <= 0;
+					10: begin							//10是10进制
+						if (recv_divcnt > cfg_divider) begin
+							recv_buf_data <= recv_pattern;
+							recv_buf_valid <= 1;
+							recv_state <= 0;
+						end
 					end
-				end
-			endcase
+					default: begin
+						if (recv_divcnt > cfg_divider) begin
+							recv_pattern <= {ser_rx, recv_pattern[7:1]};
+							recv_state <= recv_state + 1;
+							recv_divcnt <= 0;
+						end
+					end
+				endcase
+			end
 		end
 	end
 

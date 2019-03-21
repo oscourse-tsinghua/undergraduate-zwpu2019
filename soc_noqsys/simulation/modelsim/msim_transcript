@@ -12,17 +12,17 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys {C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:30:26 on Mar 18,2019
+# Start time: 21:27:50 on Mar 21,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/91947/Desktop/final/soc_noqsys" C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v 
 # -- Compiling module picosoc
 # 
 # Top level modules:
 # 	picosoc
-# End time: 14:30:27 on Mar 18,2019, Elapsed time: 0:00:01
+# End time: 21:27:50 on Mar 21,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys {C:/Users/91947/Desktop/final/soc_noqsys/picorv32.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:30:27 on Mar 18,2019
+# Start time: 21:27:50 on Mar 21,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/91947/Desktop/final/soc_noqsys" C:/Users/91947/Desktop/final/soc_noqsys/picorv32.v 
 # -- Compiling module picorv32
 # -- Compiling module picorv32_regs
@@ -37,83 +37,83 @@
 # 	picorv32_regs
 # 	picorv32_axi
 # 	picorv32_wb
-# End time: 14:30:27 on Mar 18,2019, Elapsed time: 0:00:00
+# End time: 21:27:50 on Mar 21,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys {C:/Users/91947/Desktop/final/soc_noqsys/simpleuart.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:30:27 on Mar 18,2019
+# Start time: 21:27:50 on Mar 21,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/91947/Desktop/final/soc_noqsys" C:/Users/91947/Desktop/final/soc_noqsys/simpleuart.v 
 # -- Compiling module simpleuart
 # 
 # Top level modules:
 # 	simpleuart
-# End time: 14:30:27 on Mar 18,2019, Elapsed time: 0:00:00
+# End time: 21:27:50 on Mar 21,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys/ip {C:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:30:27 on Mar 18,2019
+# Start time: 21:27:50 on Mar 21,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/91947/Desktop/final/soc_noqsys/ip" C:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v 
 # -- Compiling module rom
 # 
 # Top level modules:
 # 	rom
-# End time: 14:30:27 on Mar 18,2019, Elapsed time: 0:00:00
+# End time: 21:27:50 on Mar 21,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys/ip {C:/Users/91947/Desktop/final/soc_noqsys/ip/ram.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:30:27 on Mar 18,2019
+# Start time: 21:27:50 on Mar 21,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/91947/Desktop/final/soc_noqsys/ip" C:/Users/91947/Desktop/final/soc_noqsys/ip/ram.v 
 # -- Compiling module ram
 # 
 # Top level modules:
 # 	ram
-# End time: 14:30:27 on Mar 18,2019, Elapsed time: 0:00:00
+# End time: 21:27:50 on Mar 21,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys {C:/Users/91947/Desktop/final/soc_noqsys/segment.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:30:27 on Mar 18,2019
+# Start time: 21:27:50 on Mar 21,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/91947/Desktop/final/soc_noqsys" C:/Users/91947/Desktop/final/soc_noqsys/segment.v 
 # -- Compiling module segment
 # 
 # Top level modules:
 # 	segment
-# End time: 14:30:28 on Mar 18,2019, Elapsed time: 0:00:01
+# End time: 21:27:50 on Mar 21,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys {C:/Users/91947/Desktop/final/soc_noqsys/pll.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:30:28 on Mar 18,2019
+# Start time: 21:27:50 on Mar 21,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/91947/Desktop/final/soc_noqsys" C:/Users/91947/Desktop/final/soc_noqsys/pll.v 
 # -- Compiling module pll
 # 
 # Top level modules:
 # 	pll
-# End time: 14:30:28 on Mar 18,2019, Elapsed time: 0:00:00
+# End time: 21:27:51 on Mar 21,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys/db {C:/Users/91947/Desktop/final/soc_noqsys/db/pll_altpll.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:30:28 on Mar 18,2019
+# Start time: 21:27:51 on Mar 21,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/91947/Desktop/final/soc_noqsys/db" C:/Users/91947/Desktop/final/soc_noqsys/db/pll_altpll.v 
 # -- Compiling module pll_altpll
 # 
 # Top level modules:
 # 	pll_altpll
-# End time: 14:30:28 on Mar 18,2019, Elapsed time: 0:00:00
+# End time: 21:27:51 on Mar 21,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/91947/Desktop/final/soc_noqsys {C:/Users/91947/Desktop/final/soc_noqsys/picosoc_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:30:28 on Mar 18,2019
+# Start time: 21:27:51 on Mar 21,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/91947/Desktop/final/soc_noqsys" C:/Users/91947/Desktop/final/soc_noqsys/picosoc_tb.v 
 # -- Compiling module picosoc_tb
 # 
 # Top level modules:
 # 	picosoc_tb
-# End time: 14:30:28 on Mar 18,2019, Elapsed time: 0:00:00
+# End time: 21:27:51 on Mar 21,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  picosoc_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" picosoc_tb 
-# Start time: 14:30:30 on Mar 18,2019
+# Start time: 21:27:51 on Mar 21,2019
 # Loading work.picosoc_tb
 # Loading work.picosoc
 # Loading work.pll
@@ -134,25 +134,25 @@
 # Loading work.picorv32_pcpi_div
 # Loading altera_mf_ver.altsyncram_body
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-3017) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Too few port connections. Expected 27, found 10.
+# ** Warning: (vsim-3017) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Too few port connections. Expected 27, found 10.
 #    Time: 0 ps  Iteration: 0  Instance: /picosoc_tb/u0/cpu File: C:/Users/91947/Desktop/final/soc_noqsys/picorv32.v
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'trap'.
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'mem_la_read'.
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'mem_la_write'.
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'mem_la_addr'.
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'mem_la_wdata'.
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'mem_la_wstrb'.
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'pcpi_valid'.
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'pcpi_insn'.
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'pcpi_rs1'.
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'pcpi_rs2'.
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'pcpi_wr'.
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'pcpi_rd'.
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'pcpi_wait'.
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'pcpi_ready'.
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'eoi'.
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'trace_valid'.
-# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(105): [TFMPC] - Missing connection for port 'trace_data'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'trap'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'trace_data'.
 # 
 # add wave *
 # view structure
@@ -163,6 +163,32 @@
 #  Note : MAX 10 PLL was reset
 # Time: 0  Instance: picosoc_tb.u0.pll_inst.altpll_component.cycloneiii_pll.pll3
 #  Note : MAX 10 PLL locked to incoming clock
-# Time: 250000  Instance: picosoc_tb.u0.pll_inst.altpll_component.cycloneiii_pll.pll3
-# End time: 14:31:06 on Mar 18,2019, Elapsed time: 0:00:36
-# Errors: 0, Warnings: 18
+# Time: 546000  Instance: picosoc_tb.u0.pll_inst.altpll_component.cycloneiii_pll.pll3
+do wave.do
+restart
+# ** Warning: (vsim-3017) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Too few port connections. Expected 27, found 10.
+#    Time: 0 ps  Iteration: 0  Instance: /picosoc_tb/u0/cpu File: C:/Users/91947/Desktop/final/soc_noqsys/picorv32.v
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'trap'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'mem_la_read'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'mem_la_write'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'mem_la_addr'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'mem_la_wdata'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'mem_la_wstrb'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'pcpi_valid'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'pcpi_insn'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'pcpi_rs1'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'pcpi_rs2'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'pcpi_wr'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'pcpi_rd'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'pcpi_wait'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'pcpi_ready'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'eoi'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'trace_valid'.
+# ** Warning: (vsim-3722) C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v(114): [TFMPC] - Missing connection for port 'trace_data'.
+run -all
+#  Note : MAX 10 PLL was reset
+# Time: 0  Instance: picosoc_tb.u0.pll_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : MAX 10 PLL locked to incoming clock
+# Time: 546000  Instance: picosoc_tb.u0.pll_inst.altpll_component.cycloneiii_pll.pll3
+# End time: 21:35:55 on Mar 21,2019, Elapsed time: 0:08:04
+# Errors: 0, Warnings: 36

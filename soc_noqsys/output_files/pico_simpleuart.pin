@@ -84,7 +84,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : B4        :        :                   :      
 VCCIO8                       : B5        : power  :                   : 2.5V    : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B6        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B7        :        :                   :         : 8         :                
-clk_out                      : B8        : output : 2.5 V             :         : 8         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B8        :        :                   :         : 8         :                
 VCCIO8                       : B9        : power  :                   : 2.5V    : 8         :                
 VCCIO8                       : B10       : power  :                   : 2.5V    : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B11       :        :                   :         : 8         :                
@@ -104,7 +104,7 @@ GND                          : D5        : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : D7        :        :                   :         : 8         :                
 ~ALTERA_CONFIG_SEL~ / RESERVED_INPUT : D8        : input  : 2.5 V             :         : 8         : N              
 GND                          : D9        : gnd    :                   :         :           :                
-ser_rx                       : D10       : input  : 2.5 V             :         : 8         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D11       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D12       :        :                   :         : 6         :                
 VCCA2                        : D14       : power  :                   : 3.0V/3.3V :           :                
@@ -201,7 +201,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : P3        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : P4        :        :                   :         : 3         :                
 VCCIO3                       : P5        : power  :                   : 2.5V    : 3         :                
 ser_tx                       : P6        : output : 2.5 V             :         : 3         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : P7        :        :                   :         : 3         :                
+ser_rx                       : P7        : input  : 2.5 V             :         : 3         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : P8        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P9        :        :                   :         : 3         :                
 VCCIO3                       : P10       : power  :                   : 2.5V    : 3         :                

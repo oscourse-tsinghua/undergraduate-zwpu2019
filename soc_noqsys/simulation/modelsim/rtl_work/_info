@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/91947/Desktop/final/soc_noqsys/simulation/modelsim
 vpicorv32
-Z1 !s110 1552890627
+Z1 !s110 1553174870
 !i10b 1
 !s100 69DcXl1]==YAKV`Y9`9M@0
 Ib?`[`^zZh?DoK<@[4L[DN2
@@ -23,7 +23,7 @@ Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1552890627.000000
+Z7 !s108 1553174870.000000
 Z8 !s107 C:/Users/91947/Desktop/final/soc_noqsys/picorv32.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/91947/Desktop/final/soc_noqsys|C:/Users/91947/Desktop/final/soc_noqsys/picorv32.v|
 !i113 1
@@ -187,11 +187,11 @@ R12
 vpicosoc
 R1
 !i10b 1
-!s100 9im0]8z^M`P`@fV<3FYUI0
-IVO_lO;jPbmh[0=;j>TWIB1
+!s100 l1ZPCj_8zj07?;;NUWfij1
+I:Vi]<DU3]WKSol]VGBJ[l1
 R2
 R0
-w1552890212
+w1553168974
 8C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v
 FC:/Users/91947/Desktop/final/soc_noqsys/picosoc.v
 Z13 L0 20
@@ -199,7 +199,7 @@ R6
 r1
 !s85 0
 31
-!s108 1552890626.000000
+R7
 !s107 C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/91947/Desktop/final/soc_noqsys|C:/Users/91947/Desktop/final/soc_noqsys/picosoc.v|
 !i113 1
@@ -207,13 +207,13 @@ R10
 R11
 R12
 vpicosoc_tb
-Z14 !s110 1552890628
+Z14 !s110 1553174871
 !i10b 1
-!s100 >E;fgD?>TV24oI]^>d[^o2
-I0F6ES[Q@EY`=F3_doF82U0
+!s100 Y?>YkkN8HQkTzNDJCfiY[3
+ITkGB>WULG8JPkl94_A?OJ0
 R2
 R0
-w1552890561
+w1553174849
 8C:/Users/91947/Desktop/final/soc_noqsys/picosoc_tb.v
 FC:/Users/91947/Desktop/final/soc_noqsys/picosoc_tb.v
 L0 2
@@ -221,7 +221,7 @@ R6
 r1
 !s85 0
 31
-Z15 !s108 1552890628.000000
+Z15 !s108 1553174871.000000
 !s107 C:/Users/91947/Desktop/final/soc_noqsys/picosoc_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/91947/Desktop/final/soc_noqsys|C:/Users/91947/Desktop/final/soc_noqsys/picosoc_tb.v|
 !i113 1
@@ -229,13 +229,13 @@ R10
 R11
 R12
 vpll
-R14
+R1
 !i10b 1
-!s100 [`331fZoB3nagUaQV<8n63
-Im2iTQddlz;g`7`N2[Y=AJ0
+!s100 0laeoz]fKJCL8DY7ONJoU3
+IOIW9j]n0]LN4XbDknZWT70
 R2
 R0
-w1552872268
+w1553154769
 8C:/Users/91947/Desktop/final/soc_noqsys/pll.v
 FC:/Users/91947/Desktop/final/soc_noqsys/pll.v
 Z16 L0 39
@@ -243,7 +243,7 @@ R6
 r1
 !s85 0
 31
-R15
+R7
 !s107 C:/Users/91947/Desktop/final/soc_noqsys/pll.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/91947/Desktop/final/soc_noqsys|C:/Users/91947/Desktop/final/soc_noqsys/pll.v|
 !i113 1
@@ -253,11 +253,11 @@ R12
 vpll_altpll
 R14
 !i10b 1
-!s100 5Wh<QDJgaDmR6HOCfH6lK3
-I?QXY^CGgPO3TBD]1ZdTD;0
+!s100 7>VA2IoE_Ya<eiW7EeQ@b2
+I=c?<2OmnDNiZzYKkl=<2S3
 R2
 R0
-w1552873769
+w1553154828
 8C:/Users/91947/Desktop/final/soc_noqsys/db/pll_altpll.v
 FC:/Users/91947/Desktop/final/soc_noqsys/db/pll_altpll.v
 L0 30
@@ -279,7 +279,7 @@ R1
 IWZa7_J@=Uh?>[d>eOkN;R1
 R2
 R0
-w1552464878
+w1553154786
 8C:/Users/91947/Desktop/final/soc_noqsys/ip/ram.v
 FC:/Users/91947/Desktop/final/soc_noqsys/ip/ram.v
 R16
@@ -301,7 +301,7 @@ R1
 IEJEWW3RP]Cd08lDIdFiG93
 R2
 R0
-w1552464872
+w1553154761
 8C:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v
 FC:/Users/91947/Desktop/final/soc_noqsys/ip/rom.v
 R16
@@ -317,7 +317,7 @@ R10
 R17
 R12
 vsegment
-R14
+R1
 !i10b 1
 !s100 VZ_cLRb]V=h[3:AWFng]e1
 InZocFnM70?0@agO_LfT4J2
@@ -341,11 +341,11 @@ R12
 vsimpleuart
 R1
 !i10b 1
-!s100 Um^I^@g5kHk?Mi[]7PXnE1
-Ij^X]o0TC:Fdh3FGhQaW4;2
+!s100 VhNl]O[79Qa5O9RKQLmWk3
+IfF16RYQ?=1P?8Xl27b3Ca3
 R2
 R0
-w1552873566
+w1553173500
 8C:/Users/91947/Desktop/final/soc_noqsys/simpleuart.v
 FC:/Users/91947/Desktop/final/soc_noqsys/simpleuart.v
 R13
