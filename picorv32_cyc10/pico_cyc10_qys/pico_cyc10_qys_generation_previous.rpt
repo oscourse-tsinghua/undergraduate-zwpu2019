@@ -1,0 +1,93 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\91947\Desktop\final\picorv32_cyc10\pico_cyc10_qys.qsys --block-symbol-file --output-directory=C:\Users\91947\Desktop\final\picorv32_cyc10\pico_cyc10_qys --family="Cyclone 10 LP" --part=10CL016YU256C8G
+Progress: Loading picorv32_cyc10/pico_cyc10_qys.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding led [altera_avalon_pio 18.1]
+Progress: Parameterizing module led
+Progress: Adding pico_cyc10_0 [pico_cyc10 1.0]
+Progress: Parameterizing module pico_cyc10_0
+Progress: Adding ram [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module ram
+Progress: Adding rom [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module rom
+Progress: Adding seg [altera_avalon_pio 18.1]
+Progress: Parameterizing module seg
+Progress: Adding uart_0 [altera_avalon_uart 18.1]
+Progress: Parameterizing module uart_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\91947\Desktop\final\picorv32_cyc10\pico_cyc10_qys.qsys --synthesis=VERILOG --output-directory=C:\Users\91947\Desktop\final\picorv32_cyc10\pico_cyc10_qys\synthesis --family="Cyclone 10 LP" --part=10CL016YU256C8G
+Progress: Loading picorv32_cyc10/pico_cyc10_qys.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding led [altera_avalon_pio 18.1]
+Progress: Parameterizing module led
+Progress: Adding pico_cyc10_0 [pico_cyc10 1.0]
+Progress: Parameterizing module pico_cyc10_0
+Progress: Adding ram [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module ram
+Progress: Adding rom [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module rom
+Progress: Adding seg [altera_avalon_pio 18.1]
+Progress: Parameterizing module seg
+Progress: Adding uart_0 [altera_avalon_uart 18.1]
+Progress: Parameterizing module uart_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: pico_cyc10_qys: Generating pico_cyc10_qys "pico_cyc10_qys" for QUARTUS_SYNTH
+Info: led: Starting RTL generation for module 'pico_cyc10_qys_led'
+Info: led:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=pico_cyc10_qys_led --dir=C:/Users/91947/AppData/Local/Temp/alt7982_7132287714659761154.dir/0002_led_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/91947/AppData/Local/Temp/alt7982_7132287714659761154.dir/0002_led_gen//pico_cyc10_qys_led_component_configuration.pl  --do_build_sim=0  ]
+Info: led: Done RTL generation for module 'pico_cyc10_qys_led'
+Info: led: "pico_cyc10_qys" instantiated altera_avalon_pio "led"
+Info: pico_cyc10_0: "pico_cyc10_qys" instantiated pico_cyc10 "pico_cyc10_0"
+Info: ram: Starting RTL generation for module 'pico_cyc10_qys_ram'
+Info: ram:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=pico_cyc10_qys_ram --dir=C:/Users/91947/AppData/Local/Temp/alt7982_7132287714659761154.dir/0004_ram_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/91947/AppData/Local/Temp/alt7982_7132287714659761154.dir/0004_ram_gen//pico_cyc10_qys_ram_component_configuration.pl  --do_build_sim=0  ]
+Info: ram: Done RTL generation for module 'pico_cyc10_qys_ram'
+Info: ram: "pico_cyc10_qys" instantiated altera_avalon_onchip_memory2 "ram"
+Info: rom: Starting RTL generation for module 'pico_cyc10_qys_rom'
+Info: rom:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=pico_cyc10_qys_rom --dir=C:/Users/91947/AppData/Local/Temp/alt7982_7132287714659761154.dir/0005_rom_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/91947/AppData/Local/Temp/alt7982_7132287714659761154.dir/0005_rom_gen//pico_cyc10_qys_rom_component_configuration.pl  --do_build_sim=0  ]
+Info: rom: Done RTL generation for module 'pico_cyc10_qys_rom'
+Info: rom: "pico_cyc10_qys" instantiated altera_avalon_onchip_memory2 "rom"
+Info: seg: Starting RTL generation for module 'pico_cyc10_qys_seg'
+Info: seg:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=pico_cyc10_qys_seg --dir=C:/Users/91947/AppData/Local/Temp/alt7982_7132287714659761154.dir/0006_seg_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/91947/AppData/Local/Temp/alt7982_7132287714659761154.dir/0006_seg_gen//pico_cyc10_qys_seg_component_configuration.pl  --do_build_sim=0  ]
+Info: seg: Done RTL generation for module 'pico_cyc10_qys_seg'
+Info: seg: "pico_cyc10_qys" instantiated altera_avalon_pio "seg"
+Info: uart_0: Starting RTL generation for module 'pico_cyc10_qys_uart_0'
+Info: uart_0:   Generation command is [exec C:/intelfpga/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga/18.1/quartus/bin64/perl/lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga/18.1/quartus/sopc_builder/bin -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- C:/intelfpga/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=pico_cyc10_qys_uart_0 --dir=C:/Users/91947/AppData/Local/Temp/alt7982_7132287714659761154.dir/0007_uart_0_gen/ --quartus_dir=C:/intelfpga/18.1/quartus --verilog --config=C:/Users/91947/AppData/Local/Temp/alt7982_7132287714659761154.dir/0007_uart_0_gen//pico_cyc10_qys_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: uart_0: Done RTL generation for module 'pico_cyc10_qys_uart_0'
+Info: uart_0: "pico_cyc10_qys" instantiated altera_avalon_uart "uart_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "pico_cyc10_qys" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "pico_cyc10_qys" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "pico_cyc10_qys" instantiated altera_reset_controller "rst_controller"
+Info: rom_s1_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "rom_s1_translator"
+Info: pico_cyc10_0_altera_axi4lite_master_agent: "mm_interconnect_0" instantiated altera_merlin_axi_master_ni "pico_cyc10_0_altera_axi4lite_master_agent"
+Info: rom_s1_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "rom_s1_agent"
+Info: rom_s1_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "rom_s1_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/91947/Desktop/final/picorv32_cyc10/pico_cyc10_qys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: pico_cyc10_qys: Done "pico_cyc10_qys" with 22 modules, 29 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

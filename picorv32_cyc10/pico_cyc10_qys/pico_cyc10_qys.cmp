@@ -1,0 +1,12 @@
+	component pico_cyc10_qys is
+		port (
+			clk_clk       : in  std_logic                    := 'X'; -- clk
+			led_export    : out std_logic_vector(7 downto 0);        -- export
+			reset_reset_n : in  std_logic                    := 'X'; -- reset_n
+			seg_export    : out std_logic_vector(7 downto 0);        -- export
+			trap_export   : out std_logic;                           -- export
+			uart_rxd      : in  std_logic                    := 'X'; -- rxd
+			uart_txd      : out std_logic                            -- txd
+		);
+	end component pico_cyc10_qys;
+

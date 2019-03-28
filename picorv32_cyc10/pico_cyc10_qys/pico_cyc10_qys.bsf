@@ -1,0 +1,111 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 256 320)
+	(text "pico_cyc10_qys" (rect 82 -1 148 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 304 20 316)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 96 72)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "reset_reset_n" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 141 82 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 96 152)(line_width 1))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "uart_rxd" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "uart_rxd" (rect 4 261 52 272)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 96 272)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(output)
+		(text "led_export[7..0]" (rect 0 0 61 12)(font "Arial" (font_size 8)))
+		(text "led_export[7..0]" (rect 4 101 100 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 96 112)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(output)
+		(text "seg_export[7..0]" (rect 0 0 64 12)(font "Arial" (font_size 8)))
+		(text "seg_export[7..0]" (rect 4 181 100 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 96 192)(line_width 3))
+	)
+	(port
+		(pt 0 232)
+		(output)
+		(text "trap_export" (rect 0 0 46 12)(font "Arial" (font_size 8)))
+		(text "trap_export" (rect 4 221 70 232)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 96 232)(line_width 1))
+	)
+	(port
+		(pt 0 288)
+		(output)
+		(text "uart_txd" (rect 0 0 33 12)(font "Arial" (font_size 8)))
+		(text "uart_txd" (rect 4 277 52 288)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 96 288)(line_width 1))
+	)
+	(drawing
+		(text "clk" (rect 81 43 180 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 101 67 220 144)(font "Arial" (color 0 0 0)))
+		(text "led" (rect 80 83 178 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 101 107 238 224)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 67 123 164 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 101 147 244 304)(font "Arial" (color 0 0 0)))
+		(text "seg" (rect 76 163 170 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 101 187 238 384)(font "Arial" (color 0 0 0)))
+		(text "trap" (rect 74 203 172 419)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 101 227 238 464)(font "Arial" (color 0 0 0)))
+		(text "uart" (rect 74 243 172 499)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "rxd" (rect 101 267 220 544)(font "Arial" (color 0 0 0)))
+		(text "txd" (rect 101 283 220 576)(font "Arial" (color 0 0 0)))
+		(text " pico_cyc10_qys " (rect 183 304 462 618)(font "Arial" ))
+		(line (pt 96 32)(pt 160 32)(line_width 1))
+		(line (pt 160 32)(pt 160 304)(line_width 1))
+		(line (pt 96 304)(pt 160 304)(line_width 1))
+		(line (pt 96 32)(pt 96 304)(line_width 1))
+		(line (pt 97 52)(pt 97 76)(line_width 1))
+		(line (pt 98 52)(pt 98 76)(line_width 1))
+		(line (pt 97 92)(pt 97 116)(line_width 1))
+		(line (pt 98 92)(pt 98 116)(line_width 1))
+		(line (pt 97 132)(pt 97 156)(line_width 1))
+		(line (pt 98 132)(pt 98 156)(line_width 1))
+		(line (pt 97 172)(pt 97 196)(line_width 1))
+		(line (pt 98 172)(pt 98 196)(line_width 1))
+		(line (pt 97 212)(pt 97 236)(line_width 1))
+		(line (pt 98 212)(pt 98 236)(line_width 1))
+		(line (pt 97 252)(pt 97 292)(line_width 1))
+		(line (pt 98 252)(pt 98 292)(line_width 1))
+		(line (pt 0 0)(pt 256 0)(line_width 1))
+		(line (pt 256 0)(pt 256 320)(line_width 1))
+		(line (pt 0 320)(pt 256 320)(line_width 1))
+		(line (pt 0 0)(pt 0 320)(line_width 1))
+	)
+)
