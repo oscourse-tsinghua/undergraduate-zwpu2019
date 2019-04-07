@@ -113,16 +113,18 @@
     
 #### 3.2.1 Dhrystone
    Dhrystone是测量处理器运算能力的最常见基准程序之一，常用于处理器的整型运算性能的测量。
+   
 ![Dhrystone](IMG/Dhrystone.png)
   
   此处，引入Dhrystone对SRAM接口的CPU进行测试，其中有两个testbench，分别针对是否使用look-ahead接口进行访存的CPU性能进行比较评测。“Look-Ahead Memory”接口即提前一个时钟周期给内存发送读取信息的信号接口。Testbench对picorv32进行例化，实现256KB大小的memory，并增加虚拟UART，使其能够在仿真环境下输出信息。
 
   通过对stdlib.c syscall.c等库函数的实现，达到库移植的效果。程序由start.S开始执行，在sections.lds指定可执行代码段和数据段等放置在0x10000处，同时将启动地址0x10000作为CPU参数传递给picorv core，地址空间低64KB作为堆栈空间。
 
-该测试环境的SoC布局如下：
-![Dhrystone测试SoC布局](IMG/Dhrystone测试SoC布局.png)
+  该测试环境的SoC布局如下：
 
-在此目录下执行make test 可对不带look-ahead功能的cpu进行测试，执行make test_nola 可对带look-ahead功能的cpu进行测试。具体测试方法及参数可参照该目录下的Makefile。
+  ![Dhrystone测试SoC布局](IMG/Dhrystone测试SoC布局.png)
+
+  在此目录下执行make test 可对不带look-ahead功能的cpu进行测试，执行make test_nola 可对带look-ahead功能的cpu进行测试。具体测试方法及参数可参照该目录下的Makefile。
 
 #### 3.2.2 Firmware、tesets
   
@@ -131,9 +133,9 @@
   
   tests目录为官网提供的所有单条指令测试用例，Clifford通过riscv_test.h文件指定输出单条指令测试执行完毕后输出的信息。
 
-该测试的SoC布局为
+  该测试的SoC布局为
 
-![firmware测试SoC布局](IMG/firmware测试SoC布局.png)
+  ![firmware测试SoC布局](IMG/firmware测试SoC布局.png)
 
 #### 3.2.3 Picosoc
 
@@ -399,8 +401,7 @@ Divisor = 50Mhz / 115200 = 434。
   此时回到firmware目录下对sections.lds文件进行修改，可以看出该链接脚本直接将所有程序段放置在0x0000_0000~0x0000_c000的地址空间内。
   
   根据SoC地址空间分布，
-  需将程序的可执行代码段和只读数据放置在0x0000_0000~0x0000_3fff处的ROM处，
-  将数据段放置在0x0000_4000~0x0000_7fff处的RAM段。
+  需将程序的可执行代码段和只读数据放置在 0x0000_0000 ~ 0x0000_3fff处 的ROM处，将数据段放置在 0x0000_4000 ~ 0x0000_7fff 处的RAM段。
   
   此外，因为在对访存指令的测试中需要对内存段进行初始化，故需要将数据段的加载地址LMA放置在输出文件的text段中，即使用AT(ADDRESS)属性定义该.data程序段的加载位置。
   
