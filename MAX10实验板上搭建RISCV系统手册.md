@@ -1,5 +1,7 @@
 # 基于小脚丫MAX10开发板的RISCV SoC搭建手册
 
+	程序正常工作的git版本号 4d43f54edce18df09091342bc5b57b2bec4decc8
+
 ## 1 硬件平台
 	小脚丫MAX10开发板。STEP-MAX10是小脚丫平台基于Altera公司芯片开发的FPGA开发板。板卡集成下载器，使用MicroUSB数据线可完成开发板的供电与下载。
 
