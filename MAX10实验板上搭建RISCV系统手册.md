@@ -99,7 +99,8 @@
 ### 2.3 安装Quartus
 
   下载Quartus Lite版本，建议在windows环境下安装，因为64位 Linux环境对Modelsim的库支持不当，配置过程繁琐复杂，所以可能导致仿真环境无法使用。
-根据安装的Quartus更改Makefile中的Quartus版本和路径。
+  
+  根据安装的Quartus更改Makefile中的Quartus版本和路径。
 
 ## 3 Picorv32
 	Picorv32是由著名IC工程师Clifford开发设计的开源RISCV软核，主要专注于小体积，高频率，低功率的功能。
@@ -195,13 +196,17 @@
 #### 4.1.2 UART
    部分IP核如UART RS-232为Avolon接口，故无法直接使用这类IP核。UART模块使用picosoc目录下的simpleuart.v文件。
   
-  Simleuart模块包括一个分频系数寄存器，用于配置波特率，一个数据收发存储寄存器。 对于分频系数寄存器和数据寄存器的读写采用分开的SRAM接口，可直接连接读写。 读写方式为1位起始位，8位数据位，1位停止位，无校验位。
-分频系数计算公式为 
-
-divsors=(clock frequency)/(baund rate) 。
+  Simleuart模块包括一个分频系数寄存器，用于配置波特率，一个数据收发存储寄存器。 
+  
+  对于分频系数寄存器和数据寄存器的读写采用分开的SRAM接口，可直接连接读写。 读写方式为1位起始位，8位数据位，1位停止位，无校验位。
+  
+  分频系数计算公式为 
+  
+  divsors=(clock frequency)/(baund rate) 。
 
 #### 4.1.3 ROM
 ROM模块用于存储运行程序，直接使用原生接口的ROM IP核即可。
+
 位数选择32bits，大小选择4096words。
 
 ![](IMG/ROM1.png)
@@ -291,7 +296,9 @@ RAM无需初始化。
 
  ![](IMG/picorv32-axi1.png)
  
-  为了让Qsys能够直接识别接口类型和自动分类，需要在picorv32_axi模块的基础上进行封装，将其接口名称按照Qsys对于AXI类型接口的命名规范进行命名，其次可以去除picorv_axi中一些不必要的接口，仅留下时钟，复位，中断，AXI-LITE接口即可。
+  为了让Qsys能够直接识别接口类型和自动分类，需要在picorv32_axi模块的基础上进行封装，将其接口名称按照Qsys对于AXI类型接口的命名规范进行命名，
+  
+  其次可以去除picorv_axi中一些不必要的接口，仅留下时钟，复位，中断，AXI-LITE接口即可。
   
   根据Quartus  Platform Degsigner 用户手册ug-qps-platform-designer.pdf Table 160. 使用以下前缀能够使平台自动识别接口类型。
   
@@ -346,14 +353,15 @@ Divisor=((clock frequency)/(baud rate)) -1
   Divisor = 12Mhz / 115200 = 104。
   
   此时需要在程序运行后通过写入Divisor的值才能够让串口正常工作。
-若若pll 时钟IP核 input clock为50Mhz，output clock为50Mhz，baud rate为115200， 则
+  
+  若pll 时钟IP核 input clock为50Mhz，output clock为50Mhz，baud rate为115200， 则
 
-Divisor = 50Mhz / 115200 = 434。
+  Divisor = 50Mhz / 115200 = 434。
 
-此时运行程序无需额外写Divisor，串口即可按照预先设定的波特率正常工作。
+  此时运行程序无需额外写Divisor，串口即可按照预先设定的波特率正常工作。
 
 
-加入两个PIO模块分别作为LED数据显示和数码管数据输出。
+  加入两个PIO模块分别作为LED数据显示和数码管数据输出。
 
 ![](IMG/pio1.png)
 
@@ -380,14 +388,16 @@ Divisor = 50Mhz / 115200 = 434。
 ## 5 软件移植
   此时，需要编写脚本和工具将C语言、汇编等源程序编译为Riscv架构下的可执行ELF文件，并将可执行代码段与只读数据段转换为hex格式文件。
   
-  为了确保SoC搭建的正确性，需要使用官网测试用例对SoC进行验证，故可以以firmware目录下的测试程序为基准，对自行搭建的SoC进行适配，主要修改内容包括根据外设地址（UART）进行修改，并将数据段复制至RAM中进行初始化。
+  为了确保SoC搭建的正确性，需要使用官网测试用例对SoC进行验证，故可以以firmware目录下的测试程序为基准，对自行搭建的SoC进行适配。
+  
+  主要修改内容包括根据外设地址（UART）进行修改，并将数据段复制至RAM中进行初始化。
   
   根据3.2.2节的对firmware所测的SoC的描述可知，该firmware程序运行在64KB的RAM中，其UART地址为0x1000_0000。
   
   由于MAX10中的内存容量较小，无法将编译出来的firmware程序完全放置在芯片之中，故针对firmware程序作出适当的剪裁。
   
-  首先去掉firmware目录下的所有C语言文件，即去除print功能，去除查找梅森素数的C语言程序sieve.c，去除对中断，异常进行处理的irq.c，去除multest.c，stats.c，
-  同时在Makefile中将firmware目录下C文件生成的目标文件链接至ELF文件的代码去除。
+  首先去掉firmware目录下的所有C语言文件，即去除print功能，去除查找梅森素数的C语言程序sieve.c，去除对中断，异常进行处理的irq.c，去除multest.c，stats.c，同时在Makefile中将firmware目录下C文件生成的目标文件链接至ELF文件的代码去除。
+  
   其次，需要在start.S中去除调用这部分功能的代码（将文件开头ENABLE_XXX的宏注释）。
  
   更改start.S中输出“DONE”信息部分代码的UART地址，即将0x1000_0000改为0x0200_0004；
@@ -414,38 +424,58 @@ Divisor = 50Mhz / 115200 = 434。
   此时仍可能出现如下错误，segmentation fault，提示信息为程序过大，无法完全放入ROM空间中。
 
   故说明无法一次性运行所有官方测试用例，此时可分四个批次对TEST的代码分别运行。
+  
   通过更改根目录下的Makefile文件，将tests目录下的目标文件部分链接至firmware可执行文件中。
-此时执行make命令即可生成bin文件。
+
+  此时执行make命令即可生成bin文件。
 
 
 ## 6 Intel HEX格式文件
 
 ### 6.1 格式说明
   Intel HEX 文件是遵循 Intel HEX 文件格式的 ASCII 文本文件。在 Intel HEX 文件的每一行都包含了一个 HEX 记录。
+  
 Intel HEX由任意数量的十六进制记录组成。每个记录包含5个域，它们按以下格式排列：
 ![](IMG/HEX.png)
 
 Start Code  每个 Intel HEX 记录都由冒号开头
+
 Byte count 是数据长度域，它代表记录当中数据字节的数量
+
 Address 是地址域，它代表记录当中数据的起始地址
+
 Record type 是代表HEX记录类型的域，它可能是以下数据当中的一个：
+
 　　00-数据记录
+  
 　　01-文件结束记录
+  
 　　02-扩展段地址记录
+  
 　　03-开始段地址记录
+  
 　　04-扩展线性地址记录
+  
 　　05-开始线性地址记录
+  
 Data 是数据域，一个记录可以有许多数据字节.记录当中数据字节的数量必须和数据长度域中指定的数字相符
+
 Checksum 是校验和域，它表示这个记录的校验和.校验和的计算是通过将记录当中所有十六进制编码数字对的值相加，以256为模进行以下补足。
 
 
 ### 6.2 生成方式
   1. 通过Riscv工具链可将汇编文件和C文件编译为ELF可执行文件。
   2. 通过Riscv中的Objdump将ELF文件中的代码段和只读数据段提取为bin文件。
-  3. 自行编写程序将bin文件转换为hex格式，此处提供两个程序进行转换。bin2coe.py------ 将bin文件读入，然后转换为以32位指令一行的data，并加入Start code，byte count，address，record type，命名为coe格式（不是标准coe）。coe2hex------将coe文件读入，然后计算并加入checksum。
+  3. 自行编写程序将bin文件转换为hex格式，此处提供两个程序(在utility目录下)进行转换。
+  
+  bin2coe.py------ 将bin文件读入，然后转换为以32位指令一行的data，并加入Start code，byte count，address，record type，命名为coe格式（不是标准coe）。
+  
+  coe2hex.c------将coe文件读入，然后计算并加入checksum。
 
 ### 6.3 objcopy
-  objcopy中自带的BFD库中支持ihex格式，可通过-O参数指定，即可编译成Intel Hex格式，但此时的数据为小端数据，若用于初始化以32bits字为单位的ROM IP核，则从ROM IP核中读取出来的数据的大小端则会相反。
+  objcopy中自带的BFD库中支持ihex格式，可通过-O参数指定，即可编译成Intel Hex格式。
+  
+  但此时的数据为小端数据，若用于初始化以32bits字为单位的ROM IP核，则从ROM IP核中读取出来的数据的大小端则会相反。
   
   此外，若ROM IP指定为32bits的，则用于初始化的hex格式地址也应该以按字编址作为数据的起始地址，而不是按字节编址。
   
@@ -465,11 +495,13 @@ Checksum 是校验和域，它表示这个记录的校验和.校验和的计算�
   在testbench文件中设置输入时钟为12Mhz,即与STEP FPGA MAX10实验板上的晶振频率相同。
   
   若使用UART RS-232 IP核搭建环境，则其在仿真环境下默认的divisor为4，在程序中写入divisor后会变成设置的数值。
+  
   在testbench中模拟上位机给rx接口发送数据，每一位符号的持续时间为 divisor*cycle。
   
   运行后，首先观察tx和led是否有变化，波形是否与预期的效果相同。
   
   若不相同，则检查此时程序运行的状态，判断是程序的逻辑问题还是SoC的搭建问题。
+  
   若波形按照预期效果显示，但是tx的宽度与rx接收的宽度不相符，则是divisor的问题。
 
 ### 7.3 下板环境
@@ -479,6 +511,7 @@ Checksum 是校验和域，它表示这个记录的校验和.校验和的计算�
   或者通过Trigger设置低电平触发，则运行后若有数据发送至tx，则示波器将捕捉此处发送的数据。
   
   tx发送的高电平为3.3v，使用measure功能对每一位符号的发送位宽进行测量，其tx发送的波特率即为
+  
   baud rate=1/∆x。
   
   最后，可利用Quartus 自带的下板测试功能Signal Trap Logic Analyzer，下板后捕捉SoC内部的信号。
