@@ -22,11 +22,17 @@
 	o 板载资源：
 	
 		两个RGB三色LED；
+	
 		8路用户LED；
+	
 		2路RGB LED；
+	
 		4路拨码开关；
+	
 		4路按键；
+	
 		36个用户可扩展I/O； 
+	
 - 支持的开发工具Altera QuartusII； 
 - 一路Micro USB接口； 
 - 一个10pin的JTAG编程接口； 
