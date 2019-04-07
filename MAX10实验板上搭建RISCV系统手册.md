@@ -22,11 +22,17 @@
 	o 板载资源：
 	
 		两个RGB三色LED；
+	
 		8路用户LED；
+	
 		2路RGB LED；
+	
 		4路拨码开关；
+	
 		4路按键；
+	
 		36个用户可扩展I/O； 
+	
 - 支持的开发工具Altera QuartusII； 
 - 一路Micro USB接口； 
 - 一个10pin的JTAG编程接口； 
@@ -110,8 +116,9 @@
 ### 3.1 CPU 接口
   Picorv32包括多种对外接口的CPU，如SRAM接口，AXILITE接口，WISHBONE接口等。不同接口CPU的内部实现逻辑相同，均为以SRAM接口CPU作为核心，再增加相应接口转换模块。使用者可以通过配置参数实现对CPU部件和功能的选择。
 
-### 3.2 仓库源码分析
-     
+### 3.2 PicoRV32仓库源码分析
+[仓库地址](https://github.com/cliffordwolf/picorv32)
+
 ![项目根目录](IMG/项目根目录.png)
     
 #### 3.2.1 Dhrystone
@@ -193,10 +200,10 @@
 #### 4.1.1 新建工程
   打开Quartus，新建工程，芯片型号选择10M08SAM153。
   
-  将picorv32.v加入至项目。
+  将PicoRV32仓库中的[picorv32.v](https://github.com/cliffordwolf/picorv32/blob/master/picorv32.v)加入至项目。
   
 #### 4.1.2 UART
-   部分IP核如UART RS-232为Avolon接口，故无法直接使用这类IP核。UART模块使用picosoc目录下的simpleuart.v文件。
+   部分IP核如UART RS-232为Avolon接口，故无法直接使用这类IP核。UART模块使用PicoRV32仓库picosoc目录下的[simpleuart.v](https://github.com/cliffordwolf/picorv32/blob/master/picosoc/simpleuart.v)文件。
   
   Simleuart模块包括一个分频系数寄存器，用于配置波特率，一个数据收发存储寄存器。 
   
@@ -258,15 +265,15 @@ RAM无需初始化。
 ![](IMG/PLL3.png)
 
 #### 4.1.6 SEGMENT
-加入segment.v模块，segment.v为对数码管需要显示的数据进行译码的模块。
+加入[segment.v](https://github.com/oscourse-tsinghua/undergraduate-zwpu2019/blob/master/soc_noqsys/segment.v)模块，segment.v为对数码管需要显示的数据进行译码的模块。
 
 #### 4.1.7 顶层模块
-  在顶层模块对各个部件进行例化，加入GPIO寄存器和sw按键寄存器，以实现对LED和按键开关的控制。根据SoC设计在顶层中对CPU发出的访存地址进行映射，具体实现见picosoc.v。
+  在顶层模块对各个部件进行例化，加入GPIO寄存器和sw按键寄存器，以实现对LED和按键开关的控制。根据SoC设计在顶层中对CPU发出的访存地址进行映射，具体实现见[picosoc.v](https://github.com/oscourse-tsinghua/undergraduate-zwpu2019/blob/master/soc_noqsys/picosoc.v)。
 
   使用原生SRAM接口的picorv32无法使用Quartus自带的platform designer（Qsys）对各部件进行连接和地址分配，故使用Verilog在顶层模块中对SoC各个部件的各个部件进行连接并对映射分配地址。
 
 #### 4.1.8 时钟约束
-  增加时钟约束，新建Synnopsys Design Constraint File，写入clock源时钟约束，12Mhz时钟的周期为83.33ns。
+  增加时钟约束，新建Synnopsys Design Constraint File，写入clock源时钟约束，12Mhz时钟的周期为83.33ns，参考[clock.sdc](https://github.com/oscourse-tsinghua/undergraduate-zwpu2019/blob/master/soc_noqsys/clock.sdc)。
 
 #### 4.1.9 仿真
   编写testbench在仿真环境下观察程序运行结果，仿真环境下同样需要模拟出12Mhz的输入频率，才能确保UART输出波形的位宽正确。
@@ -298,9 +305,9 @@ RAM无需初始化。
 
  ![](IMG/picorv32-axi1.png)
  
-  为了让Qsys能够直接识别接口类型和自动分类，需要在picorv32_axi模块的基础上进行封装，将其接口名称按照Qsys对于AXI类型接口的命名规范进行命名，
+  为了让Qsys能够直接识别接口类型和自动分类，需要在picorv32-axi模块的基础上进行封装，将其接口名称按照Qsys对于AXI类型接口的命名规范进行命名，
   
-  其次可以去除picorv_axi中一些不必要的接口，仅留下时钟，复位，中断，AXI-LITE接口即可。
+  其次可以去除picorv-axi中一些不必要的接口，仅留下时钟，复位，中断，AXI-LITE接口即可,，参考[picorv32_axi_wrapper.v](https://github.com/oscourse-tsinghua/undergraduate-zwpu2019/blob/master/soc_axilite/picorv32_axi_wrapper.v)。
   
   根据Quartus  Platform Degsigner 用户手册ug-qps-platform-designer.pdf Table 160. 使用以下前缀能够使平台自动识别接口类型。
   
@@ -388,38 +395,36 @@ Divisor=((clock frequency)/(baud rate)) -1
 加入时钟约束，配置引脚等与3.1.11相同。
 
 ## 5 软件移植
-  此时，需要编写脚本和工具将C语言、汇编等源程序编译为Riscv架构下的可执行ELF文件，并将可执行代码段与只读数据段转换为hex格式文件。
+  在picorv32仓库测试软件的基础上，对软件进行移植。
   
   为了确保SoC搭建的正确性，需要使用官网测试用例对SoC进行验证，故可以以firmware目录下的测试程序为基准，对自行搭建的SoC进行适配。
-  
+
   主要修改内容包括根据外设地址（UART）进行修改，并将数据段复制至RAM中进行初始化。
   
   根据3.2.2节的对firmware所测的SoC的描述可知，该firmware程序运行在64KB的RAM中，其UART地址为0x1000_0000。
   
   由于MAX10中的内存容量较小，无法将编译出来的firmware程序完全放置在芯片之中，故针对firmware程序作出适当的剪裁。
   
-  首先去掉firmware目录下的所有C语言文件，即去除print功能，去除查找梅森素数的C语言程序sieve.c，去除对中断，异常进行处理的irq.c，去除multest.c，stats.c，同时在Makefile中将firmware目录下C文件生成的目标文件链接至ELF文件的代码去除。
+  首先去掉[firmware](https://github.com/cliffordwolf/picorv32/tree/master/firmware)目录下的所有C语言文件，即去除print功能，去除查找梅森素数的C语言程序sieve.c，去除对中断，异常进行处理的irq.c，去除multest.c，stats.c，同时在Makefile中将firmware目录下C文件生成的目标文件链接至ELF文件的代码去除。
   
-  其次，需要在start.S中去除调用这部分功能的代码（将文件开头ENABLE_XXX的宏注释）。
+  其次，需要在[start.S](https://github.com/cliffordwolf/picorv32/blob/master/firmware/start.S)中去除调用这部分功能的代码（将文件开头ENABLE XXX的宏注释）。
  
-  更改start.S中输出“DONE”信息部分代码的UART地址，即将0x1000_0000改为0x0200_0004；
+  更改start.S中输出“DONE”信息部分代码的UART地址，即将0x10000000改为0x02000004；
 
-  此外还需更改tests/riscv_test.h文件中输出TEST_FUNC_NAME处的串口地址和对于单条指令运行成功或失败时执行的代码部分。
+  此外还需更改[tests/riscvtest.h](https://github.com/cliffordwolf/picorv32/blob/master/tests/riscv_test.h)文件中输出TEST FUNC NAME处的串口地址和对于单条指令运行成功或失败时执行的代码部分。
   
-  在此项目中，作者将RVTEST_PASS宏和RVTEST_FAIL宏设置为往串口输出“OK”，“ERROR“信息，故更改串口地址即可。
+  在此项目中，作者将RVTEST PASS宏和RVTEST FAIL宏设置为往串口输出“OK”，“ERROR“信息，故更改串口地址即可。
   
   若使用UART RS-232 IP核，则无法连续打印字符，需要在每次写串口之前加入判断status寄存器trdy位的代码。
 
-  此时回到firmware目录下对sections.lds文件进行修改，可以看出该链接脚本直接将所有程序段放置在0x0000_0000~0x0000_c000的地址空间内。
+  此时回到firmware目录下对[sections.lds](https://github.com/cliffordwolf/picorv32/tree/master/firmware)文件进行修改，可以看出该链接脚本直接将所有程序段放置在0x00000000 ~ 0x0000c000的地址空间内。
   
   根据SoC地址空间分布，
-  需将程序的可执行代码段和只读数据放置在 0x0000_0000 ~ 0x0000_3fff处 的ROM处，将数据段放置在 0x0000_4000 ~ 0x0000_7fff 处的RAM段。
+  需将程序的可执行代码段和只读数据放置在 0x00000000 ~ 0x00003fff处 的ROM处，将数据段放置在 0x00004000 ~ 0x00007fff 处的RAM段。
   
   此外，因为在对访存指令的测试中需要对内存段进行初始化，故需要将数据段的加载地址LMA放置在输出文件的text段中，即使用AT(ADDRESS)属性定义该.data程序段的加载位置。
   
   最后，在start.s文件开头读取ROM中内存数据并初始化至RAM中。
-  
-  具体修改可参照仓库代码firmware.lds。
 
   使用Makefile对程序进行编译，输入make firmware/firmware.bin文件生成二进制文件。
 
@@ -431,6 +436,7 @@ Divisor=((clock frequency)/(baud rate)) -1
 
   此时执行make命令即可生成bin文件。
 
+  移植结果可参考第八节
 
 ## 6 Intel HEX格式文件
 
@@ -470,9 +476,9 @@ Checksum 是校验和域，它表示这个记录的校验和.校验和的计算�
   2. 通过Riscv中的Objdump将ELF文件中的代码段和只读数据段提取为bin文件。
   3. 自行编写程序将bin文件转换为hex格式，此处提供两个程序(在utility目录下)进行转换。
   
-  bin2coe.py------ 将bin文件读入，然后转换为以32位指令一行的data，并加入Start code，byte count，address，record type，命名为coe格式（不是标准coe）。
+  [bin2coe.py](https://github.com/oscourse-tsinghua/undergraduate-zwpu2019/blob/master/utility/bin2coe.py)------ 将bin文件读入，然后转换为以32位指令一行的data，并加入Start code，byte count，address，record type，命名为coe格式（不是标准coe）。
   
-  coe2hex.c------将coe文件读入，然后计算并加入checksum。
+  [coe2hex.c](https://github.com/oscourse-tsinghua/undergraduate-zwpu2019/blob/master/utility/coe2hex.c)------将coe文件读入，然后计算并加入checksum。
 
 ### 6.3 objcopy
   objcopy中自带的BFD库中支持ihex格式，可通过-O参数指定，即可编译成Intel Hex格式。
@@ -517,3 +523,57 @@ Checksum 是校验和域，它表示这个记录的校验和.校验和的计算�
   baud rate=1/∆x。
   
   最后，可利用Quartus 自带的下板测试功能Signal Trap Logic Analyzer，下板后捕捉SoC内部的信号。
+  
+  ## 8 移植结果仓库说明
+   [移植结果仓库](https://github.com/oscourse-tsinghua/undergraduate-zwpu2019)
+   
+  ### 8.1 IMG  picoaxi-qsys picorv32_cyc10
+  IMG ------ 仓库图片存储目录
+  
+  picoaxi-qsys ------ Quartus16-linux 环境 下搭建的适用于MAX10的SoC
+  
+  picorv32 cyc10 ------ Quartus18-Win 环境 下搭建的适用于Cyclon10的SoC
+  
+  ### 8.2 rom test
+  测试Quartus下 ROM IP核使用方法的工程。
+  
+  ROM IP核用于将程序初始化至芯片。
+  
+  下板环境为MAX10，效果为led显示指令地址，数码管显示当前指令最低字节。
+  
+   每按动一次sw2，则地址加1，指令变化。
+ 
+   以此方式可查看任意HEX文件下板后的状态。
+ 
+ ### 8.3 soc_noqsys 
+  Quartus18-Win 环境 下搭建的适用于MAX10的SoC。使用原生访存接口搭建的SoC，没有使用qsys平台。
+ 
+ ###  8.4 soc_axilite 
+  Quartus18-Win 环境 下搭建的适用于MAX10的SoC。使用AXILITE接口搭建的SoC，通过qsys平台连接部件。
+  
+ ### 8.5 test
+ #### 8.5.1 firmware 
+  基于picorv32仓库firmware目录修改的结果
+  
+#### 8.5.2 test n（n=1，2，3，4）
+  基于picorv32仓库tests目录分解为4个目录
+  
+  每运行一个目录的程序，需要修改Makefile中的TEST OBJ变量名称为对于目录名
+  
+  生成的firmware.hex可用于初始化ROM。
+  
+  运行make之前需要装好工具链，同时编译当前目录下的[coe2hex.c](https://github.com/oscourse-tsinghua/undergraduate-zwpu2019/blob/master/test/coe2hex.c)程序为可执行文件
+  
+ ### 8.6 utility
+   start.S 和 firmware.c为用于测试GPIO UART的程序。
+ 
+   效果为 LED依次点亮，数码管显示UART分频系数低8位（16进制）
+  
+   UART输出"Booting......"。
+ 
+   生成的hx8kdemo-fw.hex可用于初始化ROM。
+ 
+   运行make之前需要装好工具链，同时编译当前目录下的[coe2hex.c](https://github.com/oscourse-tsinghua/undergraduate-zwpu2019/blob/master/test/coe2hex.c)程序为可执行文件。
+
+### 8.7 utility_win
+  一些资料和针对过时SoC的运行程序。
