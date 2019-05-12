@@ -6,6 +6,12 @@ bin := target/$(target)/$(mode)/kernel.bin
 
 .PHONY: all clean run build asm qemu kernel
 
+
+bin: kernel
+	riscv32-unknown-elf-objcopy -O binary -j .text $(kernel) xy_os.text
+	riscv32-unknown-elf-objcopy -O binary -j .data $(kernel) xy_os.data
+	cp xy_os.text xy_os.data ~/Desktop/mybbl/
+
 all: kernel
 
 # $(bin): kernel
@@ -34,7 +40,6 @@ asm:
 	@riscv32-unknown-elf-objdump -d $(kernel) | less
 
 
-bin: kernel
-	riscv32-unknown-elf-objcopy -O binary -j .text $(kernel) xy_os.text
-	riscv32-unknown-elf-objcopy -O binary -j .data $(kernel) xy_os.data
-	cp xy_os.text xy_os.data ~/Desktop/mybbl/
+clean:
+	rm -rf target
+

@@ -1,8 +1,9 @@
 ENTRY(_start)
+
 MEMORY
 {
-    ROM (rx)      : ORIGIN = 0x00001000, LENGTH = 0x8000 /* entire ROM, KB */
-    RAM (xrw)       : ORIGIN = 0x00010300, LENGTH = 0x800 /* 2KB */
+    ROM (rx)      : ORIGIN = 0x0000a000, LENGTH = 0x800 /* entire ROM, 4KB */
+    RAM (xrw)       : ORIGIN = 0x00010200, LENGTH = 0x0 /* 0 B */
 }
 
 
@@ -27,7 +28,7 @@ SECTIONS {
     The program executes knowing that the data is in the RAM
     but the loader puts the initial values in the ROM (inidata).
     It is one task of the startup to copy the initial values from ROM to RAM. */
-    .data : AT ( _sidata )
+    .data :
     {
         . = ALIGN(4);
         _sdata = .;        /* create a global symbol at data start; used by startup code in order to initialise the .data section in RAM */

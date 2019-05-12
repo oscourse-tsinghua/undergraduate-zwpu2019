@@ -3,38 +3,29 @@
 #![feature(global_asm)]
 #![feature(asm)]
 
+extern crate fixedvec;
+extern crate xmas_elf;
+
 use core::panic::PanicInfo;
 use bbl::sbi;
 
 #[macro_use]
 pub mod io;
-
+pub mod elf;
 global_asm!(include_str!("boot/entry.asm"));
 
 static HELLO: &[u8] = b"Hello World!\n";
 
 #[no_mangle]
 pub extern "C" fn rust_main(){
-    
     for &c in HELLO {
         sbi::console_putchar(c as u8 as usize);
     }
-
-    io::puts("6666\n");
-
-    let a = "Hello";
-    let b = "World!\n";
-
-    print!("{} {}", a, b);
-    println!("{}", a);
-    println!();
-
-    panic!("End of main");
+    elf::elf_interpreter();
 }
 
-
 #[panic_handler]
-fn panic(info: &PanicInfo) -> !{
+fn panic(_info: &PanicInfo) -> !{
     loop{}
 }
 

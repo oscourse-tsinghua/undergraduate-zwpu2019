@@ -18,6 +18,7 @@ _start:
 	
     call rust_main
 
+
     .section .data
     .align 4 
     .global bootstack

@@ -1,8 +1,5 @@
-#ifndef BBL_PAYLOAD
-    #define BBL_PAYLOAD
-#endif
-
 #include "custom_ops.S"
+
 
 	.section .text
 	.global irq 
@@ -244,9 +241,9 @@ loop_init_bss:
 #set irq_mask
 	picorv32_maskirq_insn(zero, zero)
 	
-	li x17, 1		//putchar syscall
-	addi x10,zero,'H'	
-	ecall
+//	li x17, 1		//putchar syscall
+//	addi x10,zero,'H'	
+//	ecall
 
 	ebreak
 
@@ -298,6 +295,14 @@ loop:
 text_payload_start:
    .incbin "xy_os.text"
 text_payload_end:
+
+
+.org 0x9000 
+    .global _elf_payload_start, _elf_payload_end
+_elf_payload_start:
+    .incbin "hello"
+_elf_payload_end:
+
 
     .balign 4
     .section .data

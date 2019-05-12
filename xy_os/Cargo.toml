@@ -6,9 +6,12 @@ edition = "2018"
 
 [profile.dev]
 panic = "abort"
+opt-level = 3
 
 [profile.release]
 panic = "abort"
 
 [dependencies]
 bbl = {path = "crate/bbl"}
+xmas-elf = "0.6.2"
+fixedvec = "0.2.3"
