@@ -1,0 +1,36 @@
+
+rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+rrrrrrrrrrr          rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+rrrrrrrr                rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+rrrrr                      vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+rrrrr    rrrrrrrrrrrrr       vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+rrrrr    rrrrrrrrrrrrrrrr      vvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+rrrrr    rrrrrrrrrrrrrrrrrr    vvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+rrrrr    rrrrrrrrrrrrrrrrrr    vvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+rrrrr    rrrrrrrrrrrrrrrrrr    vvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+rrrrr    rrrrrrrrrrrrrrrr      vvvvvvvvvvvvvvvvvvvvvv  vvvvv
+rrrrr    rrrrrrrrrrrrr       vvvvvvvvvvvvvvvvvvvvvv    vvvvv
+rrrrr    rr                vvvvvvvvvvvvvvvvvvvvvv      vvvvv
+rrrrr    rr            vvvvvvvvvvvvvvvvvvvvvvvv      vvvvvvv
+rrrrr    rrrr      vvvvvvvvvvvvvvvvvvvvvvvvvv      vvvvvvvvv
+rrrrr    rrrrrr      vvvvvvvvvvvvvvvvvvvvvv      vvvvvvvvvvv
+rrrrr    rrrrrrrr      vvvvvvvvvvvvvvvvvv      vvvvvvvvvvvvv
+rrrrr    rrrrrrrrrr      vvvvvvvvvvvvvv      vvvvvvvvvvvvvvv
+rrrrr    rrrrrrrrrrrr      vvvvvvvvvv      vvvvvvvvvvvvvvvvv
+rrrrr    rrrrrrrrrrrrrr      vvvvvv      vvvvvvvvvvvvvvvvvvv
+rrrrr    rrrrrrrrrrrrrrrr      vv      vvvvvvvvvvvvvvvvvvvvv
+rrrrr    rrrrrrrrrrrrrrrrrr          vvvvvvvvvvvvvvvvvvvvvvv
+rrrrr    rrrrrrrrrrrrrrrrrrrr      vvvvvvvvvvvvvvvvvvvvvvvvv
+rrrrr    rrrrrrrrrrrrrrrrrrrrrr  vvvvvvvvvvvvvvvvvvvvvvvvvvv
+rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+
+       INSTRUCTION SETS WANT TO BE FREE
+
+===========================================================
+
+Copyright@ zhuweipu Beijing Institude of Technology
+
+===========================================================
+
