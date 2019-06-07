@@ -7,3 +7,5 @@ The peripheres include rom(16kB) ram(16kB) simpleuart and gpio.
 The board type is step fpga max10 with alter 10SAM08153C8G
 
 The functions include led, segment display
+
+使用Quartus18.1 打开qp工程文件即可

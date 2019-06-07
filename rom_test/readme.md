@@ -9,3 +9,5 @@ The led represents the addr of data of a word in rom.
 The segment represents the Little endian byte  of a word in rom.
 
 The result turns out that the addr bits in intel hex file is based on the word addr not byte addr
+
+使用Quartus18.1 打开qp工程文件即可
